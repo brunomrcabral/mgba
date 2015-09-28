@@ -29,6 +29,6 @@ Other goals include accurate enough emulation to provide a development environme
 mGBA is licensed under the **Mozilla Public License 2.0**.
 
 ###TODO:
-- [ ] Descrição do projeto
+- [x] Descrição do projeto
 - [ ] Processo
 - [ ] Análise critica

@@ -28,6 +28,20 @@ Other goals include accurate enough emulation to provide a development environme
 
 mGBA is licensed under the **Mozilla Public License 2.0**.
 
+###Processo
+
+Sendo um emulador de uma máquina virtual, a melhor forma de avaliar os progressos no código será com base em testes unitários. Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento da unidade de processamento e dos restantes periféricos (dispositivos de entrada e saída, memória, vídeo) ou carregando para a aplicaçaõ um ficheiro contendo uma cópia do software original. No caso dos emuladores, estes ficheiros contendo software designam-se por ROMs, uma vez que são obtidas por processos de dumping da memória ROM contida dentro das cassetes.
+
+Como a base do software está relativamente sólida há algum tempo, suficiente para garantir a compatibilidade com grande parte do software concebido para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, à correcção de pequenos *bugs* específicos e de eventuais regressões que surgiram como consequência dessas alterações no código.
+
+Além da optimização e melhoramento da estrutura do código base, a equipa está actualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos (PlayStation Vita, Nintendo 3DS e Nintendo Wii), o que é notável para software que foi inicialmente desenhado para correr num computador, e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
+
+**system testing**
+
+###Analise Crítica
+
+Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições <sup>1</sup>.
+
 ###TODO:
 - [x] Descrição do projeto
 - [ ] Processo

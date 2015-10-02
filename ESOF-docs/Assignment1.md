@@ -42,9 +42,9 @@ Além da optimização e melhoramento da estrutura do código base, a equipa est
 
 ###Analise Crítica
 
-
 A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
-e de eventuais regressões que surgiram como consequência dessas alterações no código.
+
+eventuais regressões que surgiram como consequência dessas alterações no código.
 
 ###TODO:
 - [x] Descrição do projeto

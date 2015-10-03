@@ -28,6 +28,14 @@ Other goals include accurate enough emulation to provide a development environme
 
 mGBA is licensed under the **Mozilla Public License 2.0**.
 
+mGBA é um novo emulador para Game Boy Advance implementado em C.
+
+O projeto teve inicio em Abril de 2013 com o objetivo de correr em hardware com características inferiores às que outros emuladores supportam, sem sacrificar o rigor e a portabilidade. Mesmo numa versão inicial, os jogos corriam sem grandes problemas pois a implementação é baseada num outro projeto de um emulador para a mesma plataforma denominado GBA.js. No entanto são poucos os vestigíos encontrados relativamente ao GBA.js devido às demais alterações já realizadas.
+
+Outros objetivos passam por adquirir uma emulação suficientemente rápida para criar um ambiente de desenvolvimento para sofware homebrew, ..., e a construção de um conjunto de recursos inovadores que possam ser utilizados por outros projetos do mesmo genero.
+
+mGBA is licensed under the **Mozilla Public License 2.0**.
+
 ###Processo
 
 Sendo um emulador de uma máquina virtual, a melhor forma de avaliar os progressos no código será com base em testes unitários. Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento da unidade de processamento e dos restantes periféricos (dispositivos de entrada e saída, memória, vídeo) ou carregando para a aplicaçaõ um ficheiro contendo uma cópia do software original. No caso dos emuladores, estes ficheiros contendo software designam-se por ROMs, uma vez que são obtidas por processos de dumping da memória ROM contida dentro das cassetes.

@@ -20,6 +20,8 @@ Faculdade de Engenharia da Universidade do Porto
 
 ![](mgba-256.png)
 
+------
+
 **mGBA** is a new **Game Boy Advance** emulator written in C.
 
 The project started in April 2013 with the goal of being fast enough to run on lower end hardware than other emulators support, without sacrificing accuracy or portability. Even in the initial version, games generally play without problems. It is loosely based on the previous GBA.js emulator, although very little of GBA.js can still be seen in mGBA.
@@ -27,6 +29,8 @@ The project started in April 2013 with the goal of being fast enough to run on l
 Other goals include accurate enough emulation to provide a development environment for homebrew software, a good workflow for tool-assist runners, and a modern feature set for emulators that older emulators may not support.
 
 mGBA is licensed under the **Mozilla Public License 2.0**.
+
+------
 
 mGBA é um novo emulador para Game Boy Advance implementado em C.
 
@@ -67,6 +71,11 @@ Além da optimização e melhoramento da estrutura do código base, a equipa est
 A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
 
 O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* tem sido relativamente reduzido, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
+
+###A editar
+As issues são uma excelente forma de seguir as tarefas a realizar, possíveís melhorias ou correções a fazer de bugs que entretanto foram identificados. As issues são geralmente etiquetadas e podem ser adicionadas a uma milestone, ou seja, a um conjunto de outras issues que deverão ser resolvidas até uma certa data definida pela equipa desenvolvedora. No momento do presente relatório, 28 das 99 issues publicadas ainda estão em aberto e apenas uma dela foi atribuída a um desenvolvedor. Neste momento, foram também já concluídas 4 milestones estando ainda 2 em aberto a serem concluídas num futuro breve. No entanto, uma delas não foi concluída a tempo estando no presente dia 4 dias em atraso com 62% das issues completas.
+
+(insert image here :/ idk maybe)
 
 
 

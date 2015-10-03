@@ -34,7 +34,9 @@ Sendo um emulador de uma máquina virtual, a melhor forma de avaliar os progress
 
 Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições <sup>1</sup>.
 
-Como a base do software está relativamente sólida há algum tempo, suficiente para garantir a compatibilidade com grande parte do software concebido para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes, e à implementação de novas funcionalidades na interface gráfica do utilizador, como por exemplo a opção de carregar e guardar o estado da máquina virtual num ficheiro.
+Como a base do *software* está relativamente sólida há algum tempo, suficiente para garantir a compatibilidade com grande parte do software concebido para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes, e à implementação de novas funcionalidades na interface gráfica do utilizador, como por exemplo a opção de carregar e guardar o estado da máquina virtual num ficheiro.
+
+No repositório existe também uma secção para *issues* bastante ativa, com utilizadores e *contributors* a submeter relatórios de *bugs* todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou *screenshot* ilustrando a situação descrita. O *feedback* do autor deste projeto é muito responsivo, tendo a maior parte das *issues* resposta ou resolução imediata.
 
 Além da optimização e melhoramento da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos (PlayStation Vita, Nintendo 3DS e Nintendo Wii).
 
@@ -42,9 +44,11 @@ Além da optimização e melhoramento da estrutura do código base, a equipa est
 
 ###Analise Crítica
 
-A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
+A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
 
-eventuais regressões que surgiram como consequência dessas alterações no código.
+O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* tem sido relativamente reduzido, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
+
+
 
 ###TODO:
 - [x] Descrição do projeto

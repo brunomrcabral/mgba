@@ -28,11 +28,17 @@ Outros objetivos do autor deste projeto e dos seus colaboradores passa por conse
 
 Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca libretro, que reúne os esforços de vários *developers open-source* na comunidade de *retro-gaming* para a criação de uma plataforma *cross-platform* para correr software e jogos de computador antigos em máquinas mais modernas. Qualquer autor de *software* de emulação é convidado a participar neste projeto.
 
-A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 para breve. É esperada ainda uma nova *milestone* no final deste ano, a versão 0.4.0.
+A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 para breve. É esperada ainda uma nova *milestone* no final deste ano.
 
 ###Processo de desenvolvimento
 
 Embora não tenha sido possível identificar um processo de desenvolvimento,
+
+O projeto tem um único proprietário, e um pequeno grupo com cerca de 14 colaboradores até ao momento. No entanto, é possivel que qualquer membro da comunidade GitHub contribua para o projeto. As instruções de contribuição estão bem definidas, apenas será necessário que o utilizador tenha em atenção alguns aspetos e cuidados descritos no documento CONTRIBUTING.md, disponível na raiz do repositório.
+
+O utilizador com a intenção de contribuir deve realizar um *fork* ou um *branch* do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no *branch* principal, através de um *pull request*. No momento do *pull request* será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto a explicar essas alterações.
+
+As alterações apenas serão aceites se o código estiver devidamente formatado segundo uma determinada nomenclatura e estilo de código, previamente definida pelo proprietário, se forem pertinentes e se não causarem problemas no funcionamento do programa, estando sujeito portanto a uma análise pelo proprietário.
 
 A melhor forma de avaliar os progressos no código será com base em testes unitários. Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento da unidade de processamento e dos restantes periféricos (dispositivos de entrada e saída, memória, vídeo) ou carregando para a aplicaçaõ um ficheiro contendo uma cópia do software original. No caso dos emuladores, estes ficheiros contendo software designam-se por ROMs, uma vez que são obtidas por processos de dumping da memória ROM contida dentro das cassetes.
 

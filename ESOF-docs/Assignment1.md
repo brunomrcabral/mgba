@@ -48,7 +48,7 @@ No momento de escrita deste relatório (3/10/2015), o projeto encontra-se relati
 
 ![](commit-frequency.PNG)
 
-Além da optimização e organização da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos (PlayStation Vita, Nintendo 3DS e Nintendo Wii), com base no *feedback* recebido pela comunidade o GitHub e na página oficial do projeto no Bugzilla. Os responsáveis por estes *ports* criaram *branches* no repositório para poder haver algum paralelismo entre o *master* que contém o código base.
+Além da optimização e organização da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos ([PlayStation Portable](https://en.wikipedia.org/wiki/PlayStation_Portable), [PlayStation Vita](https://en.wikipedia.org/wiki/PlayStation_Vita), [Nintendo 3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) e [Nintendo Wii](https://en.wikipedia.org/wiki/Nintendo_Wii)), com base no *feedback* recebido pela comunidade o GitHub e na página oficial do projeto no [Bugzilla](https://endrift.com/mgba/bugs/). Os responsáveis por estes *ports* criam *branches* no repositório para poder haver algum paralelismo entre o *master* que contém o código base.
 
 ###Analise Crítica
 
@@ -62,7 +62,7 @@ Como a base deste emulador está relativamente sólida há algum tempo, tempo es
 
 Os commits são normalmente acompanhados por uma mensagem que quase sempre nos parece pertinente, concisa e perfeitamente explicativa da alteração que foi realizada. Nesta fase do projeto, a maior parte dos commits diz respeito a correções de erros. arece-nos razoável admitir que a grande maioria foi de alguma pertinência e contribuiu para um aumento global da qualidade do projeto.
 
-A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
+A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*. 
 
 ####Issues
 

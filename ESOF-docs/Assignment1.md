@@ -32,15 +32,13 @@ A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0,
 
 ###Processo de desenvolvimento
 
-Embora não tenha sido possível identificar um processo de desenvolvimento,
-
 O projeto tem um único proprietário, e um pequeno grupo com cerca de 14 colaboradores até ao momento. No entanto, é possivel que qualquer membro da comunidade GitHub contribua para o projeto. As instruções de contribuição estão bem definidas, apenas será necessário que o utilizador tenha em atenção alguns aspetos e cuidados descritos no documento CONTRIBUTING.md, disponível na raiz do repositório.
 
 O utilizador com a intenção de contribuir deve realizar um *fork* ou um *branch* do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no *branch* principal, através de um *pull request*. No momento do *pull request* será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto a explicar essas alterações.
 
 As alterações apenas serão aceites se o código estiver devidamente formatado segundo uma determinada nomenclatura e estilo de código, previamente definida pelo proprietário, se forem pertinentes e se não causarem problemas no funcionamento do programa, estando sujeito portanto a uma análise pelo proprietário.
 
-A melhor forma de avaliar os progressos no código será com base em testes unitários. Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento da unidade de processamento e dos restantes periféricos (dispositivos de entrada e saída, memória, vídeo) ou carregando para a aplicaçaõ um ficheiro contendo uma cópia do software original. No caso dos emuladores, estes ficheiros contendo software designam-se por ROMs, uma vez que são obtidas por processos de dumping da memória ROM contida dentro das cassetes.
+Embora não tenha sido possível identificar um processo de desenvolvimento, a avaliação da qualidade e dos progressos feitos no código é realizada com base em testes unitários (numa espécie de Test-Driven Development). Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento de um determinado componente de *hardware* existente na máquina virtual, como por exemplo da unidade de processamento ou de um dispositivos de entrada, ou carregando para a aplicação ficheiros contendo cópias do software original. No contexto dos emuladores, estes ficheiros contendo software designam-se por ROMs.
 
 Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições...
 

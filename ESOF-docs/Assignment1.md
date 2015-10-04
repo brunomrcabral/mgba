@@ -12,9 +12,9 @@
 Faculdade de Engenharia da Universidade do Porto
 
 ###Grupo
-* Carlos Samouco (up201305187@fe.up.pt)
+* Carlos Manuel Carvalho Boavista Samouco (up201305187@fe.up.pt)
 * Carlos Soares (up201305514@fe.up.pt)
-* Diogo Marques (up201305642@fe.up.pt)
+* Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
 ###Introdução
 
@@ -32,15 +32,15 @@ A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0,
 
 ###Processo de desenvolvimento
 
-O projeto tem um único proprietário, e um pequeno grupo com cerca de 14 colaboradores até ao momento. No entanto, é possivel que qualquer membro da comunidade GitHub contribua para o projeto. As instruções de contribuição estão bem definidas, apenas será necessário que o utilizador tenha em atenção alguns aspetos e cuidados descritos no documento CONTRIBUTING.md, disponível na raiz do repositório.
+O projeto tem um único proprietário, e um pequeno grupo com cerca de 10 colaboradores até ao momento. No entanto, é possivel que um membro qualquer da comunidade GitHub contribua para o projeto. As instruções de contribuição estão definidas no documento CONTRIBUTING.md, disponível na raiz do repositório, sendo apenas necessário ao utilizador que tenha em atenção alguns aspetos e cuidados descritos no mesmo.
 
-O utilizador com a intenção de contribuir deve realizar um *fork* ou um *branch* do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no *branch* principal, através de um *pull request*. No momento do *pull request* será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto a explicar essas alterações.
+O utilizador com a intenção de contribuir deve realizar um *fork* ou um *branch* do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no *branch* principal, através de um *pull request*. No momento do *pull request* será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
 
-As alterações apenas serão aceites se o código estiver devidamente formatado segundo uma determinada nomenclatura e estilo de código, previamente definida pelo proprietário, se forem pertinentes e se não causarem problemas no funcionamento do programa, estando sujeito portanto a uma análise pelo proprietário.
+As alterações apenas serão aceites se o código estiver devidamente formatado segundo uma determinada nomenclatura e estilo de código (previamente definidas pelo proprietário), se forem pertinentes e se não causarem problemas no funcionamento do programa, estando sujeito portanto a uma análise pelo proprietário antes de serem aprovadas.
 
-Embora não tenha sido possível identificar um processo de desenvolvimento, a avaliação da qualidade e dos progressos feitos no código é realizada com base em testes unitários (numa espécie de Test-Driven Development). Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento de um determinado componente de *hardware* existente na máquina virtual, como por exemplo da unidade de processamento ou de um dispositivos de entrada, ou carregando para a aplicação ficheiros contendo cópias do software original. No contexto dos emuladores, estes ficheiros contendo software designam-se por ROMs.
+Embora não tenha sido possível identificar um processo de desenvolvimento, a avaliação da qualidade do código e dos progressos feitos é realizada com base em testes unitários (Test-Driven Development). Estes testes tanto podem ser escritos em código (testes manuais) para verificar o correcto funcionamento de um determinado componente de *hardware* existente na máquina virtual, como por exemplo da unidade de processamento ou de um dispositivos de entrada, ou carregando para a aplicação ficheiros contendo cópias do software original para uma espécie de teste de jogabilidade (no contexto dos emuladores, estes ficheiros contendo software designam-se por ROMs). Pequenas falhas no código de emulação podem criar erros gráficos ou de sincronização bem visíveis quando se tenta executar esse *software*.
 
-Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições...
+Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições... (EXPLICAR)
 
 ![](commit-graph.PNG)
 
@@ -52,7 +52,7 @@ Além da optimização e organização da estrutura do código base, a equipa es
 
 ###Analise Crítica
 
-#### Commits
+####Commits
 
 O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. 
 
@@ -76,9 +76,7 @@ O volume de testes unitários realizados pelo *top contributor* deste projeto ap
 
 ###Conclusão
 
-
-
 ###TODO:
 - [x] Descrição do projeto
 - [ ] Processo
-- [ ] Análise critica
+- [x] Análise critica

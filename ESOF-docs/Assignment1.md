@@ -28,7 +28,7 @@ Outros objetivos do autor deste projeto e dos seus colaboradores passam por cons
 
 O mGBA integra também um projeto maior, igualmente *open-source*, a biblioteca [libretro](https://github.com/libretro), que reúne os esforços de vários *developers open-source* na comunidade de *retro gaming* para a criação de uma plataforma *cross-platform* que consiga correr *software* e jogos *retro* em máquinas mais modernas. Qualquer autor de *software* deste tipo é convidado a participar no projeto libretro, desde que disponiblize o seu código na Internet.
 
-A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 previsto para breve. É esperada ainda uma nova *milestone* no final deste ano.
+A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 previsto para breve. É esperado ainda um novo *milestone* no final deste ano.
 
 ###Processo de desenvolvimento
 
@@ -58,9 +58,9 @@ Acreditamos ainda que este projeto apresenta uma grande margem de evolução e e
 
 ####Issues
 
-No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e *contributors* a submeter relatórios de *bugs* todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou *screenshot* ilustrando a situação descrita. O *feedback* do autor deste projeto é bastante responsivo, tendo a maior parte das *issues* resposta imediata.
+No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e *contributors* a submeter relatórios de *bugs* todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou *screenshot* ilustrando a situação descrita. O *feedback* do autor deste projeto é bastante responsivo, tendo a maior parte dos *issues* resposta imediata.
 
-As *issues* são uma excelente forma de definir uma sequência de tarefas a realizar, possíveís melhorias ou correções de *bugs* a fazer que entretanto foram identificados pela comunidade. As *issues* têm uma etiqueta associada (referente à categoria, relevância, urgência dos *bugs* encontrados, etc...) e podem ser adicionadas a uma *milestone*, ou seja, a um conjunto de outras *issues* e funcionalidades planeadas que deverão ser resolvidas e/ou implementadas até uma certa data definida pelo proprietário. No presente momento, 28 das 99 issues publicadas estão ainda em aberto e apenas uma dela foi atribuída a um *developer*. Neste momento, desde o inicio do projeto, foram já concluídas 4 *milestones*, todasnum espaço de um ano, estando ainda duas planeadas para serem concluídas numa data futura. No entanto, a próxima *milestone* não foi concluída a tempo, estando no presente dia com quatro dias em atraso com apenas 62% das issues resolvidas, com a última *issue* dessa *milestone* resolvida há oito dias atrás.
+Os *issues* são uma excelente forma de definir uma sequência de tarefas a realizar, possíveís melhorias ou correções de *bugs* a fazer que entretanto foram identificados pela comunidade. Os *issues* têm uma etiqueta associada (referente à categoria, relevância, urgência dos *bugs* encontrados, etc...) e podem ser adicionados a um *milestone*, ou seja, a um conjunto de outros *issues* e funcionalidades planeadas que deverão ser resolvidas e/ou implementadas até uma certa data definida pelo proprietário. No presente momento, 28 dos 99 issues publicados estão ainda em aberto e apenas um deles foi atribuído a um *developer*. Neste momento, e desde o inicio do projeto, foram já concluídos 4 *milestones*, todos num espaço de um ano, estando ainda dois planeados para serem lançados numa data futura. No entanto, o próximo *milestone* não foi concluído a tempo, estando no presente dia com quatro dias em atraso com apenas 62% dos *issues* resolvidos, com o último *issue* desse *milestone* resolvido há oito dias atrás.
 
 ![](milestone-due.PNG)
 

@@ -70,9 +70,4 @@ As *issues* são uma excelente forma de definir uma sequência de tarefas a real
 
 O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* não tem sido suficiente, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
 
-A realização de *ports* para diversas plataformas é um aspeto a salientar para um *software* de pequena escala que foi inicialmente projetado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*. 
-
-###TODO:
-- [x] Descrição do projeto
-- [ ] Processo
-- [x] Análise critica
+A realização de *ports* para diversas plataformas é um aspeto a salientar para um *software* de pequena escala que foi inicialmente projetado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*.

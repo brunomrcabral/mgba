@@ -20,11 +20,11 @@ Faculdade de Engenharia da Universidade do Porto
 
 ![](mgba-256.png)
 
-O mGBA é um emulador da consola portátil Game Boy Advance implementado em C.
+O [mGBA](http://mgba.io) é um emulador da consola portátil [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) implementado em C.
 
 Este projeto teve inicio em Abril de 2013 com o objetivo de correr em *hardware* com características inferiores às que outros emuladores suportavam na altura, sem sacrificar a experiência do utilizador nem a portabilidade. Ainda numa versão inicial, os jogos corriam sem grandes problemas pois a implementação original era baseada num outro projeto de emulador da mesma plataforma, mas implementado em *JavaScript*, denominado GBA.js. No entanto são poucos os vestigíos de código encontrados relativamente ao antigo GBA.js devido às várias alterações já realizadas pela equipa do mGBA.
 
-Outros objetivos do autor deste projeto e dos seus colaboradores passa por conseguir um emulador suficientemente rápido capaz de correr em máquinas e dispositivos mais antigos com enorme fiabilidade, de forma a constituir um ambiente para desenvolvimento de *software homebrew* (isto é, *software* não-oficial desenvolvido pela comunidade para esta plataforma), uma boa ferramenta para a realização de *tool-assisted speedruns* (TAS), bem como a construção de um conjunto de recursos inovadores que possam ser reutilizados por outros projetos do mesmo género.
+Outros objetivos do autor deste projeto e dos seus colaboradores passa por conseguir um emulador suficientemente rápido capaz de correr em máquinas e dispositivos mais antigos com enorme fiabilidade, de forma a constituir um ambiente para desenvolvimento de [*homebrew*](https://en.wikipedia.org/wiki/Homebrew_(video_games)) (isto é, *software* não-oficial desenvolvido pela comunidade para esta plataforma), uma boa ferramenta para a realização de [*tool-assisted speedruns*](https://en.wikipedia.org/wiki/Tool-assisted_speedrun) (TAS), bem como a construção de um conjunto de recursos inovadores que possam ser reutilizados por outros projetos do mesmo género.
 
 Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca libretro, que reúne os esforços de vários *developers open-source* na comunidade de *retro-gaming* para a criação de uma plataforma *cross-platform* para correr software e jogos de computador antigos em máquinas mais modernas. Qualquer autor de *software* de emulação é convidado a participar neste projeto.
 

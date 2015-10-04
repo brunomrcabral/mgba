@@ -28,45 +28,42 @@ The project started in April 2013 with the goal of being fast enough to run on l
 
 Other goals include accurate enough emulation to provide a development environment for homebrew software, a good workflow for tool-assist runners, and a modern feature set for emulators that older emulators may not support.
 
-mGBA is licensed under the **Mozilla Public License 2.0**.
 
 ------
 
-O mGBA é um emulador da consola Nintendo Game Boy Advance implementado em C.
+O mGBA é um emulador da consola portátil Game Boy Advance implementado em C.
 
-O projeto teve inicio em Abril de 2013 com o objetivo de correr em *hardware* com características inferiores às que outros emuladores suportam, sem sacrificar a experiência nem a portabilidade. Mesmo numa versão inicial, os jogos corriam sem grandes problemas pois a implementação é baseada num outro projeto de emulador para a mesma plataforma implementado em *Javascript*, denominado GBA.js. No entanto são poucos os vestigíos de código encontrados relativamente ao antigo GBA.js devido às várias alterações já realizadas.
+Este projeto teve inicio em Abril de 2013 com o objetivo de correr em *hardware* com características inferiores às que outros emuladores suportavam na altura, sem sacrificar a experiência do utilizador nem a portabilidade. Ainda numa versão inicial, os jogos corriam sem grandes problemas pois a implementação original era baseada num outro projeto de emulador da mesma plataforma, mas implementado em *JavaScript*, denominado GBA.js. No entanto são poucos os vestigíos de código encontrados relativamente ao antigo GBA.js devido às várias alterações já realizadas pela equipa do mGBA.
 
-Outros objetivos do autor deste projeto e dos seus colaboradores passa por conseguir um emulador suficientemente rápido capaz de correr em máquinas e dispositivos mais antigos com enorme fiabilidade, de forma a constituir um ambiente para desenvolvimento de *software homebrew* (isto é, *software* não-oficial desenvolvido pela comunidade para esta plataforma), uma boa ferramenta para a realização de *tool-assisted speedruns* (TAS), bem como a construção de um conjunto de recursos inovadores que possam ser reutilizados por outros projetos dentro do mesmo género.
+Outros objetivos do autor deste projeto e dos seus colaboradores passa por conseguir um emulador suficientemente rápido capaz de correr em máquinas e dispositivos mais antigos com enorme fiabilidade, de forma a constituir um ambiente para desenvolvimento de *software homebrew* (isto é, *software* não-oficial desenvolvido pela comunidade para esta plataforma), uma boa ferramenta para a realização de *tool-assisted speedruns* (TAS), bem como a construção de um conjunto de recursos inovadores que possam ser reutilizados por outros projetos do mesmo género.
 
-Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca libretro, que reúne os esforços de vários *developers open-source* na comunidade, na criação de uma plataforma *cross-platform* para correr software de computadores e dispositivos eletrónicos contemporâneos em máquinas mais modernas. Qualquer proprietário de *software* de emulação é convidado a participar neste projeto.
+Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca libretro, que reúne os esforços de vários *developers open-source* na comunidade de *retro-gaming* para a criação de uma plataforma *cross-platform* para correr software e jogos de computador antigos em máquinas mais modernas. Qualquer autor de *software* de emulação é convidado a participar neste projeto.
 
-A versão estável deste projeto à data da elaboração deste relatório era a 0.3.0. O lançamento de uma nova *milestone* está planeada para o final deste ano, a 0.4.0.
+A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 para breve. É esperada ainda uma nova *milestone* no final deste ano, a versão 0.4.0.
 
 ###Processo
 
-Embora não tendo um processo de desenvolvimento bem determinado.
+Embora não tenha sido possível identificar um processo de desenvolvimento,
 
 A melhor forma de avaliar os progressos no código será com base em testes unitários. Estes testes tanto podem ser escritos em código para verificar o correcto funcionamento da unidade de processamento e dos restantes periféricos (dispositivos de entrada e saída, memória, vídeo) ou carregando para a aplicaçaõ um ficheiro contendo uma cópia do software original. No caso dos emuladores, estes ficheiros contendo software designam-se por ROMs, uma vez que são obtidas por processos de dumping da memória ROM contida dentro das cassetes.
 
-Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições <sup>1</sup>.
-
-
+Test Driven Development (TDD) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições...
 
 ![](commit-graph.PNG)
 
-No momento de escrita deste relatório (3/10/2015), o projeto encontra-se relativamente ativo, com uma média de 28,23 commits por semana, desde a semana com início a 5 de outubro de 2014 até à semana com início a 27 de setembro de 2015, e um total de mais de 5400 commits.
+No momento de escrita deste relatório (3/10/2015), o projeto encontra-se relativamente ativo, com uma média de XX commits por semana, desde a semana com início a 5 de outubro de 2014 até à semana com início a 27 de setembro de 2015, e conta com mais de 2850 commits durante o seu tempo de vida.
 
 ![](commit-frequency.PNG)
 
-Além da optimização e melhoramento da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos (PlayStation Vita, Nintendo 3DS e Nintendo Wii).
+Além da optimização e organização da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos (PlayStation Vita, Nintendo 3DS e Nintendo Wii), com base no *feedback* recebido pela comunidade o GitHub e na página oficial do projeto no Bugzilla. Os responsáveis por estes *ports* criaram *branches* no repositório para poder haver algum paralelismo entre o *master* que contém o código base.
 
 ###Analise Crítica
 
 #### Commits
 
-O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro, e que ainda apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e aficionados do género. Grande parte dos *commits* são normalmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
+O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e aficionados do género. Como grande parte dos *commits* são habitualmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
 
-Como a base deste emulador está relativamente sólida há algum tempo, suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho global, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes (*play tests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas.
+Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos (*playtests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas.
 
 Os commits são normalmente acompanhados por uma mensagem que quase sempre nos parece pertinente, concisa e perfeitamente explicativa da alteração que foi realizada. Nesta fase do projeto, a maior parte dos commits diz respeito a correções de erros. Embora não seja possível averiguar, ao certo, se todos os commits foram realmente úteis para o projeto, uma vez que são muito raros aqueles que recebem comentários de outros colaboradores, parece-nos razoável admitir que a grande maioria foi de alguma pertinência e contribuiu para um aumento global da qualidade do projeto. Contudo, verifica-se que, quando o projeto sofre adições de código, ocorrem, praticamente em simultâneo, eliminações, como se constata através da estatística disponibilizada pelo GitHub.
 

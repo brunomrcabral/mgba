@@ -26,7 +26,7 @@ Este projeto teve inicio em Abril de 2013 com o objetivo de correr em *hardware*
 
 Outros objetivos do autor deste projeto e dos seus colaboradores passa por conseguir um emulador suficientemente rápido capaz de correr em máquinas e dispositivos mais antigos com enorme fiabilidade, de forma a constituir um ambiente para desenvolvimento de [*homebrew*](https://en.wikipedia.org/wiki/Homebrew_(video_games)) (isto é, *software* não-oficial desenvolvido pela comunidade para esta plataforma), uma boa ferramenta para a realização de [*tool-assisted speedruns*](https://en.wikipedia.org/wiki/Tool-assisted_speedrun) (TAS), bem como a construção de um conjunto de recursos inovadores que possam ser reutilizados por outros projetos do mesmo género.
 
-Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca libretro, que reúne os esforços de vários *developers open-source* na comunidade de *retro-gaming* para a criação de uma plataforma *cross-platform* para correr software e jogos de computador antigos em máquinas mais modernas. Qualquer autor de *software* de emulação é convidado a participar neste projeto.
+Este projeto integra também um projeto maior, igualmente *open-source*, a biblioteca [libretro](https://github.com/libretro), que reúne os esforços de vários *developers open-source* na comunidade de *retro gaming* para a criação de uma plataforma *cross-platform* que consiga correr software e jogos de computador antigos em máquinas mais modernas. Qualquer autor de *software* de emulação *open-source* é convidado a participar neste projeto.
 
 A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 para breve. É esperada ainda uma nova *milestone* no final deste ano.
 
@@ -72,9 +72,9 @@ As *issues* são uma excelente forma de definir uma sequência de tarefas a real
 
 ![](milestone-due.PNG)
 
-O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* tem sido relativamente reduzido, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
-
 ###Conclusão
+
+O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* não tem sido suficiente, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
 
 ###TODO:
 - [x] Descrição do projeto

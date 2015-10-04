@@ -52,11 +52,10 @@ Além da optimização e organização da estrutura do código base, a equipa es
 
 O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. Como grande parte destes *commits* são realizados tanto ao fim-de-semana como durante a noite, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário, sendo este o único projeto seu ao qual se tem dedicado nos últimos meses.
 
-Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e entusiastas do *retro-gaming*. 
-
 ![](commit-frequency.PNG)
 
-Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos, à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas. No geral, a maioria dos commmits realizados contribuiu positivamente para um aumento global da qualidade do projeto.
+
+Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse dos utilizadores e entusiastas do *retro-gaming*. Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa; à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos, à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas. No geral, a maioria dos commmits realizados contribuiu positivamente para um aumento global da qualidade do projeto.
 
 ####Issues
 
@@ -68,6 +67,6 @@ As *issues* são uma excelente forma de definir uma sequência de tarefas a real
 
 ###Conclusão
 
-O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* não tem sido suficiente, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
+Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir erros no código, o que mostra que o volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* não tem sido suficiente, levando a eventuais regressões no funcionamento deste *software*. 
 
 A realização de *ports* para diversas plataformas é um aspeto a salientar para um *software* de pequena escala que foi inicialmente projetado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*.

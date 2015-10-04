@@ -11,25 +11,14 @@
 
 Faculdade de Engenharia da Universidade do Porto
 
-###Team
+###Grupo
 * Carlos Samouco (up201305187@fe.up.pt)
 * Carlos Soares (up201305514@fe.up.pt)
 * Diogo Marques (up201305642@fe.up.pt)
 
-###Descrição
+###Introdução
 
 ![](mgba-256.png)
-
-------
-
-**mGBA** is a new **Game Boy Advance** emulator written in C.
-
-The project started in April 2013 with the goal of being fast enough to run on lower end hardware than other emulators support, without sacrificing accuracy or portability. Even in the initial version, games generally play without problems. It is loosely based on the previous GBA.js emulator, although very little of GBA.js can still be seen in mGBA.
-
-Other goals include accurate enough emulation to provide a development environment for homebrew software, a good workflow for tool-assist runners, and a modern feature set for emulators that older emulators may not support.
-
-
-------
 
 O mGBA é um emulador da consola portátil Game Boy Advance implementado em C.
 
@@ -41,7 +30,7 @@ Este projeto integra também um projeto maior, igualmente *open-source*, a bibli
 
 A versão estável do mGBA à data da elaboração deste relatório era a 0.3.0, com o lançamento da 0.3.1 para breve. É esperada ainda uma nova *milestone* no final deste ano, a versão 0.4.0.
 
-###Processo
+###Processo de desenvolvimento
 
 Embora não tenha sido possível identificar um processo de desenvolvimento,
 
@@ -61,11 +50,13 @@ Além da optimização e organização da estrutura do código base, a equipa es
 
 #### Commits
 
-O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e aficionados do género. Como grande parte dos *commits* são habitualmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
+O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. 
+
+Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e entusiastas do *retro-gaming*. Como grande parte dos *commits* são habitualmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
 
 Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos (*playtests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas.
 
-Os commits são normalmente acompanhados por uma mensagem que quase sempre nos parece pertinente, concisa e perfeitamente explicativa da alteração que foi realizada. Nesta fase do projeto, a maior parte dos commits diz respeito a correções de erros. Embora não seja possível averiguar, ao certo, se todos os commits foram realmente úteis para o projeto, uma vez que são muito raros aqueles que recebem comentários de outros colaboradores, parece-nos razoável admitir que a grande maioria foi de alguma pertinência e contribuiu para um aumento global da qualidade do projeto. Contudo, verifica-se que, quando o projeto sofre adições de código, ocorrem, praticamente em simultâneo, eliminações, como se constata através da estatística disponibilizada pelo GitHub.
+Os commits são normalmente acompanhados por uma mensagem que quase sempre nos parece pertinente, concisa e perfeitamente explicativa da alteração que foi realizada. Nesta fase do projeto, a maior parte dos commits diz respeito a correções de erros. arece-nos razoável admitir que a grande maioria foi de alguma pertinência e contribuiu para um aumento global da qualidade do projeto.
 
 A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS* ou *Linux*. 
 
@@ -79,10 +70,7 @@ As *issues* são uma excelente forma de definir uma sequência de tarefas a real
 
 O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* tem sido relativamente reduzido, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
 
-###A editar
-
-
-(insert image here :/ idk maybe)
+###Conclusão
 
 
 

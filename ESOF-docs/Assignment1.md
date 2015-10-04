@@ -44,19 +44,19 @@ Embora não tenha sido possível identificar um processo de desenvolvimento bem 
 
 No momento de escrita desta secção do relatório, o projeto encontrava-se relativamente ativo, com uma média de 33.3 *commits* por semana, num período de 1 ano que se estende desde a semana com início a 12 de outubro de 2014 até à semana com início a 27 de setembro de 2015, contando com mais de 2850 commits durante o seu tempo de vida. Na presente semana verificou-se também um mínimo histórico dos últimos 12 meses de 5 *commits* numa semana, segundo as estatísticas fornecidas pelo próprio GitHub.
 
-![](commit-frequency.PNG)
-
 Além da optimização e organização da estrutura do código base, a equipa está atualmente a fazer *ports* do mGBA para novas plataformas, também elas consolas de jogos ([PlayStation Portable](https://en.wikipedia.org/wiki/PlayStation_Portable), [PlayStation Vita](https://en.wikipedia.org/wiki/PlayStation_Vita), [Nintendo 3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) e [Nintendo Wii](https://en.wikipedia.org/wiki/Nintendo_Wii)), com base no *feedback* recebido pela comunidade o GitHub e na página oficial do projeto no [Bugzilla](https://endrift.com/mgba/bugs/). Os responsáveis por estes *ports* criam *branches* no repositório para poder haver algum paralelismo entre o *master* que contém o código base.
 
 ###Analise Crítica
 
 ####Commits
 
-O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. 
+O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último mês. A frequência dos commits parece-nos normal para um projeto desta dimensão que nasceu de um outro projeto já maduro. Como grande parte destes *commits* são realizados tanto ao fim-de-semana como durante a noite, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário, sendo este o único projeto seu ao qual se tem dedicado nos últimos meses.
 
-Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e entusiastas do *retro-gaming*. Como grande parte dos *commits* são habitualmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
+Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e entusiastas do *retro-gaming*. 
 
-Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos (*playtests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas. No geral, a grande maioria dos commmits realizados contribuiu para um aumento global da qualidade do projeto.
+![](commit-frequency.PNG)
+
+Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos, à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas. No geral, a maioria dos commmits realizados contribuiu positivamente para um aumento global da qualidade do projeto.
 
 ####Issues
 

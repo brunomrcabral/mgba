@@ -12,15 +12,15 @@
 Faculdade de Engenharia da Universidade do Porto
 
 ###Grupo
+* Carlos Jorge Rocha Soares (up201305514@fe.up.pt)
 * Carlos Manuel Carvalho Boavista Samouco (up201305187@fe.up.pt)
-* Carlos Soares (up201305514@fe.up.pt)
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
 ###Introdução
 
 ![](mgba-256.png)
 
-O [mGBA](http://mgba.io) é um emulador da consola portátil [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) implementado em C.
+O [mGBA](http://mgba.io) é um emulador da consola portátil [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) escrito totalmente em C.
 
 Este projeto teve inicio em Abril de 2013 com o objetivo de correr em *hardware* com características inferiores às que outros emuladores suportavam na altura, sem sacrificar a experiência do utilizador nem a portabilidade. Ainda numa versão inicial, os jogos corriam sem grandes problemas pois a implementação original era baseada num outro projeto de emulador da mesma plataforma, mas implementado em *JavaScript*, denominado GBA.js. No entanto são poucos os vestigíos de código encontrados relativamente ao antigo GBA.js devido às várias alterações já realizadas pela equipa do mGBA.
 
@@ -44,7 +44,7 @@ Test Driven Development (TDD) é uma técnica de desenvolvimento de software que
 
 ![](commit-graph.PNG)
 
-No momento de escrita deste relatório (3/10/2015), o projeto encontra-se relativamente ativo, com uma média de XX commits por semana, desde a semana com início a 5 de outubro de 2014 até à semana com início a 27 de setembro de 2015, e conta com mais de 2850 commits durante o seu tempo de vida.
+No momento de escrita desta secção do relatório, o projeto encontra-se relativamente ativo, com uma média de XX *commits* por semana, desde a semana com início a 5 de outubro de 2014 até à semana com início a 27 de setembro de 2015, e conta com mais de 2850 commits durante o seu tempo de vida.
 
 ![](commit-frequency.PNG)
 
@@ -58,11 +58,7 @@ O projeto encontra-se ativo, tendo recebido alguns *commits* ao longo do último
 
 Acreditamos ainda que este projeto apresenta uma grande margem de evolução, continuando a despertar o interesse de colaboradores, utilizadores e entusiastas do *retro-gaming*. Como grande parte dos *commits* são habitualmente realizados ao fim-de-semana, tudo indica que este projeto seja um pequeno *hobby* do seu proprietário.
 
-Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos (*playtests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas.
-
-Os commits são normalmente acompanhados por uma mensagem que quase sempre nos parece pertinente, concisa e perfeitamente explicativa da alteração que foi realizada. Nesta fase do projeto, a maior parte dos commits diz respeito a correções de erros. arece-nos razoável admitir que a grande maioria foi de alguma pertinência e contribuiu para um aumento global da qualidade do projeto.
-
-A realização de *ports* é notável para software que foi inicialmente desenhado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*. 
+Como a base deste emulador está relativamente sólida há algum tempo, tempo este suficiente para garantir a compatibilidade com grande parte dos jogos e *software* comercial lançados para a *Gameboy Advance*, sendo que nos últimos meses a equipa tem-se dedicado sobretudo ao *refactoring* do código, procurando melhorias no desempenho geral do programa, à correcção de pequenos *bugs* específicos encontrados durante a execução dos testes de jogabilidade em certos jogos (*playtests*), à implementação de novas funcionalidades na interface gráfica do utilizador, e aos *ports* para outras plataformas. No geral, a grande maioria dos commmits realizados contribuiu para um aumento global da qualidade do projeto.
 
 ####Issues
 
@@ -75,6 +71,8 @@ As *issues* são uma excelente forma de definir uma sequência de tarefas a real
 ###Conclusão
 
 O volume de testes unitários realizados pelo *top contributor* deste projeto após cada *refactoring* ou correção de *bugs* não tem sido suficiente, levando a eventuais regressões no funcionamento deste *software*. Há um número relativamente elevado de *commits* realizados com o único propósito de corrigir maus comportamentos no código.
+
+A realização de *ports* para diversas plataformas é um aspeto a salientar para um *software* de pequena escala que foi inicialmente projetado para correr num computador com *interface* gráfica e em sistemas operativos como *Windows*, *MacOS*, *Linux* ou *FreeBSD*. 
 
 ###TODO:
 - [x] Descrição do projeto

@@ -22,7 +22,9 @@ Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software
 
 ###Levantamento de Requisitos
 
-Apesar de estar a ser marioritariamente desenvolvido pelo proprietário, o mGBA depende bastante dos seus contributors e da comunidade de *retro gaming*, pois são sobretudo estes que contribuem para uma melhoria do projeto e da compatibilidade com os vários jogos lançados para esta consola, dando conta de *bugs*, imperfeições no resultado e propondo novas funcionalidades.
+Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos *stakeholders*, isto é, das pessoas que têm uma influência na elaboração dos requisitos. No contexto deste projeto *open-source*, os *stakeholders* são todos os *contributors* e a comunidade de *retro gaming*, um público alvo mais específico, pois são sobretudo estes que contribuem para a melhoria da qualidade do projeto e da compatibilidade com os vários jogos lançados para esta consola. 
+
+São estas pessoas que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado e propõem novas funcionalidades que complementem a sua experiência.
 
 O próprio autor definiu alguns destes objetivos no início do projeto, após uma análise por comparação com outros emuladores, tendo a comunidade contribuido com os restantes ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, caraterizando o próprio emulador. Entre os requisitos enumerados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
 

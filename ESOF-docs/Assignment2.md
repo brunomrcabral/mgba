@@ -18,15 +18,13 @@ Faculdade de Engenharia da Universidade do Porto
 
 ###Gestão de Requisitos
 
-Os conceitos estudados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, esses conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos fundamentado no *open-source*
-
-
+Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, esses conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos fundamentado no *open-source*
 
 ###Levantamento de Requisitos
 
-Apesar de estar a ser marioritariamente desenvolvido pelo proprietário do projeto, o mGBA é bastante dependente dos seus contributors e da comunidade de *retro gaming*, pois são sobretudo estes que contribuem para uma melhoria do projeto e da compatibilidade com os vários jogos lançados para esta consola, dando conta de *bugs*, imperfeições no resultado da emulação e propondo novas funcionalidades.
+Apesar de estar a ser marioritariamente desenvolvido pelo proprietário, o mGBA depende bastante dos seus contributors e da comunidade de *retro gaming*, pois são sobretudo estes que contribuem para uma melhoria do projeto e da compatibilidade com os vários jogos lançados para esta consola, dando conta de *bugs*, imperfeições no resultado e propondo novas funcionalidades.
 
-O próprio autor definiu alguns destes objetivos no início do projeto, tendo a comunidade contribuido com os restantes. Estes objetivos e funcionalides estão habitualmente presentes e são amplamente utilizados em *software* do mesmo género. Entre os requisitos enumerados pelo autor no documento README.md, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
+O próprio autor definiu alguns destes objetivos no início do projeto, tendo a comunidade contribuido com os restantes ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, pois caraterizam o próprio emulador. Entre os requisitos enumerados pelo autor no documento README presente neste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
 
 - compatibilidade com a maioria dos periféricos e jogos da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores

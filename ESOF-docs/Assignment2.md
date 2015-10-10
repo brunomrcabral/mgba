@@ -43,6 +43,9 @@ Os requisitos que se encontram ainda em aberto são:
 - suporte à linguagem de *scripting* Lua
 - uma suite de *debugging* mais completa
 
+###Issues
+No repositório existe também uma secção de issues bastante ativa, com utilizadores e *contributors* a submeter relatórios de bugs todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou captura de ecrã ilustrando a situação descrita.
+
 ### Solicitação de novas funcionalidadaes
 O utilizador com a intenção de contribuir deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
 

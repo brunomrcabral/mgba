@@ -24,17 +24,17 @@ Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software
 
 Apesar de estar a ser marioritariamente desenvolvido pelo proprietário, o mGBA depende bastante dos seus contributors e da comunidade de *retro gaming*, pois são sobretudo estes que contribuem para uma melhoria do projeto e da compatibilidade com os vários jogos lançados para esta consola, dando conta de *bugs*, imperfeições no resultado e propondo novas funcionalidades.
 
-O próprio autor definiu alguns destes objetivos no início do projeto, tendo a comunidade contribuido com os restantes ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, pois caraterizam o próprio emulador. Entre os requisitos enumerados pelo autor no documento README presente neste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
+O próprio autor definiu alguns destes objetivos no início do projeto, tendo a comunidade contribuido com os restantes ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, caraterizando o próprio emulador. Entre os requisitos enumerados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
 
 - compatibilidade com a maioria dos periféricos e jogos da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores
-- ports para outros sistemas operativos e plataformas recorrendo a frameworks como Qt/SDL
-- frameskipping configurável
+- ports para outras plataformas recorrendo a *frameworks* como Qt/SDL
+- *frameskipping* configurável
 - suporte a *screenshots* (capturas de ecrã) e *cheat codes*
 - suporte a *savestates* e visualização dos mesmos na *interface* gráfica do utilizador
 - gravação de vídeos e GIFs animados
 - possibilidade de mapear os botões em qualquer dispositivo de entrada ligado ao computador
-- suporte a leitura de ficheiros comprimidos nos formatos ZIP e 7Zip
+- suporte a leitura de ficheiros nos formatos ZIP e 7Zip
 - suporte a *patches* IPS, UPS e BPS
 - suporte a debugging recorrendo a uma *interface* em linha de comandos
 

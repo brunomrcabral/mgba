@@ -20,6 +20,10 @@ Faculdade de Engenharia da Universidade do Porto
 
 Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, esses conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos fundamentado no *open-source*
 
+Existem dois tipos de requisitos em engenharia de *software*:
+- requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamado de "capacidades")
+- requisitos não-funcionais are the ones that act to constrain the solution
+
 ###Levantamento de Requisitos
 
 Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos *stakeholders*, isto é, das pessoas que têm uma influência na elaboração dos requisitos. No contexto deste projeto *open-source*, os *stakeholders* são todos os *contributors* e a comunidade de *retro gaming*, um público alvo mais específico, pois são sobretudo estes que contribuem para a melhoria da qualidade do projeto e da compatibilidade com os vários jogos lançados para esta consola. 
@@ -45,7 +49,7 @@ No entanto existem alguns requisitos em aberto, à espera de serem implementados
 - suporte à linguagem de *scripting* Lua
 - uma suite de *debugging* mais completa
 
-Estas funcionalidades são secundárias e apenas melhoram a experiência do utilizador.
+Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador final.
 
 ###Issues
 No repositório existe também uma secção de issues bastante ativa, com utilizadores e *contributors* a submeter relatórios de bugs todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou captura de ecrã ilustrando a situação descrita.

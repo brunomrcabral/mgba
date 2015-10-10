@@ -16,7 +16,7 @@ Faculdade de Engenharia da Universidade do Porto
 * Carlos Manuel Carvalho Boavista Samouco (up201305187@fe.up.pt)
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
-###Gestão de Requisitos
+##Gestão de Requisitos
 
 Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, esses conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos fundamentado no *open-source*
 
@@ -43,4 +43,9 @@ Os requisitos que se encontram ainda em aberto são:
 - suporte à linguagem de *scripting* Lua
 - uma suite de *debugging* mais completa
 
+### Solicitação de novas funcionalidadaes
+O utilizador com a intenção de contribuir deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
+
 ###Validação de Requisitos
+
+As alterações submetidas pelos utilizadores serão apenas aceites se o código estiver devidamente formatado e organizado segundo uma determinada nomenclatura e estilo de código que devem ser obedecidos (também definidas pelo proprietário no documento). As alterações devem também ser pertinentes e não causar problemas ou regressões no funcionamento do programa, estando sujeias portanto a uma análise pelo proprietário antes de serem aprovadas.

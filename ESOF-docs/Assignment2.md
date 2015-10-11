@@ -18,7 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Gestão de Requisitos
 
-Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, esses conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos fundamentado no *open-source*
+Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, estes conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos com fundações no *open-source*, tal como este aqui abordado.
 
 Existem dois tipos de requisitos em engenharia de *software*:
 - requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamado de "capacidades")
@@ -26,11 +26,11 @@ Existem dois tipos de requisitos em engenharia de *software*:
 
 ###Levantamento de Requisitos
 
-Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos *stakeholders*, isto é, das pessoas que têm uma influência na elaboração dos requisitos. No contexto deste projeto *open-source*, os *stakeholders* são todos os *contributors* e a comunidade de *retro gaming*, um público alvo mais específico, pois são sobretudo estes que contribuem para a melhoria da qualidade do projeto e da compatibilidade com os vários jogos lançados para esta consola. 
+Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos seus *contributors* principais que submetem *pull requests* com as suas ideias e dos seus *stakeholders*, isto é, das pessoas que têm influência na elaboração dos requisitos. No contexto deste projeto, os *stakeholders* são um público alvo mais específico, a comunidade de *retro gaming*, pois são sobretudo estes que contribuem para a melhoria da qualidade global do *software*.
 
-São estas pessoas que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado e propõem novas funcionalidades que complementem a sua experiência.
+No contexto dos emuladores como o mGBA, ter qualidade significa ser capaz de garantir a compatibilidade com a maior parte do *software* e dos periférios lançados para o dispositivo a ser emulado. São os stakeholders que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado obtido e propõem novas funcionalidades para complementarem a sua experiência de utilização.
 
-O próprio autor definiu alguns destes objetivos no início do projeto, após uma análise por comparação com outros emuladores, tendo a comunidade contribuido com os restantes ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, caraterizando o próprio emulador. Entre os requisitos enumerados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
+O próprio autor definiu alguns destes objetivos no início do projeto, após uma análise por comparação com outros emuladores, tendo a comunidade contribuido com os restantes requisitos ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas estão habitualmente presentes em *software* do mesmo género e são indispensáveis à experiência do utilizador final, conferindo características que o distingue de *software* equivalente. Entre os requisitos enumerados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles realizados até à data de elaboração deste relatório:
 
 - compatibilidade com a maioria dos periféricos e jogos da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores
@@ -44,19 +44,23 @@ O próprio autor definiu alguns destes objetivos no início do projeto, após um
 - suporte a *patches* IPS, UPS e BPS
 - suporte a debugging recorrendo a uma *interface* em linha de comandos
 
-No entanto existem alguns requisitos em aberto, à espera de serem implementados:
+No entanto existem alguns em aberto, à espera de serem implementados:
 - suporte a comunicações em rede utilizando um link cable emulado
 - suporte à linguagem de *scripting* Lua
 - uma suite de *debugging* mais completa
 
-Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador final.
+Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
 
-###Issues
+### Especificação de Requisitos
+
+####Bugs/Issues
 No repositório existe também uma secção de issues bastante ativa, com utilizadores e *contributors* a submeter relatórios de bugs todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou captura de ecrã ilustrando a situação descrita.
 
-### Solicitação de novas funcionalidadaes
+####Novas funcionalidadaes
 O utilizador com a intenção de contribuir deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
 
 ###Validação de Requisitos
 
-As alterações submetidas pelos utilizadores serão apenas aceites se o código estiver devidamente formatado e organizado segundo uma determinada nomenclatura e estilo de código que devem ser obedecidos (também definidas pelo proprietário no documento). As alterações devem também ser pertinentes e não causar problemas ou regressões no funcionamento do programa, estando sujeias portanto a uma análise pelo proprietário antes de serem aprovadas.
+As alterações submetidas pelos utilizadores estão sujeitas a um processo de validação manual pelo proprietário deste projeto antes de serem aprovadas. Estas alterações devem ser pertinentes, não causar problemas nem perturbações no funcionamento do programa nem regressões nos testes e/o compatibilidade do *software*. Não há muitas informações disponíveis publicamente quanto aos processos utilizados e a frequência com que esses testes são realizados.
+
+O proprietário enumera uma série de ... : serão apenas aceites se o código estiver devidamente formatado e organizado segundo uma determinada nomenclatura e estilo de código que devem ser obedecidos (também definidas pelo proprietário no documento). 

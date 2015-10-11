@@ -21,8 +21,8 @@ Faculdade de Engenharia da Universidade do Porto
 Os conceitos abordados nas aulas teóricas dizem respeito a projetos de *software* comercial. No entanto, estes conceitos não se aplicam na totalidade a um projeto comunitário sem fins lucrativos como este aqui estudado, fundamentado no *open-source*, sem um processo de desenvolvimento de *software* bem definido.
 
 Existem dois tipos de requisitos em engenharia de *software*:
-- requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamados de "capacidades")
-- requisitos não-funcionais are the ones that act para criar restrições the solution
+- requisitos funcionais (ou capacidades) descrevem as funcionalidades que se espera que o sistema disponibilize, de uma forma completa e consistente (expectativas do utilizador, atentendo aos propósitos para o qual o sistema será desenvolvido) **:** funcionalidades da *interface* gráfica de utilizador, suporte a leitura de diversos formatos de ficheiros e a funcionalidades não conseguidas na máquina real sem recorrer à emulação
+- requisitos não-funcionais referem-se a aspetos não-funcionais do sistema, como restrições nas quais o sistema deve operar ou propriedades emergentes do sistema (utilidade, desempenho, suporte, escalabilidade) **:** possibilidade do produto final suportar mais do que um dispositivo ou plataforma, ...
 
 ###Levantamento de Requisitos
 

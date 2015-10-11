@@ -18,15 +18,15 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Gestão de Requisitos
 
-Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. Nesse sentido, estes conceitos aplicam-se apenas em parte a um projeto comunitário e sem fins lucrativos com fundações no *open-source*, tal como este aqui abordado.
+Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. No entanto, estes conceitos não se aplicam na totalidade a um projeto comunitário sem fins lucrativos fundamentado no *open-source*, tal como este aqui abordado.
 
 Existem dois tipos de requisitos em engenharia de *software*:
-- requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamado de "capacidades")
+- requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamados de "capacidades")
 - requisitos não-funcionais are the ones that act to constrain the solution
 
 ###Levantamento de Requisitos
 
-Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos seus *contributors* principais que submetem *pull requests* com as suas ideias e dos seus *stakeholders*, isto é, das pessoas que têm influência na elaboração dos requisitos. No contexto deste projeto, os *stakeholders* são um público alvo mais específico, a comunidade de *retro gaming*, pois são sobretudo estes que contribuem para a melhoria da qualidade global do *software*.
+Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos seus *main contributors* que submetem *pull requests* com as suas ideias e dos seus *stakeholders*, isto é, das pessoas que têm influência na elaboração dos requisitos. No contexto deste projeto, os *stakeholders* representam um público alvo mais específico, com conhecimentos básicos nesta área, a comunidade de *retro gaming*, pois são sobretudo estes que contribuem para a melhoria da qualidade global do *software*.
 
 No contexto dos emuladores como o mGBA, ter qualidade significa ser capaz de garantir a compatibilidade com a maior parte do *software* e dos periférios lançados para o dispositivo a ser emulado. São os stakeholders que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado obtido e propõem novas funcionalidades para complementarem a sua experiência de utilização.
 

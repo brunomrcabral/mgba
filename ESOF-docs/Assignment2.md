@@ -18,11 +18,11 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Gestão de Requisitos
 
-Os conceitos abordados nas aulas teóricas dizem respeito a projetos de software comercial. No entanto, estes conceitos não se aplicam na totalidade a um projeto comunitário sem fins lucrativos fundamentado no *open-source*, tal como este aqui abordado.
+Os conceitos abordados nas aulas teóricas dizem respeito a projetos de *software* comercial. No entanto, estes conceitos não se aplicam na totalidade a um projeto comunitário sem fins lucrativos como este aqui estudado, fundamentado no *open-source*, sem um processo de desenvolvimento de *software* bem definido.
 
 Existem dois tipos de requisitos em engenharia de *software*:
 - requisitos funcionais - descrevem as funcionalidades que o produto final deve ter (também chamados de "capacidades")
-- requisitos não-funcionais are the ones that act to constrain the solution
+- requisitos não-funcionais are the ones that act para criar restrições the solution
 
 ###Levantamento de Requisitos
 
@@ -49,17 +49,28 @@ No entanto existem alguns em aberto, à espera de serem implementados:
 - suporte à linguagem de *scripting* Lua
 - ferramentas de *debugging* mais completas
 
+### Análise de Requisitos
+
+- classificação: agrupamento de requisitos em "módulos" para facilitar a visão global do funcionamento pretendido para o sistema;
+- resolução de conflitos: dada a multiplicidade e diversidade de papéis das partes interessadas envolvidas na captura e análise de requisitos, é inevitável a existência de conflitos nos requisitos identificados; é importante resolver estes conflitos o mais breve possível;
+- priorização: consiste na atribuição de uma "prioridade" a cada requisito (por exemplo elevada/média/baixa); obviamente, este pode ser um fator gerador de conflitos;
+- confirmação: é confirmada com as partes interessadas a completude dos requisitos, sua consistência e validade (de acordo com o que se pretende do sistema).
+
 ### Especificação de Requisitos
 
-####Bugs/Issues
-No repositório existe também uma secção de issues bastante ativa, com utilizadores e *contributors* a submeter relatórios de bugs todas as semanas devidamente acompanhados por uma pequena mensagem a descrever o problema e por vezes uma imagem ou captura de ecrã ilustrando a situação descrita.
+A especificação de requisitos no mGBA recorre a dois meios:
 
-####Novas funcionalidadaes
-O utilizador com a intenção de contribuir deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
+####Bugs/Issues
+No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e vários *contributors* a submeter relatórios de *bugs* com alguma frequência, devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita.
+
+####Pull Requests
+O utilizador com a intenção de contribuir com novas funcionalidades deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
 
 ###Validação de Requisitos
 
-As alterações submetidas pelos utilizadores estão sujeitas a um processo de validação manual pelo proprietário deste projeto antes de serem aprovadas. Estas alterações devem ser pertinentes, não causar problemas nem perturbações no funcionamento do programa nem regressões nos testes e/o compatibilidade do *software*. Não há muitas informações disponíveis publicamente quanto aos processos utilizados e a frequência com que esses testes são realizados.
+As alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar o Travis-CI, uma ferramenta do *GitHub* que realiza automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
+
+Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes, não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
 
 Motivação: Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
 

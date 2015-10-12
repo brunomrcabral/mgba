@@ -61,16 +61,16 @@ No entanto existem alguns em aberto, à espera de serem implementados:
 A especificação de requisitos no mGBA recorre a dois meios:
 
 ####Bugs/Issues
-No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e vários *contributors* a submeter relatórios de *bugs* com alguma frequência, devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. Depois de serem detetados os bugs, o responsável pela gestão do projeto, com recurso ao Bugzilla[https://endrift.com/mgba/bugs/describecomponents.cgi] (*Bug-Tracking System*), detalha e cataloga os bugs de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução.  
+No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e vários *contributors* a submeter relatórios de *bugs* com alguma frequência ou a sugerir novas funcionalidades, devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. Depois de serem detetados os bugs, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (*Bug-Tracking System*), detalha e cataloga os bugs de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da milestone que trará essa alteração.
 
 ####Pull Requests
-O utilizador com a intenção de contribuir com novas funcionalidades deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.
+O utilizador com a intenção de contribuir com novas funcionalidades deverá fazer um *fork* ou um *branch* do repositório na sua versão atual, e após realizar alterações significativas no código, pedir ao proprietário que as incorpore no *branch* principal (ou *master*), através de um *pull request*. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações e a sua motivação.
 
 ###Validação de Requisitos
 
 As alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar o Travis-CI, uma ferramenta do *GitHub* que realiza automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
 
-Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes, não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
+Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes e não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
 
 Motivação: Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
 

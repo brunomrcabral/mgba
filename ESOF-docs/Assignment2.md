@@ -61,10 +61,7 @@ No entanto existem alguns em aberto, à espera de serem implementados:
 A especificação de requisitos no mGBA recorre a dois meios:
 
 ####Bugs/Issues
-No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e vários *contributors* a submeter relatórios de *bugs* com alguma frequência, devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. Depois de serem detetados os bugs, o responsável pelo gestão do projeto, com recurso ao Bugzilla (*Bug-Tracking System*), detalha e cataloga os bugs de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução.  
-
-A secção detalhada sobre os bugs pode ser vista no seguinte link: 
-https://endrift.com/mgba/bugs/describecomponents.cgi
+No repositório existe também uma secção de *issues* bastante ativa, com utilizadores e vários *contributors* a submeter relatórios de *bugs* com alguma frequência, devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. Depois de serem detetados os bugs, o responsável pela gestão do projeto, com recurso ao Bugzilla[https://endrift.com/mgba/bugs/describecomponents.cgi] (*Bug-Tracking System*), detalha e cataloga os bugs de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução.  
 
 ####Pull Requests
 O utilizador com a intenção de contribuir com novas funcionalidades deverá fazer um fork ou um branch do repositório na sua versão atual, e após realizar alterações significantes no código, pedir ao proprietário que as incorpore no branch principal, através de um pull request. No momento do pull request será também necessário indicar qual a finalidade daquele código, ou seja, qual o componente que foi implementado ou melhorado, bem como um parágrafo sucinto onde explique essas alterações.

@@ -32,14 +32,13 @@ Os requisitos apresentados são marioritamente funcionais e nesta fase de desenv
 
 ####Motivação
 
-O principal propósito do autor deste projeto era a criação de um novo emulador capaz de correr grande parte dos jogos e *software* desenvolvidos para a consola *Game Boy Advance* com a maior fiabilidade possível no maior número de plataformas e máquinas com requisitos inferiores aos de outros emuladores existentes na atualidade. 
+O principal propósito do responsável por este projeto na concretização deste projeto era a criação de um novo emulador de *Game Boy Advance* capaz de correr grande parte dos jogos e *software* desenvolvidos para a consola com a maior fiabilidade possível no maior número de plataformas.
 
-O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento do projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais conceituados disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades que são sugeridas estão habitualmente presentes em *software* do mesmo género. O objetivo do responsável por este projeto em aceitar essas sugestões ... conferindo características que distingue este de *software* equivalente.
-
+O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento do projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais conceituados disponíveis na *Internet*, tendo a comunidade contribuido com o levantamento dos restantes e mais variados requisitos ao longo do ciclo de desenvolvimento deste *software*. Estas novas funcionalidades sugeridas pelos utilizadores estão habitualmente presentes em *software* do mesmo género. O objetivo do responsável por este projeto em aceitar essas sugestões que confere novas características que o distinguem de *software* equivalente.
 
 ####Bugs/Issues
 
-No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, organizando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas associados a cada componente do programa, dadas as diferentes prioridades que cada componente pode apresentar. Para além da prioridade atribuida a cada componente existem ainda prioridades de resolução dos *issues*, que definem a versão da *milestone* na qual será estes serão resolvidos. Os critérios de selecção serão indicados mais abaixo, na validação de requisitos.
+No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a enviar relatórios de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o gestor do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, organizando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas associados a cada componente do programa, dadas as diferentes prioridades que cada uma delas pode apresentar. Para além da prioridade atribuida a cada componente existem ainda prioridades de resolução dos *bugs* e *issues*, que definem a versão da *milestone* na qual estes serão resolvidos.
 
 ####Pull Requests
 
@@ -60,7 +59,7 @@ Entre os requisitos e casos de utilização enunciados pelo responsável deste p
 - suporte a *patches* IPS, UPS e BPS
 - suporte a debugging recorrendo a uma *interface* em linha de comandos
 
-O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um software que permite ao computador ter o comportamento de um Game Boy Advance podendo assim correr ROMs (onde está a cópia do jogo). Na última versão do emulador, também já é possível correr software homebrew de 3 novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
+Na última *milestone* disponibilizada ao público, também já é possível correr este *software* em três novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
 
 ###Especificação de Requisitos
 
@@ -68,24 +67,24 @@ Dado que não foi encontrado nenhum documento com a descrição dos requisitos f
 
 Este tipo de documento que estabelece os termos de condição entre os clientes e os desenvolvedores em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
 
-Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base em *milestones* criadas pelo mesmo e tentar sempre que possível cumprir os prazos e datas limites estipuladas pelo próprio.
+Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base em *milestones* criadas pelo mesmo e tentar sempre que possível cumprir os prazos e datas limites estipulados pelo próprio.
 
 ###Análise e Negociação de Requisitos
 
-A principal fonte de requisitos correntes provém dos *bug reports*/*issues* e dos *pull requests* existentes no repositório do GitHub. Ambos são frequentados tanto pela *core team* (o proprietário deste projeto e os seus *main contributors*
+A principal fonte de requisitos do mGBA são os *bug reports* e os *pull requests* existentes no repositório do GitHub. Ambos são frequentados pelo responsável por este projeto e pelos seus *contributors/developers*.
 
-Nem todos os problemas levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja posta em prática é necessário que pelo menos um dos desenvolvedores aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um pull request.
+Nem todos os *issues* levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja colocada em prática é necessário que pelo menos um dos *developers* aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um *pull request*.
+
+Existe ainda um processo de análise manual feita pelo gestor do projeto, que consiste nos seguintes pontos:
+- as sugestões de novas funcionalidades enviadas em texto devem acrescentar funcionalidades relevantes ao *software*
+- o levantamento de *bugs* na forma de *issues* deve ser o mais [completo](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues) possível, indicando todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens ou ficheiros de estado do jogo em questão
+- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) que devem ser obedecidos (também definidos pelo autor no documento CONTRIBUTING.md)
 
 ###Validação de Requisitos
 
 A validação de requisitos consiste em demonstrar que os requisitos levantados no processo de negociação com o cliente definem o sistema que este realmente deseja. Trata-se assim do processo onde se avalia a consistência dos pedidos que o cliente faz e se valida esses pedidos como forma de evitar erros de requisitos e diminuir os custos de desenvolvimento. O organizador deste projeto enumera no documento CONTRIBUTING.md uma série de regras e cuidados que cada utilizador deve ter antes de publicar a sua contribuição.
 
 Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo automático de validação antes de serem aprovados. Após uma análise da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI na verificação de conflitos que possam surgir entre o código da versão presente no *master* e o código submetido nos *pull requests* e na realização de testes de compilação automáticos sobre o *source code* submetido, rejeitando código em conflito ou que apresente erros.
-
-Existe ainda um processo de análise e validação manual feita pelo proprietário do projeto:
-- as sugestões de novas funcionalidades enviadas em texto devem acrescentar funcionalidades relevantes ao *software*
-- o levantamento de *bugs* na forma de *issues* deve ser o mais [completo](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues) possível, indicando todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens ou ficheiros de estado do jogo em questão
-- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) que devem ser obedecidos (também definidos pelo autor no documento CONTRIBUTING.md)
 
 O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a possibilitar a sua classificação em diferentes categorias e prioridades, contribuindo para uma maior organização das tarefas a desenvolver. Consultando a lista de *issues* dos últimos cinco meses, é possível classificá-los em três categorias diferentes: *bugs*, *minor bugs* e *enhancements*. Todos os *issues* que sejam considerados novas funcionalidades e que não corrijam ou melhorem componentes do emulador já implementados em código são habitualmemente classificados como *enhancements* (melhorias), recebendo a menor das prioridades. Os *minor bugs* são *bugs* efetivamente presentes na versão atual do *software* mas que se manifestam em poucos casos, sendo pouco frequentes ou difíceis de reproduzir num cenário típico de utilização, recebendo portanto prioridade normal. 
 

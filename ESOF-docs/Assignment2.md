@@ -67,24 +67,26 @@ Dado que não foi encontrado nenhum documento com a descrição dos requisitos f
 
 Este tipo de documento que estabelece os termos de condição entre os clientes e os desenvolvedores em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
 
-Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base nas *milestones* definidas pelo próprio, tenando sempre que possível cumprir os prazos e datas limite estipulados.
+Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base nas *milestones* definidas pelo próprio, tentando sempre que possível cumprir os prazos e datas limite estipulados.
 
 ###Análise e Negociação de Requisitos
 
-A principal fonte de requisitos do mGBA são os *bug reports* e os *pull requests* existentes no repositório do GitHub. Ambos são habitualmente frequentados pelo responsável por este projeto e pelos seus *contributors/developers*.
+A principal fonte de requisitos do mGBA são os *bug reports* e os *pull requests* existentes no repositório do GitHub. Ambos são habitualmente frequentados pelo responsável deste projeto e pelos seus *contributors* e *developers*.
 
-Nem todos os *issues* levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja colocada em prática é necessário que pelo menos um dos *developers* aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, submetendo um *pull request* mais tarde.
+Nem todos os *issues* levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja colocada em prática é necessária a aprovação do gestor do projeto e que pelo menos um dos *developers* aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, submetendo um *pull request* mais tarde.
 
 Existe ainda um processo de análise manual feita pelo gestor do projeto, que consiste nos seguintes pontos:
 - as sugestões de novas funcionalidades enviadas em texto devem acrescentar funcionalidades relevantes ao *software*
-- o levantamento de *bugs* na forma de *issues* deve ser o mais [completo](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues) possível, indicando todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens ou ficheiros de estado do jogo em questão
-- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) que devem ser obedecidos (também definidos pelo autor no documento CONTRIBUTING.md)
+- o levantamento de *bugs* na forma de *issues* deve ser o mais [completo](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues) possível, indicando qual a versão do *software* testada e todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens explicativas ou ficheiros de estado do jogo em questão
+- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) também definidos pelo autor que devem ser obedecidos
 
 Nem todos os requisitos propostos podem ser vistos como viáveis ou relevantes no contexto do projeto, sendo os pedidos nestas situações rejeitados ou negociados de forma a adaptar às necessidades do proprietário. Tanto este como os colaboradores recorrem com frequência à secção de discussão associada a cada submissão como um meio para eventuais esclarecimentos e/ou obversações adicionais. 
 
 ###Validação de Requisitos
 
-A validação de requisitos consiste em demonstrar que os requisitos levantados no processo de negociação com o cliente definem o sistema que este realmente deseja. Trata-se assim do processo onde se avalia a consistência dos pedidos que o cliente faz e se valida esses pedidos como forma de evitar erros de requisitos e diminuir os custos de desenvolvimento. O organizador deste projeto enumera no documento CONTRIBUTING.md uma série de regras e cuidados que cada utilizador deve ter antes de publicar a sua contribuição.
+A validação de requisitos consiste em demonstrar que os requisitos levantados no processo de negociação com o cliente definem o sistema que este realmente deseja. Trata-se assim do processo onde se avalia a consistência dos pedidos que o cliente faz e se valida esses pedidos como forma de evitar erros de requisitos e diminuir os custos de desenvolvimento. 
+
+No entanto, aqui verifica-se exatamente a situação contrária, como se estivéssemos perante uma inversão de papéis. No contexto do projeto em estudo, é o próprio responsável pelo projeto que decide se um dado requisito proposto por um utilizador final é relevante ou necessário para este.
 
 Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo automático de validação antes de serem aprovados. Após uma análise da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI na verificação de conflitos que possam surgir entre o código da versão presente no *master* e o código submetido nos *pull requests* e na realização de testes de compilação automáticos sobre o *source code* submetido, rejeitando código em conflito ou que apresente erros.
 

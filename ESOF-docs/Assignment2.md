@@ -102,3 +102,5 @@ Durante o mesmo periodo de tempo o projeto recebeu apenas dois pull requests, te
 ##Análise Crítica
 
 Os conceitos abordados nas aulas teóricas dizem respeito a projetos de *software* comercial. No entanto, estes conceitos não se aplicam na totalidade a um projeto comunitário sem fins lucrativos como este aqui estudado, fundamentado no *open-source*, sem um processo de desenvolvimento de *software* bem definidos.
+
+Consideramos que a secção de issues do github é de facto a ferramenta essencial que mantem este projeto ativo e dinâmico pois é através deste contacto direto entre desenvolvedores e utilizadore que são apresentados pedidos de novas funcionalidades e reportados eventuais bugs com vista ao aprimoramento do software. Também julgamos muito positivo a forma como o principal desenvolvedor se dedica a documentar todos os bugs detetados por forma a manter uma boa organização interna do projeto.

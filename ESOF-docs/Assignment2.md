@@ -16,23 +16,27 @@ Faculdade de Engenharia da Universidade do Porto
 * Carlos Manuel Carvalho Boavista Samouco (up201305187@fe.up.pt)
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
-##Gestão de Requisitos
-
-Existem dois tipos de requisitos em engenharia de *software*:
-- requisitos funcionais (ou capacidades) descrevem as funcionalidades que se espera que o sistema disponibilize, de uma forma completa e consistente (expectativas do utilizador, atentendo aos propósitos para o qual o sistema será desenvolvido) **:** funcionalidades da *interface* gráfica de utilizador, suporte a leitura de diversos formatos de ficheiros e a funcionalidades não conseguidas na máquina real sem recorrer à emulação
-- requisitos não-funcionais referem-se a aspetos não-funcionais do sistema, como restrições nas quais o sistema deve operar ou propriedades emergentes do sistema (utilidade, desempenho, suporte, escalabilidade) **:** possibilidade do produto final suportar mais do que um dispositivo ou plataforma, ...
-
 ###Levantamento de Requisitos
 
 Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o mGBA depende também dos seus *main contributors* que submetem *pull requests* com as suas ideias e dos seus *stakeholders*, isto é, das pessoas que têm influência na elaboração dos requisitos. No contexto deste projeto, os *stakeholders* representam um público alvo mais específico, com conhecimentos básicos nesta área, a comunidade de *retro gaming*, pois são sobretudo estes que contribuem para a melhoria da qualidade global do *software*.
 
 No contexto dos emuladores como o mGBA, ter qualidade significa ser capaz de garantir a compatibilidade com a maior parte do *software* e dos periférios lançados para o dispositivo a ser emulado. São os stakeholders que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado obtido e propõem novas funcionalidades para complementarem a sua experiência de utilização deste *software*.
 
+Existem dois tipos de requisitos em engenharia de *software* também associados a este projeto:
+
+- requisitos funcionais (ou capacidades) descrevem as funcionalidades que se espera que o sistema disponibilize, de uma forma completa e consistente (expetativas do utilizador, atentendo aos propósitos para o qual o sistema foi desenvolvido) **:** funcionalidades da *interface* gráfica de utilizador, suporte a leitura de diversos formatos de ficheiros e a funcionalidades não conseguidas na máquina real sem recorrer à emulação
+
+- requisitos não-funcionais referem-se a aspetos não-funcionais do sistema, como restrições nas quais o sistema deve operar ou propriedades emergentes do sistema (utilidade, desempenho, suporte, escalabilidade) **:** possibilidade do produto final suportar mais do que um dispositivo ou plataforma, ...
+
 ####Motivação
 
 A motivação deste projeto assenta de igual forma em requisitos funcionais e não funcionais que foram previamente definidos no inicio pelo autor. Relativamente a requisitos funcionais o principal propósito seria fazer com que este novo emulador fosse capaz de correr a maior parte dos jogos para Game Boy Advance mas com requisitos inferiores aos de outros emuladores usados na época. Muitos dos requisitos já foram classificados como completos restando apenas alguns requisitos não funcionais que são progressivamente criados com base na parte do projeto já realizada. Dos requisitos inicialmente definidos restam apenas serem focados alguns requisitos não funcionais passando por melhorias na performance, eficiencia ou mesmo portabilidade.
 
 O próprio autor definiu alguns destes objetivos aquando o início do desenvolvimento deste projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas são as que estão habitualmente presentes em *software* do mesmo género, conferindo características que distingue este de *software* equivalente. Entre os requisitos enunciados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles conseguidos até ao momento de elaboração deste relatório:
+
+###Casos de Utilização
+
+
 
 - compatibilidade com grande parte dos periféricos e jogos da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores
@@ -51,10 +55,9 @@ No entanto existem alguns em aberto, à espera de serem implementados:
 - suporte à linguagem de *scripting* Lua
 - ferramentas de *debugging* mais completas
 - 
-###Casos de Utilização
+
 
 O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um software que permite ao computador ter o comportamento de um Game Boy Advance podendo assim correr ROMs (onde está a cópia do jogo). Na última versão do emulador, também já é possível correr software homebrew de 3 novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
-
 
 
 ###Análise de Requisitos

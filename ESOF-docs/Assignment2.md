@@ -34,13 +34,15 @@ O principal propósito do projeto seria a criação de um novo emulador capaz de
 
 O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento deste projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades sugeridas são as que estão habitualmente presentes em *software* do mesmo género, conferindo características que distingue este de *software* equivalente. Entre os requisitos enunciados pelo autor no documento README. presente na raiz deste repositório, destacam-se os seguintes, todos eles conseguidos até ao momento de elaboração deste relatório:
 
+Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
+
 ####Bugs/Issues
 
-No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, separando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da *milestone* na qual será resolvido.
+No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, organizando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas associados a cada componente do programa, dadas as diferentes prioridades que cada componente pode apresentar. Para além da prioridade atribuida a cada componente existem ainda prioridades de resolução dos *issues*, que definem a versão da *milestone* na qual será estes serão resolvidos. Os critérios de selecção serão indicados mais abaixo, na validação de requisitos.
 
 ####Pull Requests
 
-O utilizador com a intenção de contribuir com novas funcionalidades para este projeto deverá fazer um *fork* ou um *branch* do repositório na sua versão atual e pedir ao proprietário que as incorpore no *branch* principal (ou *master*) através de um *pull request*, após ter realizado alterações significativas no código. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações e a sua motivação.
+O utilizador com a intenção de contribuir com novas funcionalidades para este projeto deverá fazer um *fork* ou um *branch* do repositório na sua versão atual e pedir ao proprietário que as incorpore no *branch* principal (ou *master*) através de um *pull request*, após ter realizado alterações significativas no código. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente do programa que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações.
 
 ###Casos de Utilização
 
@@ -59,15 +61,7 @@ O utilizador com a intenção de contribuir com novas funcionalidades para este 
 - suporte à linguagem de *scripting* Lua
 - ferramentas de *debugging* mais completas
 
-Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
-
 O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um software que permite ao computador ter o comportamento de um Game Boy Advance podendo assim correr ROMs (onde está a cópia do jogo). Na última versão do emulador, também já é possível correr software homebrew de 3 novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
-
-###Análise de Requisitos
-
-A principal fonte de requisitos correntes provém dos *bug reports*/*issues* e dos *pull requests* existentes no repositório do GitHub. Ambos são frequentados tanto pela *core team* (o proprietário deste projeto e os seus *main contributors*
-
-Nem todos os problemas levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja posta em prática é necessário que pelo menos um dos desenvolvedores aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um pull request.
 
 ###Especificação de Requisitos
 
@@ -76,6 +70,13 @@ Dado que não foi encontrado nenhum documento com a descrição dos requisitos f
 Este tipo de documento que estabelece os termos de condição entre os clientes e os desenvolvedores em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
 
 Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base em *milestones* criadas pelo mesmo e tentar sempre que possível cumprir os prazos e datas limites estipuladas pelo próprio.
+
+###Análise e Negociação de Requisitos
+
+A principal fonte de requisitos correntes provém dos *bug reports*/*issues* e dos *pull requests* existentes no repositório do GitHub. Ambos são frequentados tanto pela *core team* (o proprietário deste projeto e os seus *main contributors*
+
+Nem todos os problemas levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja posta em prática é necessário que pelo menos um dos desenvolvedores aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um pull request.
+
 
 ###Validação de Requisitos
 

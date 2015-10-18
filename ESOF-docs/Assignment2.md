@@ -20,11 +20,11 @@ Faculdade de Engenharia da Universidade do Porto
 
 Apesar de estar a ser maioritariamente desenvolvido pelo seu proprietário, o projeto depende também dos seus *contributors* que submetem *pull requests* com alterações ao código e dos seus *stakeholders*. No contexto deste projeto, os *stakeholders* representam um público alvo mais específico, com conhecimentos avançados nesta área, a comunidade de *retro gaming*, pois são sobretudo estes que contribuem com testes para a melhoria da qualidade global do programa. São principalmente estes *stakeholders* que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado obtido e propõem novas funcionalidades para complementarem a sua experiência de utilização deste *software*.
 
-Em Egenharia de Software existem dois tipos de requisitos, os quais tentamos adaptar ao projeto em estudo:
+Em Engenharia de Software existem dois tipos de requisitos, os quais tentamos adaptar ao projeto em estudo:
 
-- requisitos funcionais (ou capacidades) descrevem as funcionalidades que se espera que o sistema disponibilize, de uma forma completa e consistente (expetativas do utilizador, atentendo aos propósitos para o qual o sistema foi desenvolvido) **:** funcionalidades da *interface* gráfica de utilizador, suporte a leitura de vários formatos de ficheiros e a funcionalidades não conseguidas na máquina real sem recorrer à técnicas de emulação.
+- requisitos funcionais (ou capacidades) descrevem as funcionalidades que se espera que o sistema disponibilize, de uma forma completa e consistente (expetativas do utilizador, atentendo aos propósitos para o qual o sistema foi desenvolvido) **:** funcionalidades da *interface* gráfica de utilizador, suporte a leitura de vários formatos de ficheiros, suporte a determinadas funcionalidades não conseguidas no *hardware* original sem recorrer a técnicas de emulação.
 
-- requisitos não-funcionais referem-se a aspetos não-funcionais do sistema, como restrições nas quais o sistema deve operar ou propriedades emergentes do sistema (utilidade, desempenho, suporte, escalabilidade) **:** possibilidade do produto final suportar mais do que uma plataforma ou sistema operativo, possibilidade de correr em modo *multithreading* ou em máquinas mais antigas com especificações mais baixas, etc...
+- requisitos não-funcionais referem-se a aspetos não-funcionais do sistema, como restrições nas quais o sistema deve operar ou propriedades emergentes do sistema (utilidade, desempenho, suporte, escalabilidade) **:** possibilidade do produto final suportar mais do que uma plataforma ou sistema operativo, possibilidade de correr num ambiente *multithreaded* com benefícios ou em máquinas mais antigas com especificações mais baixas, etc...
 
 Os requisitos apresentados nesta fase de desenvolvimento são sobretudo funcionais e representam maioritariamente funcionalidades secundárias com vista a melhorar a experiência do utilizador final.
 
@@ -32,11 +32,11 @@ Os requisitos apresentados nesta fase de desenvolvimento são sobretudo funciona
 
 O principal propósito do responsável por este projeto na concretização deste projeto era a criação de um novo emulador de *Game Boy Advance* capaz de correr grande parte dos jogos e *software* desenvolvidos para a consola com a maior fiabilidade e compatibilidade possível no maior número de plataformas.
 
-O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento do projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais conceituados disponíveis na *Internet*, tendo a comunidade contribuido com o levantamento dos restantes e mais variados requisitos ao longo do ciclo de desenvolvimento deste *software*. Estas novas funcionalidades propostas pelos utilizadores estão habitualmente presentes em *software* do mesmo género e conferem-lhe características que o distinguem de outros *softwares* equivalentes.
+O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento do projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais conceituados disponíveis na *Internet*, tendo a comunidade contribuido com o levantamento dos restantes e mais variados requisitos ao longo do seu ciclo de desenvolvimento. Estas novas funcionalidades propostas pelos utilizadores estão habitualmente presentes em *software* do mesmo género e conferem-lhe características que o distinguem de outros *softwares* equivalentes.
 
 ####Bugs/Issues
 
-No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a enviar relatórios de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o gestor do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, organizando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas associados a cada componente, tendo em conta os diferentes pesos que cada componente pode apresentar na finalização do produto. Para além desta prioridade atribuida a cada componente existem ainda prioridades na resolução dos *bugs* e *issues*, que definem a celeridade com a qual serão resolvidos e a versão da *milestone* onde poderão aparecer resolvidos.
+No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a enviar relatórios de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o gestor do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, organizando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas associados a cada componente, tendo em conta os diferentes pesos que cada componente pode apresentar na finalização do produto. Para além desta prioridade atribuida a cada componente existem ainda prioridades na resolução dos *bugs* e *issues*, que definem a celeridade com a qual serão resolvidos e qual a versão da *milestone* onde poderão aparecer resolvidos.
 
 ####Pull Requests
 
@@ -57,7 +57,7 @@ Entre os requisitos e casos de utilização enunciados pelo responsável deste p
 - suporte a *patches* IPS, UPS e BPS
 - suporte a debugging recorrendo a uma *interface* em linha de comandos
 
-Na última *milestone* disponibilizada ao público, também já é possível correr este *software* em três novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
+Na última *milestone* disponibilizada ao público também já é possível correr este *software* em três novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
 
 ###Especificação de Requisitos
 
@@ -69,7 +69,7 @@ Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar a
 
 ###Análise e Negociação de Requisitos
 
-A principal fonte de requisitos do mGBA são os *bug reports* e os *pull requests* existentes no repositório do GitHub. Ambos são habitualmente frequentados pelo responsável deste projeto e pelos seus *contributors* e utilizadores.
+A principal fonte de requisitos do mGBA são os *bug reports* e os *pull requests* existentes no repositório do GitHub, habitualmente frequentados pelo responsável deste projeto e pelos seus utilizadores.
 
 Nem todos os *issues* levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja colocada em prática é necessária a aprovação do gestor do projeto e que pelo menos um dos *developers* aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, submetendo um *pull request* mais tarde.
 
@@ -90,9 +90,9 @@ Numa fase inicial, os *pull requests* e as alterações submetidas pelos utiliza
 
 O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a possibilitar a sua classificação em diferentes categorias e prioridades, contribuindo para uma maior organização das tarefas a desenvolver. Consultando a lista de *issues* dos últimos cinco meses, é possível classificá-los em três categorias diferentes: *bugs*, *minor bugs* e *enhancements*. Todos os *issues* que sejam considerados novas funcionalidades e que não corrijam ou melhorem componentes do emulador já implementados em código são habitualmemente classificados como *enhancements* (melhorias), recebendo a menor das prioridades. Os *minor bugs* são *bugs* efetivamente presentes na versão atual do *software* mas que se manifestam em poucos casos, sendo pouco frequentes ou difíceis de reproduzir num cenário típico de utilização, recebendo portanto prioridade normal. 
 
-Finalmente, existem os *issues* classificados como *bugs* pelo autor deste projeto, que retratam casos mais severos dos *minor bugs* anteriormente referidos, podendo estar associados a *crashes* ou a comportamentos erráticos do *software*, sendo que estes recebem a atenção máxima por parte da equipa de desenvolvimento. A categorização dos *issues* recorrendo a etiquetas facilita os processos de validação dos *bugs*, constribuindo para uma maior eficácia na detecção e resolução destes.
+Finalmente, existem os *issues* classificados como *bugs* pelo autor deste projeto, que retratam casos mais severos dos *minor bugs* anteriormente referidos, podendo estar associados a *crashes* ou a comportamentos erráticos do *software*, sendo que estes recebem a atenção máxima por parte da equipa de desenvolvimento. A categorização dos *issues* recorrendo a etiquetas facilita os processos de validação dos *bugs*, constribuindo para uma maior eficiência na detecção e resolução destes. Apesar de a maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades ou ao tempo necessário para a sua implementação. 
 
-Apesar de a maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades ou ao tempo necessário para a sua implementação. No período compreendido entre 18 de setembro e 18 de outubro de 2015 foram recebidos 16 *issues*, tendo a equipa resolvido 13 no decorrer do último mês. O responsável pelo projeto é também relativamente rápido em dar *feedback* aos utilizadores, tendo todos os *issues* submetidos até à data pelo menos uma resposta do mesmo.
+No período compreendido entre 18 de setembro e 18 de outubro de 2015 foram recebidos 16 *issues*, tendo a equipa resolvido 13 no decorrer do último mês. O responsável pelo projeto é também relativamente rápido em dar *feedback* aos utilizadores, tendo todos os *issues* submetidos até à data pelo menos uma resposta do mesmo.
 
 ![](Assignment2/current_issues.png)
 

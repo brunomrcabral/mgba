@@ -36,8 +36,6 @@ O próprio autor definiu alguns destes objetivos aquando o início do desenvolvi
 
 ###Casos de Utilização
 
-
-
 - compatibilidade com grande parte dos periféricos e jogos da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores
 - ports para outras plataformas recorrendo a *frameworks* como Qt/SDL
@@ -49,16 +47,12 @@ O próprio autor definiu alguns destes objetivos aquando o início do desenvolvi
 - suporte a leitura de ficheiros nos formatos ZIP e 7Zip
 - suporte a *patches* IPS, UPS e BPS
 - suporte a debugging recorrendo a uma *interface* em linha de comandos
-
-No entanto existem alguns em aberto, à espera de serem implementados:
 - suporte a *multiplayer* em rede utilizando um link cable emulado
 - suporte à linguagem de *scripting* Lua
 - ferramentas de *debugging* mais completas
-- 
 
 
 O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um software que permite ao computador ter o comportamento de um Game Boy Advance podendo assim correr ROMs (onde está a cópia do jogo). Na última versão do emulador, também já é possível correr software homebrew de 3 novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
-
 
 ###Análise de Requisitos
 

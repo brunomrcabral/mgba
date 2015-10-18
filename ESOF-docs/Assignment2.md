@@ -35,6 +35,16 @@ O principal propósito do projeto seria a criação de um novo emulador capaz de
 
 O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento deste projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades sugeridas são as que estão habitualmente presentes em *software* do mesmo género, conferindo características que distingue este de *software* equivalente. Entre os requisitos enunciados pelo autor no documento README. presente na raiz deste repositório, destacam-se os seguintes, todos eles conseguidos até ao momento de elaboração deste relatório:
 
+####Bugs/Issues
+
+No repositório existe também uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades, todos eles devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. 
+
+Após terem sido detetados esses bugs, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (*Bug-Tracking System*), detalha e cataloga os *bugs* de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da *milestone* na qual será resolvido.
+
+####Pull Requests
+
+O utilizador com a intenção de contribuir com novas funcionalidades para este projeto deverá fazer um *fork* ou um *branch* do repositório na sua versão atual e pedir ao proprietário que as incorpore no *branch* principal (ou *master*) através de um *pull request*, após ter realizado alterações significativas no código. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações e a sua motivação.
+
 ###Casos de Utilização
 
 - compatibilidade com grande parte dos periféricos e jogos da Game Boy Advance
@@ -70,16 +80,6 @@ Muitos dos requisitos já foram classificados como completos restando apenas alg
 
 Nem todos os problemas levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja posta em prática é necessário que pelo menos um dos desenvolvedores aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um pull request.
 
-####Bugs/Issues
-
-No repositório existe também uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades, todos eles devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. 
-
-Após terem sido detetados esses bugs, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (*Bug-Tracking System*), detalha e cataloga os *bugs* de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da *milestone* na qual será resolvido.
-
-####Pull Requests
-
-O utilizador com a intenção de contribuir com novas funcionalidades para este projeto deverá fazer um *fork* ou um *branch* do repositório na sua versão atual e pedir ao proprietário que as incorpore no *branch* principal (ou *master*) através de um *pull request*, após ter realizado alterações significativas no código. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações e a sua motivação.
-
 ###Especificação de Requisitos
 
 Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do software em questão (também conhecido por *software requirements specification* ou SRS) assume-me que este não foi criado devendo-se possivelmente à pequena dimensão do projeto.
@@ -96,8 +96,8 @@ Numa fase inicial, os *pull requests* e as alterações submetidas pelos utiliza
 
 Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto:
 - as sugestões de novas funcionalidades apresentadas em texto devem acrescentar funcionalidades relevantes ao *software*
-- o levantamento de *bugs* deve [https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues]()
-- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style](determinados critérios) que devem ser obedecidos (também definidos pelo autor no documento CONTRIBUTING.md)
+- o levantamento de *bugs* na forma de *issues* deve ser o mais [completo](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues) possível, indicando todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens ou ficheiros de estado do jogo em questão
+- as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) que devem ser obedecidos (também definidos pelo autor no documento CONTRIBUTING.md)
 
 O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a possibilitar a sua classificação em diferentes categorias e prioridades, contribuindo para uma maior organização das tarefas a desenvolver. Consultando a lista de *issues* dos últimos cinco meses, é possível classificá-los em três categorias diferentes: *bugs*, *minor bugs* e *enhancements*. Todos os *issues* que sejam considerados novas funcionalidades e que não corrijam ou melhorem componentes do emulador já implementados em código são habitualmemente classificados como "enhancements" (melhorias), recebendo a menor das prioridades. Os *minor bugs* são *bugs* efetivamente presentes na versão atual do *software* mas que se manifestam em poucos casos, sendo pouco frequentes ou difíceis de reproduzir num cenário típico de utilização, recebendo portanto prioridade normal. Finalmente, existem os *issues* classificados como *bugs* pelo autor deste projeto, que retratam casos mais severos dos *minor bugs* anteriormente referidos, podendo estar associados a *crashes* ou a comportamentos bastante erráticos do *software*, sendo que estes recebem a atenção máxima por parte da equipa de desenvolvimento. Apesar da maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades de implementação.
 

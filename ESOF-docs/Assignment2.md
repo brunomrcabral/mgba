@@ -29,6 +29,9 @@ Apesar de estar a ser marioritariamente desenvolvido pelo seu proprietário, o m
 No contexto dos emuladores como o mGBA, ter qualidade significa ser capaz de garantir a compatibilidade com a maior parte do *software* e dos periférios lançados para o dispositivo a ser emulado. São os stakeholders que vão dando conta de eventuais *bugs* na aplicação, que se mostram exigentes e insatisfeitos pelas imperfeições no resultado obtido e propõem novas funcionalidades para complementarem a sua experiência de utilização deste *software*.
 
 ####Motivação
+
+A motivação deste projeto assenta de igual forma em requisitos funcionais e não funcionais que foram previamente definidos no inicio pelo autor. Relativamente a requisitos funcionais o principal propósito seria fazer com que este novo emulador fosse capaz de correr a maior parte dos jogos para Game Boy Advance mas com requisitos inferiores aos de outros emuladores usados na época. Muitos dos requisitos já foram classificados como completos restando apenas alguns requisitos não funcionais que são progressivamente criados com base na parte do projeto já realizada. Dos requisitos inicialmente definidos restam apenas serem focados alguns requisitos não funcionais passando por melhorias na performance, eficiencia ou mesmo portabilidade.
+
 O próprio autor definiu alguns destes objetivos aquando o início do desenvolvimento deste projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades que foram requisitadas são as que estão habitualmente presentes em *software* do mesmo género, conferindo características que distingue este de *software* equivalente. Entre os requisitos enunciados pelo autor no documento README presente na raiz deste repositório, destacam-se os seguintes, todos eles conseguidos até ao momento de elaboração deste relatório:
 
 - compatibilidade com grande parte dos periféricos e jogos da Game Boy Advance
@@ -47,6 +50,12 @@ No entanto existem alguns em aberto, à espera de serem implementados:
 - suporte a *multiplayer* em rede utilizando um link cable emulado
 - suporte à linguagem de *scripting* Lua
 - ferramentas de *debugging* mais completas
+- 
+###Casos de Utilização
+
+O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um software que permite ao computador ter o comportamento de um Game Boy Advance podendo assim correr ROMs (onde está a cópia do jogo). Na última versão do emulador, também já é possível correr software homebrew de 3 novas plataformas, sendo estas Nintendo 3DS, Nintendo Wii, e PlayStation Vita.
+
+
 
 ###Análise de Requisitos
 
@@ -70,11 +79,10 @@ Numa fase inicial, os *pull requests* e as alterações submetidas pelos utiliza
 
 Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes e não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
 
-![](Assignment2/current_issues.png)
-
+[](Assignment2/current_issues.png)
 Motivação: Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
 
-![](Assignment2/current_pullrequests.png)
+[](Assignment2/current_pullrequests.png)
 
 O proprietário enumera uma série de ... : serão apenas aceites se o código estiver devidamente formatado e organizado segundo uma determinada nomenclatura e estilo de código que devem ser obedecidos (também definidas pelo proprietário no documento). 
 

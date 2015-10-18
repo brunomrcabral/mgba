@@ -94,11 +94,12 @@ O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a 
 
 Finalmente, existem os *issues* classificados como *bugs* pelo autor deste projeto, que retratam casos mais severos dos *minor bugs* anteriormente referidos, podendo estar associados a *crashes* ou a comportamentos bastante erráticos do *software*, sendo que estes recebem a atenção máxima por parte da equipa de desenvolvimento. A categorização dos *issues* recorrendo a etiquetas facilita os processos de validação dos *bugs*, constribuindo para uma maior eficácia na detecção e resolução destes.
 
-Apesar de a maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades ou ao tempo necessário para a sua implementação. No período compreendido entre 18 de setembro e 18 de outubro de 2015 foram recebidos 16 *issues*, tendo a equipa resolvido 13 deles no decorrer do mês. Os restantes três continuam em aberto, aguardando mais informações.
+Apesar de a maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades ou ao tempo necessário para a sua implementação. No período compreendido entre 18 de setembro e 18 de outubro de 2015 foram recebidos 16 *issues*, tendo a equipa resolvido 13 no decorrer do mês. O proprietário é também relativamente rápido em dar *feedback* aos utilizadores, tendo todos os *issues* submetidos até à data pelo menos uma resposta do mesmo.
 
 ![](Assignment2/current_issues.png)
 
-Durante o mesmo periodo de tempo o projeto recebeu apenas dois pull requests, tendo ambos sido incorporados no *branch* principal.
+Durante o mesmo periodo de tempo o projeto recebeu apenas dois pull requests, tendo ambos sido incorporados no *branch* principal numa questão de dias.
+
 ![](Assignment2/current_pullrequests.png)
 
 ##Análise Crítica

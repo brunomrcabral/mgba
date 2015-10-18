@@ -78,6 +78,12 @@ Após terem sido detetados esses bugs, o responsável pela gestão do projeto, c
 
 O utilizador com a intenção de contribuir com novas funcionalidades para este projeto deverá fazer um *fork* ou um *branch* do repositório na sua versão atual e pedir ao proprietário que as incorpore no *branch* principal (ou *master*) através de um *pull request*, após ter realizado alterações significativas no código. No momento do *pull request* será também necessário indicar a finalidade daquele código, ou seja, qual a componente que foi implementada ou alterada bem como um parágrafo onde explique sucintamente esssas alterações e a sua motivação.
 
+###Especificação de Requisitos
+
+Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do software em questão (software requirements specification ou SRS) é assumido que este não foi criado devendo-se possivelmente à pequena dimensão do projeto.
+Este tipo de documento que estabelece os termos de condição entre os clientes e os desenvolvedores em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
+Neste caso, cabe ao autor do projeto decidir o rumo que o projeto deve tomar e quais as alterações a fazer com base em milestones criadas pelo mesmo e tentar sempre que possível corresponder as datas limites.
+
 ###Validação de Requisitos
 
 Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI, utilizada pelo *GitHub* na realização automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.

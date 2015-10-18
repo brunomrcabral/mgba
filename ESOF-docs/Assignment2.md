@@ -80,15 +80,21 @@ O utilizador com a intenção de contribuir com novas funcionalidades para este 
 
 ###Especificação de Requisitos
 
-Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do software em questão (software requirements specification ou SRS) é assumido que este não foi criado devendo-se possivelmente à pequena dimensão do projeto.
+Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do software em questão (também conhecido por *software requirements specification* ou SRS) assume-me que este não foi criado devendo-se possivelmente à pequena dimensão do projeto.
+
 Este tipo de documento que estabelece os termos de condição entre os clientes e os desenvolvedores em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
-Neste caso, cabe ao autor do projeto decidir o rumo que o projeto deve tomar e quais as alterações a fazer com base em milestones criadas pelo mesmo e tentar sempre que possível corresponder as datas limites.
+
+Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar ao longo do seu ciclo de desenvolvimento, quais as alterações a fazer com base em *milestones* criadas pelo mesmo e tentar sempre que possível cumprir os prazos e datas limites estipuladas pelo próprio.
 
 ###Validação de Requisitos
 
 Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI, utilizada pelo *GitHub* na realização automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
 
 Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes e não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
+
+O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a possibilitar a sua classificação em diferentes categorias e prioridades, contribuindo para uma maior organização das tarefas a desenvolver. Consultando a lista de *issues* dos últimos cinco meses, é possível classificá-los em três categorias diferentes: *bugs*, *minor bugs* e *enhancements*. Os *issues* que não corrijam ou melhoram aspetos da base do emulador são habitualmemente classificados como "enhancements" (melhorias), sendo estes os menos prioritários. Os "minor bugs" são *bugs* efetivamente presentes na versão atual do *software* mas que se manifestam em poucos casos, sendo pouco frequentes ou difíceis de reproduzir num cenário típico de utilização (recebem prioridade normal). Finalmente, existem os *issues* classificados como *bugs*, que correspondem a casos mais severos dos *minor bugs* anteriormente referidos, podendo estar associados a *crashes* ou a comportamentos bastante erráticos do *software*, sendo que estes recebem a prioridade máxima.
+
+Esta organização dos *issues* facilita os processos de validação dos mesmos, constribuindo para uma maior eficácia na detecção de *bugs*.
 
 [](Assignment2/current_issues.png)
 Motivação: Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.

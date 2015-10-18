@@ -30,16 +30,13 @@ Existem dois tipos de requisitos em engenharia de *software* também associados 
 
 ####Motivação
 
-A motivação deste projeto assenta de igual forma em requisitos funcionais e não funcionais que foram previamente definidos no 
 O principal propósito do projeto seria a criação de um novo emulador capaz de correr grande parte dos jogos e *software* desenvolvidos para a consola *Game Boy Advance* em máquinas e dispositivos com requisitos inferiores aos de outros emuladores existentes na atualidade. 
 
 O próprio autor definiu alguns destes objetivos e requisitos aquando o início do desenvolvimento deste projeto, após uma análise por comparação com outros emuladores *open-source* e comerciais disponíveis na *Internet*, tendo a comunidade contribuido com os restantes e mais variados requisitos ao longo dos últimos meses. Estas novas funcionalidades sugeridas são as que estão habitualmente presentes em *software* do mesmo género, conferindo características que distingue este de *software* equivalente. Entre os requisitos enunciados pelo autor no documento README. presente na raiz deste repositório, destacam-se os seguintes, todos eles conseguidos até ao momento de elaboração deste relatório:
 
 ####Bugs/Issues
 
-No repositório existe também uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades, todos eles devidamente acompanhados por uma pequena mensagem a relatar o problema e muitas vezes por uma imagem ou captura de ecrã ilustrando a situação descrita. 
-
-Após terem sido detetados esses bugs, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (*Bug-Tracking System*), detalha e cataloga os *bugs* de acordo com o tipo de layer do software onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da *milestone* na qual será resolvido.
+No repositório existe uma secção de *issues* bastante ativa, com vários utilizadores e *contributors* a fazer levantamentos de *bugs* com alguma frequência ou a sugerir novas funcionalidades. Após ter conhecimento dos mesmos, o responsável pela gestão do projeto, com recurso ao [Bugzilla](https://endrift.com/mgba/bugs/describecomponents.cgi) (um *Bug-Tracking System*), especifica e categoriza os *bugs*, separando-os pela componente do programa onde estão a ocorrer, permitindo uma boa organização dos problemas de cada componente do programa. Além disso, a cada bug é atribuida uma prioridade de resolução bem como a versão da *milestone* na qual será resolvido.
 
 ####Pull Requests
 
@@ -68,15 +65,7 @@ O mGBA trata-se de um emulador de Game Boy Advance, ou seja, é neste caso, um s
 
 ###Análise de Requisitos
 
-- classificação: agrupamento de requisitos em "módulos" para facilitar a visão global do funcionamento pretendido para o sistema;
-- resolução de conflitos: dada a multiplicidade e diversidade de papéis das partes interessadas envolvidas na captura e análise de requisitos, é inevitável a existência de conflitos nos requisitos identificados; é importante resolver estes conflitos o mais breve possível;
-- priorização: consiste na atribuição de uma "prioridade" a cada requisito (por exemplo elevada/média/baixa); obviamente, este pode ser um fator gerador de conflitos;
-- confirmação: é confirmada com as partes interessadas a completude dos requisitos, sua consistência e validade (de acordo com o que se pretende do sistema).
-- 
-
 A principal fonte de requisitos correntes provém dos *bug reports*/*issues* e dos *pull requests* existentes no repositório do GitHub. Ambos são frequentados tanto pela *core team* (o proprietário deste projeto e os seus *main contributors*
-
-Muitos dos requisitos já foram classificados como completos restando apenas alguns requisitos não funcionais que são progressivamente criados com base na parte do projeto já realizada. Dos requisitos inicialmente definidos restam apenas serem focados alguns requisitos não funcionais passando por melhorias na performance, eficiencia ou mesmo portabilidade.
 
 Nem todos os problemas levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja posta em prática é necessário que pelo menos um dos desenvolvedores aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, fazendo depois um pull request.
 

@@ -44,7 +44,7 @@ O utilizador com a intenção de contribuir com novas funcionalidades para este 
 
 ###Casos de Utilização
 
-Entre os requisitos e casos de utilização enunciados pelo responsável deste projeto no documento [README.MD](https://github.com/mgba-emu/mgba/blob/master/README.md) presente na raiz do repositório, destacam-se os seguintes, todos eles satisfeitos até ao momento de elaboração deste relatório:
+Entre os requisitos e casos de utilização enunciados no documento [README.MD](https://github.com/mgba-emu/mgba/blob/master/README.md) presente na raiz do repositório, destacam-se os seguintes, todos eles satisfeitos até ao momento de elaboração deste relatório:
 
 - compatibilidade com grande parte dos periféricos (*hardware*) e jogos comerciais (*software*) da Game Boy Advance
 - emulação rápida, capaz de executar em tempo real mesmo em computadores e dispositivos com características inferiores
@@ -61,7 +61,7 @@ Na última *milestone* disponibilizada ao público também já é possível corr
 
 ###Especificação de Requisitos
 
-Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do *software* em questão (também conhecido por *software requirements specification* ou SRS) assume-me que este nunca foi criado, devendo-se possivelmente à pequena dimensão do projeto.
+Dado que não foi encontrado nenhum documento com a descrição dos requisitos funcionais e não funcionais do *software* em questão (também conhecido por [*software requirements specification*](https://en.wikipedia.org/wiki/Software_requirements_specification) ou SRS) assume-me que este nunca foi criado, devendo-se possivelmente à pequena dimensão do projeto.
 
 Este tipo de documento que estabelece os termos de condição entre os clientes e os *developers* em relação ao que o produto final deve ou não corresponder, apesar de ser bastante importante não faria grande sentido neste tipo de projeto pois está a ser desenvolvido por colaboradores voluntários sem elevado grau de compromisso.
 

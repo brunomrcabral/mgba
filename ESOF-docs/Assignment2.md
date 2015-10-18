@@ -94,11 +94,12 @@ O GitHub disponibiliza ainda métodos de etiquetação dos *issues*, de forma a 
 Apesar da maioria dos requisitos propostos pelos utilizadores merecerem atenção por parte do organizador, alguns deles acabam por não ser aceites, muitas vezes devido a dificuldades de implementação.
 
 No período compreendido entre 18 de setembro e 18 de outubro de 2015 foram recebidos apenas dois pull requests, tendo ambos sido incorporados no *branch* principal.
-[](Assignment2/current_pullrequests.png)
+
+![](Assignment2/current_pullrequests.png)
 
 Quanto aos *issues*, no mesmo período a equipa recebeu 16, tendo resolvido 13 deles no decorrer do mês. Os restantes três continuam em aberto, aguardando confirmação.
 
-[](Assignment2/current_issues.png)
+![](Assignment2/current_issues.png)
 
 ##Análise Crítica
 

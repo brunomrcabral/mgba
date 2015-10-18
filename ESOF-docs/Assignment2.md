@@ -74,7 +74,7 @@ A principal fonte de requisitos do mGBA são os *bug reports* e os *pull request
 Nem todos os *issues* levantados pela comunidade merecem a mesma atenção a nível de tempo e recursos. Para que uma ideia seja colocada em prática é necessária a aprovação do gestor do projeto e que pelo menos um dos *developers* aceite implementá-la, ou que a própria pessoa que teve a ideia tenha a iniciativa de a implementar, submetendo um *pull request* mais tarde.
 
 Existe um processo de análise e validação manual feita pelo gestor do projeto, que compreende os seguintes pontos:
-- as sugestões de novas funcionalidades enviadas em texto devem acrescentar funcionalidades relevantes ao *software*
+- as sugestões de novas funcionalidades enviadas em texto devem acrescentar funcionalidades relevantes ao programa
 - o levantamento de *bugs* na forma de *issues* deve ser o mais [completo possível](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#filing-issues), indicando qual a versão do *software* testada e todos os passos necessários para reproduzir o *bug*, acompanhado devidamente por imagens explicativas ou ficheiros de estado do jogo em questão
 - as alterações de código submetidas pelos utilizadores não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade; será apenas aceite código devidamente formatado e organizado segundo [determinados critérios](https://github.com/mgba-emu/mgba/blob/master/CONTRIBUTING.md#coding-style) também definidos pelo autor que devem ser obedecidos
 

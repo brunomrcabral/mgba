@@ -66,11 +66,14 @@ O utilizador com a intenção de contribuir com novas funcionalidades deverá fa
 
 ###Validação de Requisitos
 
-As alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar o Travis-CI, uma ferramenta do *GitHub* que realiza automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
+Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI, utilizada pelo *GitHub* na realização automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
 
 Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes e não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.
 
+[](Assignment2/current_issues.png)
 Motivação: Os requisitos apresentados são marioritamente funcionais e representam funcionalidades secundárias que apenas melhoram a experiência do utilizador.
+
+[](Assignment2/current_pullrequests.png)
 
 O proprietário enumera uma série de ... : serão apenas aceites se o código estiver devidamente formatado e organizado segundo uma determinada nomenclatura e estilo de código que devem ser obedecidos (também definidas pelo proprietário no documento). 
 

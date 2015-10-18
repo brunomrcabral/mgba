@@ -90,6 +90,8 @@ Neste caso, cabe ao único autor do projeto decidir o rumo que este deve tomar a
 
 ###Validação de Requisitos
 
+A validação de requisitos consiste em demostrar que os requisitos levantados no processo de negociação com o cliente definem o sistema que este realmente deseja. Trata-se assim do processo onde se avalia a consistência dos pedidos que o cliente faz e se valida esses pedidos como forma de evitar erros de requisitos e diminuir os custos de desenvolvimento.
+
 Numa fase inicial, os *pull requests* e as alterações submetidas pelos utilizadores estão sujeitas a um processo de validação automático antes de serem aprovadas. Após termos analisado da estrutura do repositório, verificou-se que este foi configurado para utilizar a ferramenta Travis-CI, utilizada pelo *GitHub* na realização automaticamente testes de compilação sobre o *source code* submetido nos *pull requests*, rejeitando código que não passe nos mesmos.
 
 Existe ainda um processo de análise e validação manual feita pelo proprietário deste projeto. As alterações submetidas pelos utilizadores devem ser pertinentes e não devem provocar alterações significantes no comportamento do código nem regressões nos testes de compatibilidade do *software*.

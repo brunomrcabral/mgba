@@ -44,3 +44,5 @@ O package "third-party" contém bibliotecas de terceiros (third-party) independe
 O package "debugger" implementa as funcionalidades de debugging na interface em linha de comandos (CLI), bem como uma interface da aplicação com gdb (GCC Debugger).
 
 O package "util" contém algumas dependências e estruturas de dados comuns utilizadas pelos outros packages.
+
+##Deployment View

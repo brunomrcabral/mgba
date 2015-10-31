@@ -22,14 +22,17 @@ No seguinte diagrama de packages encontram-se esquematizadas as principais abstr
 
 ![](Assignment3/logical-view.png)
 
-Após análise cuidada do código disponibilizado no repositório pela equipa deste projeto, foi possível verificar que este é constuitído por seis pacotes que definem a organização e estrutura do projeto.
+Após análise cuidada do código disponibilizado no repositório pelos autores deste projeto, foi possível verificar que este é constuitído por seis *packages* que definem a sua estrutura e organização.
 
-O pacote "gba" é responsável por implementar uma máquina virtual no host que serve como base na simulação do comportamento do hardware original da consola Game Boy Advance. Emulação do hardware e BIOS originais, dispositivos de entrada/saída (teclado, rato, comando), serialização  (possibilidade de carregar e guardar o estado da máquina virtual)...
+O pacote **gba** é responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do *hardware* original da consola *Game Boy Advance*. Emulação do *hardware* e BIOS originais, dispositivos de entrada/saída (teclado, rato, *gamepad*), serialização (possibilidade de carregar e guardar o estado da máquina virtual no sistema de ficheiros), etc...
 
-O pacote "arm" implementa recompilação dinâmica de instruções de processadores da família ARM7.
+O pacote **arm*" implementa recompilação dinâmica de instruções de processadores da família ARM7.
 O recompilador dinâmico é responsável pela leitura do programa ou código máquina da plataforma a ser emulada e pela produção de código máquina nativo da plataforma ou arquitetura onde esta corre.
 
-O pacote "platform" contém frameworks e APIs (application programming interfaces) de terceiros específicas para cada plataforma e sistema operativo, necessárias para a criação de interfaces gráficas de utilizador e acesso a di
+O pacote **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas.
+- Qt **:** cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms with little or no change in the underlying codebase, while having the power and speed of native applications.
+- SDL **:** Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+
 
 O package "third-party" contém bibliotecas de terceiros (third-party) independentes da plataforma necessárias ao funcionamento do software. Estas bibliotecas normalmente são open-source e acrescentam funcionalidades extra à aplicação.
 - [blip_buf](https://code.google.com/p/blip-buf/) **:** *Blip_buf is a small waveform synthesis library meant for use in classic video game sound chip emulation. It greatly simplifies sound chip emulation code by handling all the details of resampling. The emulator merely sets the input clock rate and output sample rate, adds waveforms by specifying the clock times where their amplitude changes, then reads the resulting output samples.*

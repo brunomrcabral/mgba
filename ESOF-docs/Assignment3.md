@@ -18,7 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Logical View
 
-No seguinte diagrama de packages encontram-se esquematizadas as principais abstrações do sistema, a separação das várias camadas da aplicação e as dependências entre packages que caracterizam a vista lógica do projeto em estudo.
+No seguinte diagrama de *packages* encontram-se esquematizadas as principais abstrações do sistema, a separação das várias camadas da aplicação e as dependências entre packages que caracterizam a *logical view* do projeto em estudo.
 
 ![](Assignment3/logical-view.png)
 
@@ -46,3 +46,7 @@ O package "debugger" implementa as funcionalidades de debugging na interface em 
 O package "util" contém algumas dependências e estruturas de dados comuns utilizadas pelos outros packages.
 
 ##Deployment View
+
+Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual.
+
+![](Assignment3/deployment-view.png)

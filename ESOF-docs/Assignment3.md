@@ -55,3 +55,17 @@ O *package* **util** contém funcionalidades comuns e estruturas de dados freque
 Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual.
 
 ![](Assignment3/deployment-view.png)
+
+Existe uma máquina hospedeira com unidade de processamento central (CPU), memória RAM e unidade de armazenamento, capaz de receber *inputs* de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir *output* para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários ficheiros ROM (no diagrama representados como artefactos) que contém o código do programa a ser executado na máquina virtual.
+
+A máquina hospedeira deverá ser capaz de executar uma ou mais máquinas virtuais em simultâneo, com recurso a técnicas de multiprogramação integradas no próprio sistema operativo. A máquina virtual é também ela constituída por vários artefactos.
+
+O **Emitter** é responsável por
+
+A componente **Context** mantém o estado da máquina virtual. Permite ao utilizador configurar a máquina, parar ou colocar em pausaa execução da mesma, guardar ou carregar um novo estado, substituindo o atual.
+
+Existe ainda um *dispatcher* de eventos, representado aqui pela componente **Events**, responsável por reencaminhar ou eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e vice-versa, estabelecendo assim comunicação bidireccional.
+
+Por fim, existe uma componente **Renderer**
+
+Ao nível da máquina virtual

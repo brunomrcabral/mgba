@@ -31,7 +31,7 @@ No seguinte diagrama de *packages* encontram-se esquematizadas a separação do 
 
 ![](Assignment3/logical-view.png)
 
-Após análise cuidada do código disponibilizado no repositório pelos autores deste projeto, foi possível verificar que este se encontra estrutrurado em seis *packages*:
+Após análise cuidada do código disponibilizado no repositório pelos autores deste projeto, foi possível verificar que este se encontra estruturado em seis *packages*:
 
 O *package* **gba** é responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do *hardware* original da consola *Game Boy Advance*. Entre as várias tarefas desempenhadas por esta componente do *software* destacam-se: emulação do *hardware* original e dispositivos de entrada/saída, acesso à memória, gestão de interrupções, serialização (possibilidade de carregar e guardar o estado da máquina virtual no sistema de ficheiros da máquina hospedeira).
 
@@ -59,6 +59,23 @@ O *package* **util** contém funcionalidades comuns e estruturas de dados freque
 - *buffers* circulares
 - operações sobre *strings* e vetores
 
+##Implementation View
+
+Um diagrama de componentes representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:
+- modelar os dados do código fonte, do código executável do software.
+- destacar a função de cada módulo para facilitar a sua reutilização
+- auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
+
+[imagem]
+
+A componente **GUI** é responsável pela interacção principal entre o utilizador e o *software* e implementa uma *interface* gráfica simples com a qual o utilizador pode realizar várias operações.
+
+A componente **Context** regista o estado da máquina virtual. Permite ao utilizador configurar a máquina, parar ou colocar em pausa execução da mesma, guardar ou carregar um novo estado.
+
+Existe ainda um *dispatcher* de eventos, representado aqui pela componente **Input**, responsável por reencaminhar eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e vice-versa, estabelecendo assim uma comunicação bidireccional.
+
+Por fim, existe uma componente **Renderer**
+
 ##Deployment View
 
 Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual.
@@ -68,13 +85,3 @@ Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifes
 Existe uma máquina hospedeira com unidade de processamento central (CPU), memória RAM e unidade de armazenamento, capaz de receber *inputs* de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir *output* para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários ficheiros ROM (no diagrama representados como artefactos) que contém o código do programa a ser executado na máquina virtual.
 
 A máquina hospedeira deverá ser capaz de executar uma ou mais máquinas virtuais em simultâneo, com recurso a técnicas de multiprogramação integradas no próprio sistema operativo. A máquina virtual é também ela constituída por vários artefactos.
-
-O **Emitter** é responsável por
-
-A componente **Context** mantém o estado da máquina virtual. Permite ao utilizador configurar a máquina, parar ou colocar em pausaa execução da mesma, guardar ou carregar um novo estado, substituindo o atual.
-
-Existe ainda um *dispatcher* de eventos, representado aqui pela componente **Events**, responsável por reencaminhar ou eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e vice-versa, estabelecendo assim comunicação bidireccional.
-
-Por fim, existe uma componente **Renderer**
-
-Ao nível da máquina virtual

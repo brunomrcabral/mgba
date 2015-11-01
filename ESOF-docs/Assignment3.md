@@ -31,6 +31,10 @@ No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências 
 
 ![](Assignment3/use-case-view.png)
 
+Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de *Game Boy Advance* que permite ao utilizador final correr *software* inicialmente concebido para esta consola de jogos portátil em qualquer máquina moderna, recorrendo a uma máquina virtual que simula o comportamento do *hardware* original. O utilizador não precisa de conhecer estes detalhes de implementação para poder interagir com este *software* e tirar o maior proveito da máquina virtual nele integrada.
+
+Através da interface gráfica (*GUI*) do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode interagir com a máquina virtual, ou até mesmo controlar a sua execução. Pode ainda configurar certos aspetos associados à *interface* entre a maquina hospedeira e a máquina virtual, ajustando-a às suas necessidades, como por exemplo definir o mapeamento de *inputs* virtuais da consola aos *inputs* físicos da máquina.
+
 ##Logical View
 
 No seguinte diagrama de *packages* é possível observar separação do sistema em várias componentes de código e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo:

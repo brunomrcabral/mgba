@@ -70,7 +70,7 @@ O *package* **util** contém funcionalidades comuns e **estruturas de dados** fr
 
 ##Implementation View
 
-Um **diagrama de componentes** associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades:
+Um **diagrama de componentes**<sup>[[1]](#nav1)</sup> associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades<sup>[[2]](#nav2)</sup>:
 - separar os dados do código fonte do código executável do software,
 - destacar a função de cada módulo para facilitar a sua reutilização,
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
@@ -85,9 +85,13 @@ A componente **GBAConfig** permite ao utilizador **configurar** a máquina virtu
 
 Por fim, existe uma componente **GBARenderer** que embora no código apenas seja responsável pela produção de imagem, por questões de simplificação esta componente irá englobar também a produção de som.
 
+<sup><a name="nav1">1</a></sup> [https://msdn.microsoft.com/pt-br/library/dd409390.aspx](https://msdn.microsoft.com/pt-br/library/dd409390.aspx)
+
+<sup><a name="nav2">2</a></sup> [https://pt.wikipedia.org/wiki/Diagrama_de_componentes](https://pt.wikipedia.org/wiki/Diagrama_de_componentes)
+
 ##Process View
 
-Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de proceso** de um projeto, sendo eles:
+Um **diagrama de atividades**<sup>[[3]](#nav3)</sup> ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de proceso** de um projeto, sendo eles:
 - fluxos de trabalho entre um sistema e os seus utilizadores
 - as etapas executadas para um caso de uso
 - sequências de interações entre as componentes do *software*
@@ -97,16 +101,20 @@ Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** 
 
 Devido à complexidade do sistema, este diagrama descreve apenas os passos chave da emulação, desde o momento em que é iniciada pelo carregamento de um ficheiro ROM pelo utilizador até ao momento em que este decide terminar a emulação.
 
-O **processo de emulação** do *mGBA* pode ser dividido em três actividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A *GBAGUI* corresponde à interface gráfica que permite ao utilizador interagir visualmentecom o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarrega de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola. Os *renderers* por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar a imagem produzida pelo emulador no ecrã.
+O **processo de emulação** do *mGBA* pode ser dividido em três actividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A **GBAGUI** corresponde à interface gráfica que permite ao utilizador interagir visualmentecom o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarrega de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola. Os *renderers* por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar a imagem produzida pelo emulador no ecrã.
 
 Apos inicializados, os *renderers* correm em *threads* separadas da GUI, sendo que tanto os *renderers* como a GUI permanecem em ciclo contínuo até receberem a informação de que devem terminar a emulação. Este comando de terminação pode ser gerado pelo **utilizador** a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o **ciclo de emulação** resta repor o emulador no seu **estado original**. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova **configuração** do utilizador. Atinge-se assim o **estado final** da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
 
+<sup><a name="nav3">3</a></sup> [https://msdn.microsoft.com/pt-br/library/dd409360.aspx](https://msdn.microsoft.com/pt-br/library/dd409360.aspx)
+
 ##Deployment View
 
-Os **diagramas de distribuição** permitem mostrar de que modo os **artefactos** (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em **nós** de hardware e como se relacionam com determinados componentes de *hardware*. O seguinte **diagrama de distribuição** característico de uma **vista de distribuição** ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
+Os **diagramas de distribuição**<sup>[[4]](#nav4)</sup> permitem mostrar de que modo os **artefactos** (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em **nós** de hardware e como se relacionam com determinados componentes de *hardware*. O seguinte **diagrama de distribuição** característico de uma **vista de distribuição** ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
 
 ![](Assignment3/deployment-view.png)
 
 Existe uma **máquina hospedeira** constituída por uma unidade de processamento central, memória RAM e unidade de armazenamento, capaz de receber **inputs** de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir **output** para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários **ficheiros ROM** (no diagrama representados como um artefacto) que contém o código do programa a ser executado na máquina virtual, bem como outros recursos adicionais necessários ao seu correto funcionamento. Estes ficheiros são carregados na aplicação pelo **utilizador** e devem apresentar um formato específico definido no código, sendo portanto validados antes da sua execução.
 
 A **máquina hospedeira** deverá ser também capaz de executar uma ou mais **máquinas virtuais** em simultâneo, cada uma com estados distintos, com recurso a técnicas de **multiprogramação** integradas no próprio **sistema operativo**. A máquina virtual é também ela constituída por vários **artefactos** de código que simulam as diferentes componentes de *hardware* em *software*.
+
+<sup><a name="nav4">4</a></sup> [http://www.tutorialspoint.com/uml/uml_deployment_diagram.htm](http://www.tutorialspoint.com/uml/uml_deployment_diagram.htm)

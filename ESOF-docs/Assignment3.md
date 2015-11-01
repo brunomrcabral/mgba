@@ -70,7 +70,7 @@ O *package* **util** contém funcionalidades comuns e estruturas de dados freque
 
 ##Process View
 
-Um diagrama de atividades ilustra um processo como um fluxo de trabalho por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever processos de diversos tipos, sendo eles:
+Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos, sendo eles:
 - fluxos de trabalho entre um sistema e os seus utilizadores
 - as etapas executadas para um caso de uso
 - sequências de interações entre as componentes do *software*

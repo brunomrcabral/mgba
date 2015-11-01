@@ -31,9 +31,9 @@ No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências 
 
 ![](Assignment3/use-case-view.png)
 
-Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de *Game Boy Advance* que permite ao utilizador final correr *software* inicialmente concebido para esta consola de jogos portátil em qualquer máquina moderna, recorrendo a uma máquina virtual que simula o comportamento do *hardware* original. O utilizador não precisa de conhecer estes detalhes de implementação para poder interagir com este *software* e tirar o maior proveito da máquina virtual nele integrada.
+Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de **Game Boy Advance** que permite ao utilizador correr *software* inicialmente concebido para esta consola de jogos portátil em qualquer máquina moderna, recorrendo a uma **máquina virtual** que simula o comportamento do *hardware* original. Os seus utilizadores não precisam de conhecer quaisquer detalhes da implementação para poder interagir com este *software* e tirar o máximo proveito da máquina virtual nele integrada.
 
-Através da interface gráfica (*GUI*) do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode interagir com a máquina virtual, ou até mesmo controlar a sua execução. Pode ainda configurar certos aspetos associados à *interface* entre a maquina hospedeira e a máquina virtual, ajustando-a às suas necessidades, como por exemplo definir o mapeamento de *inputs* virtuais da consola aos *inputs* físicos da máquina.
+Através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode interagir com a máquina virtual, ou até mesmo controlar a sua execução. É ainda possível ao utilizador configurar certos aspetos associados à *interface* entre a maquina hospedeira e a máquina virtual, ajustando-a às suas necessidades, como por exemplo definir o mapeamento de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, a correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
 
 ##Logical View
 

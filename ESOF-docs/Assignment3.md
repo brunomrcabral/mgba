@@ -57,8 +57,8 @@ O *package* **third-party** contém bibliotecas *open source* de terceiros (*thi
 - [blip_buf](https://code.google.com/p/blip-buf/) **:** *Blip_buf is a small waveform synthesis library meant for use in classic video game sound chip emulation. It greatly simplifies sound chip emulation code by handling all the details of resampling. The emulator merely sets the input clock rate and output sample rate, adds waveforms by specifying the clock times where their amplitude changes, then reads the resulting output samples.*
 - [inih](https://github.com/benhoyt/inih) **:** biblioteca minimalista e *lightweight* escrita em C para leitura de ficheiros de configuração .INI, concebida especialmente para correr em sistemas embarcados
 - [libpng](http://www.libpng.org/pub/png/libpng.html) **:** biblioteca de funções destinadas à leitura, escrita e manipulação de ficheiros de imagem no formato PNG (*Portable Network Graphics*)
-- [lzma](http://www.7-zip.org/sdk.html) **:** biblioteca multi-plataforma de compressão de dados baseada no algoritmo LZMA desenvolvido por *Igor Pavlov*, também conhecido como *Lempel-Ziv-Markov chain algorithm*.
-- [zlib](http://www.zlib.net) **:** biblioteca multi-plataforma de compressão de dados baseada no algoritmo DEFLATE escrita por *Jean-Loup Gailly* e *Mark Adler*, muito semelhante ao popular formato ZIP
+- [lzma](http://www.7-zip.org/sdk.html) **:** biblioteca multiplataforma de compressão de dados baseada no algoritmo LZMA desenvolvido por *Igor Pavlov*, também conhecido como *Lempel-Ziv-Markov chain algorithm*.
+- [zlib](http://www.zlib.net) **:** biblioteca multiplataforma de compressão de dados baseada no algoritmo DEFLATE escrita por *Jean-Loup Gailly* e *Mark Adler*, muito semelhante ao popular formato ZIP
 
 O *package* **debugger** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (GCC Debugger).
 

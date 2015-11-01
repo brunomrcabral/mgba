@@ -78,6 +78,12 @@ Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** 
 
 ![](Assignment3/process-view.png)
 
+Devido à comlexidade das operações, este diagrama apenas descreve os passos chave da emulação, desde o momento em que é iniciada pelo Loading de uma ROM pelo Cliente até ao momento em que esta termina.
+
+O Processo de Emulação pode ser dividido em 3 atividades principais: GBAGUI, GBAContext e GBARenderers. A GBAGUI corresponde  à interface que permite ao utilizador interagir com o programa. É esta actividade que permite que o utilizador carregue o ficheiro com a ROM, configure o Emulador e visualize os outputs gerados pelo programa. A informação gerada pelo utilizador na GUI segue depois para o Context que se encarregua de fazer os Loadings e Saves dos inputs do utilizador, inicializar todos os controladores de hardware e chamar as bibliotecas necessárias para a emulação. Os Renderers neste caso por via de simplificação, representao o conjunto das API's e dos controladores necessários para a emulação.
+
+Apos inicializados, os Renderers correm em Threads separadas da GUI, sendo que a GUI  permanece em RunLoop até receber informação que deve terminar a Emulação. Esse comando de terminação pode ser gerado pelo utilizador apartir da GUI ou pode ser gerado internamente quando a ROM termina a sua execução. Terminado o RunLoop resta repor o estado normal do Emulador. Assim a GUI pede ao Context para destruir as vareáveis usadas durante a emulação, e este encarrega-se também de repor os Randerers ao seu estado de pré-emulação. Chega-se assim ao estado final da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM para o Emulador.
+
 ##Implementation View
 
 Um **diagrama de componentes** associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades:

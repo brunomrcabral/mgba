@@ -76,7 +76,7 @@ Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** 
 - sequências de interações entre as componentes do *software*
 - algoritmos implementados no *software*
 
-Samouco, aqui está a tua única hipótese para brilhares...
+![](Assignment3/process-view.png)
 
 ##Implementation View
 

@@ -68,22 +68,6 @@ O *package* **util** contém funcionalidades comuns e **estruturas de dados** fr
 - tabelas de dispersão
 - *buffers* circulares
 
-##Process View
-
-Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de proceso** de um projeto, sendo eles:
-- fluxos de trabalho entre um sistema e os seus utilizadores
-- as etapas executadas para um caso de uso
-- sequências de interações entre as componentes do *software*
-- algoritmos implementados no *software*
-
-![](Assignment3/process-view.png)
-
-Devido à complexidade do sistema, este diagrama descreve apenas os passos chave da emulação, desde o momento em que é iniciada pelo carregamento de um ficheiro ROM pelo utilizador até ao momento em que este decide terminar a emulação.
-
-O processo de emulação pode ser dividido em 3 atividades principais: GBAGUI, GBAContext e GBARenderers. A GBAGUI corresponde  à interface que permite ao utilizador interagir com o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o Emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o Context que se encarregua de fazer os Loadings e Saves dos inputs do utilizador, inicializar todos os controladores de hardware e chamar as bibliotecas necessárias para a emulação. Os Renderers neste caso por via de simplificação, representao o conjunto das API's e dos controladores necessários para a emulação.
-
-Apos inicializados, os *renderers* correm em *threads* separadas da interface gráfica, sendo que estas permanecem em ciclo contínuo até receberem informações de que deve terminar a emulação. Este comando de terminação pode ser gerado pelo utilizador a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o ciclo de emulação resta repor o emulador no seu estado original. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova configuração do utilizador. Atinge-se assim o estado final da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
-
 ##Implementation View
 
 Um **diagrama de componentes** associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades:
@@ -97,9 +81,25 @@ A componente **GBAGUI** é responsável pela interacção principal entre o util
 
 A componente **GBAContext** mantém o estado da máquina virtual e das partes que a constituem. Esta componente é também responsável por reencaminhar eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e informação para os dispositivos de saída, através de uma componente **GBARenderer**, estabelecendo assim uma comunicação bidireccional entre as duas partes. O utilizador apenas pode interagir com esta componente através dos dispositivos de entrada e terminando ou colocando em pausa a execução da mesma.
 
-A componente **GBAConfig** permite ao utilizador configurar a máquina virtual.
+A componente **GBAConfig** permite ao utilizador **configurar** a máquina virtual.
 
 Por fim, existe uma componente **GBARenderer** que embora no código apenas seja responsável pela produção de imagem, por questões de simplificação esta componente irá englobar também a produção de som.
+
+##Process View
+
+Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de proceso** de um projeto, sendo eles:
+- fluxos de trabalho entre um sistema e os seus utilizadores
+- as etapas executadas para um caso de uso
+- sequências de interações entre as componentes do *software*
+- algoritmos implementados no *software*
+
+![](Assignment3/process-view.png)
+
+Devido à complexidade do sistema, este diagrama descreve apenas os passos chave da emulação, desde o momento em que é iniciada pelo carregamento de um ficheiro ROM pelo utilizador até ao momento em que este decide terminar a emulação.
+
+O **processo de emulação** do *mGBA* pode ser dividido em três actividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A **GBAGUI** corresponde à interface que permite ao utilizador interagir graficamente com o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarregua de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola. Os *renderers* neste caso por questões de simplificação representam o conjunto das APIs e dos controladores necessários para a emulação.
+
+Apos inicializados, os *renderers* correm em *threads* separadas da interface gráfica, sendo que estas permanecem em ciclo contínuo até receberem informações de que deve terminar a emulação. Este comando de terminação pode ser gerado pelo **utilizador** a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o **ciclo de emulação** resta repor o emulador no seu **estado original**. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova **configuração** do utilizador. Atinge-se assim o **estado final** da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
 
 ##Deployment View
 

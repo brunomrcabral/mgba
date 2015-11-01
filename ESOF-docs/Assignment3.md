@@ -74,9 +74,9 @@ Samouco, aqui está a tua única hipótese para brilhares...
 
 ##Implementation View
 
-Um **diagrama de componentes** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:
-- modelar os dados do código fonte, do código executável do software.
-- destacar a função de cada módulo para facilitar a sua reutilização
+Um **diagrama de componentes** associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades:
+- separar os dados do código fonte do código executável do software,
+- destacar a função de cada módulo para facilitar a sua reutilização,
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
 
 [imagem]

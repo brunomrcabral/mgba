@@ -59,6 +59,10 @@ O *package* **util** contém funcionalidades comuns e estruturas de dados freque
 - *buffers* circulares
 - operações sobre *strings* e vetores
 
+##Process View
+
+Samouco, aqui está a tua única hipótese para brilhares...
+
 ##Implementation View
 
 Um diagrama de componentes representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:

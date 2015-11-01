@@ -87,13 +87,13 @@ Um **diagrama de componentes** associado a uma **vista de implementação** repr
 
 [imagem]
 
-A componente **GUI** é responsável pela interacção principal entre o utilizador e o *software* e implementa uma *interface* gráfica simples com a qual o utilizador pode realizar várias operações.
+A componente **GBAGUI** é responsável pela interacção principal entre o utilizador e o *software* e implementa um protótipo de *interface* gráfica com a qual o utilizador pode realizar várias operações. Integra também funções que permitem inicializar, destruir e executar uma nova instância de uma **máquina virtual** ou carregar de um estado previamente guardado, bem como um ciclo principal para atualizar o seu estado.
 
-A componente **Context** regista o estado da máquina virtual. Permite ao utilizador configurar a máquina, parar ou colocar em pausa execução da mesma, guardar ou carregar um novo estado.
+A componente **GBAContext** mantém o estado da máquina virtual e das partes que a constituem. Esta componente é também responsável por reencaminhar eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e informação para os dispositivos de saída, através de uma componente **GBARenderer**, estabelecendo assim uma comunicação bidireccional entre as duas partes. O utilizador apenas pode interagir com esta componente através dos dispositivos de entrada e terminando ou colocando em pausa a execução da mesma.
 
-Existe ainda um *dispatcher* de eventos, representado aqui pela componente **Input**, responsável por reencaminhar eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e vice-versa, estabelecendo assim uma comunicação bidireccional.
+A componente **GBAConfig** permite ao utilizador configurar a máquina virtual.
 
-Por fim, existe uma componente **Renderer**
+Por fim, existe uma componente **GBARenderer** que embora no código apenas seja responsável pela produção de imagem, por questões de simplificação esta componente irá englobar também a produção de som.
 
 ##Deployment View
 

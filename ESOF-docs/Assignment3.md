@@ -27,17 +27,17 @@ Neste relatório iremos abordar alguns dos conceitos associados à arquitetura d
 
 ##Use-Case View
 
-No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências de interações entre o utilizador e os diferentes processos:
+No seguinte **diagrama de casos** de uso encontram-se esquematizadas as **sequências de interações** entre o **utilizador** e os diferentes **processos**:
 
 ![](Assignment3/use-case-view.png)
 
 Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de **Game Boy Advance** que permite ao utilizador correr *software* inicialmente concebido para esta consola de jogos portátil em qualquer máquina moderna, recorrendo a uma **máquina virtual** que simula o comportamento do *hardware* original. Os seus utilizadores não precisam de conhecer quaisquer detalhes da implementação para poder interagir com este *software* e tirar o máximo proveito da máquina virtual nele integrada.
 
-Através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode interagir com a máquina virtual, ou até mesmo controlar a sua execução. É ainda possível ao utilizador configurar certos aspetos associados à *interface* entre a maquina hospedeira e a máquina virtual, ajustando-a às suas necessidades, como por exemplo definir o mapeamento de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, a correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
+Através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode **interagir** com a máquina virtual, ou até mesmo **controlar** a sua execução. É ainda possível ao utilizador **configura**r certos aspetos associados à *interface* entre a **máquina hospedeira** e a **máquina virtual**, ajustando-a às suas necessidades, como por exemplo definir o mapeamento de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, a correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
 
 ##Logical View
 
-No seguinte diagrama de *packages* é possível observar separação do sistema em várias componentes de código e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo:
+No seguinte diagrama de *packages* é possível observar a separação do **sistema** em várias **componentes** de código e as **dependências** entre *packages* que caracterizam a **vista lógica** do projeto em estudo:
 
 ![](Assignment3/logical-view.png)
 
@@ -75,7 +75,7 @@ Samouco, aqui está a tua única hipótese para brilhares...
 
 ##Implementation View
 
-Um diagrama de componentes representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:
+Um **diagrama de componentes** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:
 - modelar os dados do código fonte, do código executável do software.
 - destacar a função de cada módulo para facilitar a sua reutilização
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.

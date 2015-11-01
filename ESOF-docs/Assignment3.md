@@ -85,7 +85,7 @@ A componente **GBAContext** mantém o estado da máquina virtual e das partes qu
 
 A componente **GBAConfig** permite ao utilizador **configurar** a máquina virtual.
 
-Por fim existem os *GBARenderers*, que por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar mo ecrã a imagem produzida pelo emulador.
+Por fim existem os **GBARenderers**, que por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar no ecrã a imagem produzida pelo emulador.
 
 <sup><a name="nav2">2</a></sup> [https://msdn.microsoft.com/pt-br/library/dd409390.aspx](https://msdn.microsoft.com/pt-br/library/dd409390.aspx)
 
@@ -103,7 +103,7 @@ Um **diagrama de atividades**<sup>[[4]](#nav4)</sup> ilustra um processo como um
 
 Devido à complexidade do sistema, este diagrama descreve apenas os passos chave da emulação, desde o momento em que é iniciada pelo carregamento de um ficheiro ROM pelo utilizador até ao momento em que este decide terminar a emulação.
 
-O **processo de emulação** do *mGBA* pode ser dividido em três actividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A **GBAGUI** corresponde à interface gráfica que permite ao utilizador interagir visualmentecom o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarrega de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola.
+O **processo de emulação** do *mGBA* pode ser dividido em três actividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A **GBAGUI** corresponde à interface gráfica que permite ao utilizador interagir visualmente com o programa. É esta actividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarrega de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola.
 
 Apos inicializados, os *renderers* correm em *threads* separadas da GUI, sendo que tanto os *renderers* como a GUI permanecem em ciclo contínuo até receberem a informação de que devem terminar a emulação. Este comando de terminação pode ser gerado pelo **utilizador** a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o **ciclo de emulação** resta repor o emulador no seu **estado original**. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova **configuração** do utilizador. Atinge-se assim o **estado final** da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
 

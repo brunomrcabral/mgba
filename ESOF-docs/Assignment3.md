@@ -18,28 +18,38 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o modelo de  vistas 4+1. Para o efeito foram elaborados cinco diagramas UML, com recurso ao *software* Enterprise Architect, para cada uma das cinco componentes do modelo de vistas acima referido:
+Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o **modelo de vistas 4+1**. Para o efeito foram elaborados cinco **diagramas UML**, com recurso ao *software* Enterprise Architect, para cada uma das cinco **componentes** do modelo de vistas acima referido:
 - diagrama de componentes (*component diagram*), referente à vista de implementação (*implementation view*)
 - diagrama de pacotes (*package diagram*), referente à vista lógica (*logical view*)
 - diagrama de atividades (*activity diagram*), referente à vista de processo (*process view)*
 - diagrama de distribuição (*deployment diagram*), referente à vista de distribuição (*deployment view)*
 - diagrama de casos de utilização associado à vista de casos de utilização (*use-case view*)
 
+##Use-Case View
+
+No seguinte **diagrama de casos** de uso encontram-se esquematizadas as **sequências de interações** entre o **utilizador** e os diferentes **processos**:
+
+![](Assignment3/use-case-view.png)
+
+Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de *Game Boy Advance* que permite ao utilizador correr em qualquer máquina moderna **software** inicialmente concebido para esta consola de jogos portátil, recorrendo a uma **máquina virtual** que simula o comportamento do *hardware* original. Os seus utilizadores não precisam de conhecer quaisquer detalhes da implementação para poder interagir com este *software* e tirar o máximo proveito da máquina virtual nele integrada.
+
+Qualquer utilizador pode, através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, **interagir** com a máquina virtual, ou até mesmo **controlar** a sua execução. É ainda possível ao utilizador **configurar** certos aspetos associados à comunicação entre a **máquina hospedeira** e a **máquina virtual**, ajustando-a às suas necessidades, como por exemplo definir o **mapeamento** de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, estabelecer uma correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
+
 ##Logical View
 
-No seguinte diagrama de *packages* encontram-se esquematizadas a separação do sistema em várias componentes isoladas e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo.
+No seguinte **diagrama de packages** é possível observar a separação do **sistema** em várias **componentes** de código e as **dependências** entre *packages* que caracterizam a **vista lógica** do projeto em estudo:
 
 ![](Assignment3/logical-view.png)
 
 Após análise cuidada do código disponibilizado no repositório pelos autores deste projeto, foi possível verificar que este se encontra estruturado em seis *packages*:
 
-O *package* **gba** é responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do *hardware* original da consola *Game Boy Advance*. Entre as várias tarefas desempenhadas por esta componente do *software* destacam-se: emulação do *hardware* original e dispositivos de entrada/saída, acesso à memória, gestão de interrupções, serialização (possibilidade de carregar e guardar o estado da máquina virtual no sistema de ficheiros da máquina hospedeira).
+O *package* **gba** é responsável pela implementação de uma **máquina virtual** na máquina hospedeira que serve como base para a **simulação** do comportamento do *hardware* original da consola *Game Boy Advance*. Entre as várias tarefas desempenhadas por esta componente do *software* destacam-se: emulação do *hardware* original e dispositivos de entrada/saída, acesso à memória, gestão de interrupções, serialização (possibilidade de carregar e guardar o estado da máquina virtual no sistema de ficheiros da máquina hospedeira).
 
-O *package* **arm** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
+O *package* **arm** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
 
-O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas, sendo estas:
-- [Qt](http://www.qt.io/developers) **:** cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.
-- [SDL](https://www.libsdl.org) **:** (Simple DirectMedia Layer) biblioteca para desenvolvimento de aplicações multiplataforma designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware recorrendo a APIs do sistema como OpenGL e Direct3D.
+O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada **sistema operativo** a correr nas diferentes plataformas, sendo estas:
+- [Qt](http://www.qt.io/developers) **:** *cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.*
+- [SDL](https://www.libsdl.org) **:** *Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.*
 
 O *package* **third-party** contém bibliotecas *open source* de terceiros (*third-party libraries*) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base, como por exemplo suporte à leitura de formatos de ficheiro menos comuns. Segue-se uma lista com as cinco bibliotecas utilizadas no projeto estudado: 
 - [blip_buf](https://code.google.com/p/blip-buf/) **:** *Blip_buf is a small waveform synthesis library meant for use in classic video game sound chip emulation. It greatly simplifies sound chip emulation code by handling all the details of resampling. The emulator merely sets the input clock rate and output sample rate, adds waveforms by specifying the clock times where their amplitude changes, then reads the resulting output samples.*
@@ -50,24 +60,29 @@ O *package* **third-party** contém bibliotecas *open source* de terceiros (*thi
 
 O *package* **debugger** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (GCC Debugger).
 
-O *package* **util** contém funcionalidades comuns e estruturas de dados frequentemente utilizadas nos outros packages:
-- suporte a *multithreading*
-- suporte a *sockets*
+O *package* **util** contém funcionalidades comuns e **estruturas de dados** frequentemente utilizadas nos outros *packages*:
+- suporte a *multithreading* e *sockets*
 - funções de gestão de memória
 - funções de validação de CRC (*Cyclic Redundancy Check*)
+- operações sobre *strings* e vetores
 - tabelas de dispersão
 - *buffers* circulares
-- operações sobre *strings* e vetores
 
 ##Process View
+
+Um **diagrama de atividades** ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de proceso** de um projeto, sendo eles:
+- fluxos de trabalho entre um sistema e os seus utilizadores
+- as etapas executadas para um caso de uso
+- sequências de interações entre as componentes do *software*
+- algoritmos implementados no *software*
 
 Samouco, aqui está a tua única hipótese para brilhares...
 
 ##Implementation View
 
-Um diagrama de componentes representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados para os seguintes fins:
-- modelar os dados do código fonte, do código executável do software.
-- destacar a função de cada módulo para facilitar a sua reutilização
+Um **diagrama de componentes** associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades:
+- separar os dados do código fonte do código executável do software,
+- destacar a função de cada módulo para facilitar a sua reutilização,
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
 
 [imagem]
@@ -82,10 +97,10 @@ Por fim, existe uma componente **Renderer**
 
 ##Deployment View
 
-Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual.
+Os **diagramas de distribuição** permitem mostrar de que modo os **artefactos** (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em **nós** de hardware e como se relacionam com determinados componentes de *hardware*. O seguinte **diagrama de distribuição** característico de uma **vista de distribuição** ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
 
 ![](Assignment3/deployment-view.png)
 
-Existe uma máquina hospedeira constituída por uma unidade de processamento central, memória RAM e unidade de armazenamento, capaz de receber *inputs* de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir *output* para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários ficheiros ROM (no diagrama representados como artefactos) que contém o código do programa a ser executado na máquina virtual, bem como outros recursos adicionais necessários ao seu correto funcionamento. Estes ficheiros são carregados na aplicação pelo utilizador e devem apresentar um formato específico definido no código.
+Existe uma **máquina hospedeira** constituída por uma unidade de processamento central, memória RAM e unidade de armazenamento, capaz de receber **inputs** de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir **output** para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários **ficheiros ROM** (no diagrama representados como um artefacto) que contém o código do programa a ser executado na máquina virtual, bem como outros recursos adicionais necessários ao seu correto funcionamento. Estes ficheiros são carregados na aplicação pelo **utilizador** e devem apresentar um formato específico definido no código, sendo portanto validados antes da sua execução.
 
-A máquina hospedeira deverá ser também capaz de executar uma ou mais máquinas virtuais em simultâneo, cada uma com estados distintos, com recurso a técnicas de multiprogramação integradas no próprio sistema operativo. A máquina virtual é também ela constituída por vários artefactos de código que simulam as diferentes componentes de *hardware* em *software*.
+A **máquina hospedeira** deverá ser também capaz de executar uma ou mais **máquinas virtuais** em simultâneo, cada uma com estados distintos, com recurso a técnicas de **multiprogramação** integradas no próprio **sistema operativo**. A máquina virtual é também ela constituída por vários **artefactos** de código que simulam as diferentes componentes de *hardware* em *software*.

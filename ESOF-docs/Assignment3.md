@@ -31,9 +31,9 @@ No seguinte **diagrama de casos** de uso encontram-se esquematizadas as **sequê
 
 ![](Assignment3/use-case-view.png)
 
-Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de *Game Boy Advance* que permite ao utilizador correr **software** inicialmente concebido para esta consola de jogos portátil em qualquer máquina moderna, recorrendo a uma **máquina virtual** que simula o comportamento do *hardware* original. Os seus utilizadores não precisam de conhecer quaisquer detalhes da implementação para poder interagir com este *software* e tirar o máximo proveito da máquina virtual nele integrada.
+Como já foi referido nos relatórios anteriores, o **mGBA** é um emulador de *Game Boy Advance* que permite ao utilizador correr em qualquer máquina moderna **software** inicialmente concebido para esta consola de jogos portátil, recorrendo a uma **máquina virtual** que simula o comportamento do *hardware* original. Os seus utilizadores não precisam de conhecer quaisquer detalhes da implementação para poder interagir com este *software* e tirar o máximo proveito da máquina virtual nele integrada.
 
-Através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, o utilizador típico pode **interagir** com a máquina virtual, ou até mesmo **controlar** a sua execução. É ainda possível ao utilizador **configurar** certos aspetos associados à *interface* entre a **máquina hospedeira** e a **máquina virtual**, ajustando-a às suas necessidades, como por exemplo definir o **mapeamento** de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, estabelecer uma correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
+Qualquer utilizador pode, através da interface gráfica do **mGBA** e dos periféricos de entrada e saída da sua máquina, **interagir** com a máquina virtual, ou até mesmo **controlar** a sua execução. É ainda possível ao utilizador **configurar** certos aspetos associados à comunicação entre a **máquina hospedeira** e a **máquina virtual**, ajustando-a às suas necessidades, como por exemplo definir o **mapeamento** de *inputs* virtuais da consola aos *inputs* físicos da máquina, isto é, estabelecer uma correspondência entre os botões da consola virtual e os botões do comando/teclado ou movimentos do rato realizados na máquina do utilizador.
 
 ##Logical View
 
@@ -47,7 +47,7 @@ O *package* **gba** é responsável pela implementação de uma **máquina virtu
 
 O *package* **arm** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
 
-O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas, sendo estas:
+O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada **sistema operativo** a correr nas diferentes plataformas, sendo estas:
 - [Qt](http://www.qt.io/developers) **:** *cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.*
 - [SDL](https://www.libsdl.org) **:** *Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.*
 
@@ -60,7 +60,7 @@ O *package* **third-party** contém bibliotecas *open source* de terceiros (*thi
 
 O *package* **debugger** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (GCC Debugger).
 
-O *package* **util** contém funcionalidades comuns e estruturas de dados frequentemente utilizadas nos outros packages:
+O *package* **util** contém funcionalidades comuns e **estruturas de dados** frequentemente utilizadas nos outros *packages*:
 - suporte a *multithreading* e *sockets*
 - funções de gestão de memória
 - funções de validação de CRC (*Cyclic Redundancy Check*)
@@ -97,7 +97,7 @@ Por fim, existe uma componente **Renderer**
 
 ##Deployment View
 
-Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
+Os **diagramas de distribuição** permitem mostrar de que modo os **artefactos** (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em **nós** de hardware e como se relacionam com determinados componentes de *hardware*. O seguinte **diagrama de distribuição** característico de uma **vista de distribuição** ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
 
 ![](Assignment3/deployment-view.png)
 

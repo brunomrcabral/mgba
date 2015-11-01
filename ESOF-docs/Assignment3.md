@@ -18,7 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o modelo de vistas 4+1. Para o efeito foram elaborados cinco diagramas UML, com recurso ao *software* Enterprise Architect, para cada uma das cinco componentes do modelo de vistas acima referido:
+Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o **modelo de vistas 4+1**. Para o efeito foram elaborados cinco **diagramas UML**, com recurso ao *software* Enterprise Architect, para cada uma das cinco **componentes** do modelo de vistas acima referido:
 - diagrama de componentes (*component diagram*), referente à vista de implementação (*implementation view*)
 - diagrama de pacotes (*package diagram*), referente à vista lógica (*logical view*)
 - diagrama de atividades (*activity diagram*), referente à vista de processo (*process view)*
@@ -96,6 +96,6 @@ Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifes
 
 ![](Assignment3/deployment-view.png)
 
-Existe uma máquina hospedeira constituída por uma unidade de processamento central, memória RAM e unidade de armazenamento, capaz de receber *inputs* de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir *output* para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários ficheiros ROM (no diagrama representados como artefactos) que contém o código do programa a ser executado na máquina virtual, bem como outros recursos adicionais necessários ao seu correto funcionamento. Estes ficheiros são carregados na aplicação pelo utilizador e devem apresentar um formato específico definido no código.
+Existe uma **máquina hospedeira** constituída por uma unidade de processamento central, memória RAM e unidade de armazenamento, capaz de receber *inputs* de dispositivos de entrada ligados a esta (teclado, rato, *gamepad*) e produzir *output* para dispositivos de saída, como por exemplo um ecrã e dois altifalantes numa configuração típica. Existe ainda no sistema de ficheiros do disco rígido um ou vários ficheiros ROM (no diagrama representados como artefactos) que contém o código do programa a ser executado na máquina virtual, bem como outros recursos adicionais necessários ao seu correto funcionamento. Estes ficheiros são carregados na aplicação pelo utilizador e devem apresentar um formato específico definido no código.
 
-A máquina hospedeira deverá ser também capaz de executar uma ou mais máquinas virtuais em simultâneo, cada uma com estados distintos, com recurso a técnicas de multiprogramação integradas no próprio sistema operativo. A máquina virtual é também ela constituída por vários artefactos de código que simulam as diferentes componentes de *hardware* em *software*.
+A **máquina hospedeira** deverá ser também capaz de executar uma ou mais **máquinas virtuais** em simultâneo, cada uma com estados distintos, com recurso a técnicas de **multiprogramação** integradas no próprio **sistema operativo**. A máquina virtual é também ela constituída por vários **artefactos** de código que simulam as diferentes componentes de *hardware* em *software*.

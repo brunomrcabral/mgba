@@ -27,13 +27,13 @@ Neste relatório iremos abordar alguns dos conceitos associados à arquitetura d
 
 ##Use-Case View
 
-No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências de interações entre o utilizador e os diferentes processos.
+No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências de interações entre o utilizador e os diferentes processos:
 
 ![](Assignment3/use-case-view.png)
 
 ##Logical View
 
-No seguinte diagrama de *packages* é possível observar separação do sistema em várias componentes de código e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo.
+No seguinte diagrama de *packages* é possível observar separação do sistema em várias componentes de código e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo:
 
 ![](Assignment3/logical-view.png)
 
@@ -88,7 +88,7 @@ Por fim, existe uma componente **Renderer**
 
 ##Deployment View
 
-Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual.
+Os diagramas de *deployment* permitem mostrar de que modo os artefactos (manifestações físicas dos seus componentes de *software*) de um sistema são distribuídos em nós de hardware e como se relacionam com determinados componentes de hardware. O seguinte diagrama de *deployment* ilustra de forma simplificada a relação existente entre máquina hospedeira e máquina virtual:
 
 ![](Assignment3/deployment-view.png)
 

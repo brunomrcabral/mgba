@@ -18,16 +18,22 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o modelo de  vistas 4+1. Para o efeito foram elaborados cinco diagramas UML, com recurso ao *software* Enterprise Architect, para cada uma das cinco componentes do modelo de vistas acima referido:
+Neste relatório iremos abordar alguns dos conceitos associados à arquitetura do projeto em estudo segundo o modelo de vistas 4+1. Para o efeito foram elaborados cinco diagramas UML, com recurso ao *software* Enterprise Architect, para cada uma das cinco componentes do modelo de vistas acima referido:
 - diagrama de componentes (*component diagram*), referente à vista de implementação (*implementation view*)
 - diagrama de pacotes (*package diagram*), referente à vista lógica (*logical view*)
 - diagrama de atividades (*activity diagram*), referente à vista de processo (*process view)*
 - diagrama de distribuição (*deployment diagram*), referente à vista de distribuição (*deployment view)*
 - diagrama de casos de utilização associado à vista de casos de utilização (*use-case view*)
 
+##Use-Case View
+
+No seguinte diagrama de casos de uso encontram-se esquematizadas as sequências de interações entre o utilizador e os diferentes processos.
+
+![](Assignment3/use-case-view.png)
+
 ##Logical View
 
-No seguinte diagrama de *packages* encontram-se esquematizadas a separação do sistema em várias componentes isoladas e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo.
+No seguinte diagrama de *packages* é possível observar separação do sistema em várias componentes de código e as dependências entre *packages* que caracterizam a vista lógica do projeto em estudo.
 
 ![](Assignment3/logical-view.png)
 

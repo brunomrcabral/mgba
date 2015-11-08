@@ -39,7 +39,7 @@ Qualquer utilizador pode, através da interface gráfica do **mGBA** e dos perif
 
 ##Logical View
 
-No seguinte **diagrama de packages** é possível observar a separação do **sistema** em várias **componentes** de código e as **dependências** entre *packages* que caracterizam a **vista lógica** do projeto em estudo:
+No seguinte **diagrama de pacotes** é possível observar a separação do **sistema** em várias **componentes** de código e as **dependências** entre *packages* que caracterizam a **vista lógica** do projeto em estudo:
 
 ![](Assignment3/logical-view.png)
 
@@ -47,7 +47,7 @@ Após análise cuidada do código disponibilizado no repositório pelos autores 
 
 O *package* **gba** é responsável pela implementação de uma **máquina virtual** na máquina hospedeira que serve como base para a **simulação** do comportamento do *hardware* original da consola *Game Boy Advance*. Entre as várias tarefas desempenhadas por esta componente do *software* destacam-se: emulação do *hardware* original e dispositivos de entrada/saída, acesso à memória, gestão de interrupções, serialização (possibilidade de carregar e guardar o estado da máquina virtual no sistema de ficheiros da máquina hospedeira).
 
-O *package* **arm** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
+O *package* **arm** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código-máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
 
 O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada **sistema operativo** a correr nas diferentes plataformas, sendo estas:
 - [Qt](http://www.qt.io/developers) **:** *cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.*
@@ -63,21 +63,21 @@ O *package* **third-party** contém bibliotecas *open source* de terceiros (*thi
 O *package* **debugger** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (GCC Debugger).
 
 O *package* **util** contém funcionalidades comuns e **estruturas de dados** frequentemente utilizadas nos outros *packages*:
-- suporte a *multithreading* e *sockets*
-- funções de gestão de memória
-- funções de validação de CRC (*Cyclic Redundancy Check*)
-- operações sobre *strings* e vetores
-- tabelas de dispersão
-- *buffers* circulares
+- suporte a *multithreading* e *sockets*;
+- funções de gestão de memória;
+- funções de validação de CRC (*Cyclic Redundancy Check*);
+- operações sobre *strings* e vetores;
+- tabelas de dispersão;
+- *buffers* circulares.
 
 ##Implementation View
 
 Um **diagrama de componentes**<sup>[[2]](#nav2)</sup> associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades<sup>[[3]](#nav3)</sup>:
-- separar os dados do código fonte do código executável do software,
-- destacar a função de cada módulo para facilitar a sua reutilização,
+- separar os dados do código fonte do código executável do software;
+- destacar a função de cada módulo para facilitar a sua reutilização;
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
 
-###[imagem] !!!
+### !!! [IMAGEM] !!!
 
 A componente **GBAGUI** é responsável pela interação principal entre o utilizador e o *software* e implementa um protótipo de *interface* gráfica com a qual o utilizador pode realizar várias operações. Integra também funções que permitem inicializar, destruir e executar uma nova instância de uma **máquina virtual** ou carregar de um estado previamente guardado, bem como um ciclo principal para atualizar o seu estado.
 
@@ -105,7 +105,7 @@ Devido à complexidade do sistema, este diagrama descreve apenas os passos chave
 
 O **processo de emulação** do *mGBA* pode ser dividido em três atividades principais: *GBAGUI*, *GBAContext* e *GBARenderers*. A **GBAGUI** corresponde à interface gráfica que permite ao utilizador interagir visualmente com o programa. É esta atividade que permite que o utilizador carregue o ficheiro da ROM ou um estado da máquina virtual, configure o emulador e visualize a saída gerada pelo programa. A informação gerada pelo utilizador na GUI segue depois para o *GBAContext* que se encarrega de ler e interpretar essa informação recebida e inicializar as componentes e estruturas de dados necessárias para a emulação do *hardware* da consola.
 
-Apos inicializados, os *renderers* correm em *threads* separadas da GUI, sendo que tanto os *renderers* como a GUI permanecem em ciclo contínuo até receberem a informação de que devem terminar a emulação. Este comando de terminação pode ser gerado pelo **utilizador** a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o **ciclo de emulação** resta repor o emulador no seu **estado original**. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova **configuração** do utilizador. Atinge-se assim o **estado final** da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
+Após serem inicializados, os *renderers* correm em *threads* separadas da GUI, sendo que tanto os *renderers* como a GUI permanecem em ciclo contínuo até receberem a informação de que devem terminar a emulação. Este comando de terminação pode ser gerado pelo **utilizador** a partir da interface gráfica ou pela própria máquina virtual após um situação de erro durante a sua execução. Finalizado o **ciclo de emulação** resta repor o emulador no seu **estado original**. Desta forma, a GUI pede ao *GBAContext* para destruir as variáveis de estado utilizadas durante a emulação, e este encarrega-se também de terminar os *renderers* e guardar a nova **configuração** do utilizador. Atinge-se assim o **estado final** da emulação, onde cabe ao utilizador a continuidade do ciclo, caso decida carregar uma nova ROM ou estado, ou sair da aplicação.
 
 <sup><a name="nav4">4</a></sup> [https://msdn.microsoft.com/pt-br/library/dd409360.aspx](https://msdn.microsoft.com/pt-br/library/dd409360.aspx)
 

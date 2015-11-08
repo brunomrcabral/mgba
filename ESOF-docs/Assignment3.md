@@ -77,7 +77,7 @@ Um **diagrama de componentes**<sup>[[2]](#nav2)</sup> associado a uma **vista de
 - destacar a função de cada módulo para facilitar a sua reutilização;
 - auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles
 
-### !!! [IMAGEM] !!!
+### ![](Assignment3/implementation-view.png)
 
 A componente **GBAGUI** é responsável pela interação principal entre o utilizador e o *software* e implementa um protótipo de *interface* gráfica com a qual o utilizador pode realizar várias operações. Integra também funções que permitem inicializar, destruir e executar uma nova instância de uma **máquina virtual** ou carregar de um estado previamente guardado, bem como um ciclo principal para atualizar o seu estado.
 

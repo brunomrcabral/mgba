@@ -79,13 +79,13 @@ Um **diagrama de componentes**<sup>[[2]](#nav2)</sup> associado a uma **vista de
 
 ### ![](Assignment3/implementation-view.png)
 
-A componente **GBAGUI** é responsável pela interação principal entre o utilizador e o *software* e implementa um protótipo de *interface* gráfica com a qual o utilizador pode realizar várias operações. Integra também funções que permitem inicializar, destruir e executar uma nova instância de uma **máquina virtual** ou carregar de um estado previamente guardado, bem como um ciclo principal para atualizar o seu estado.
+A componente **GBAGUI** é responsável pela interação principal entre o utilizador e o *software* e implementa um protótipo de *interface* gráfica com a qual o utilizador pode realizar várias operações. Este protótipo é implementado pela biblioteca de interfaces gráficas **Qt**. Integra também funções que permitem inicializar, destruir e executar uma nova instância de uma **máquina virtual** ou carregar de um estado previamente guardado, bem como um ciclo principal para atualizar o seu estado.
 
 A componente **GBAContext** mantém o estado da máquina virtual e das partes que a constituem. Esta componente é também responsável por reencaminhar eventos dos dispositivos de entrada da máquina hospedeira para a máquina virtual e informação para os dispositivos de saída, através de uma componente **GBARenderer**, estabelecendo assim uma comunicação bidirecional entre as duas partes. O utilizador apenas pode interagir com esta componente através dos dispositivos de entrada e terminando ou colocando em pausa a execução da mesma.
 
-A componente **GBAConfig** permite ao utilizador **configurar** a máquina virtual.
+A componente **GBAConfig** permite ao utilizador **configurar** a máquina virtual via **GBAContext**.
 
-Por fim existem os **GBARenderers**, que por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar no ecrã a imagem produzida pelo emulador.
+Por fim existem os **GBARenderers**, que por questões de simplificação representam o conjunto de bibliotecas e componentes do *software* responsáveis por processar a informação de saída gerada pela máquina virtual, como por exemplo desenhar no ecrã a imagem produzida pelo emulador. A componente **GBAGUI** depende da camada de *rendering* para apresentar essa informação na interface gráfica do utilizador, recorrendo às variadas APIs disponíveis no sistema operativo da máquina hospedeira (*OpenGL*, *DirectX*, *SDL*)
 
 <sup><a name="nav2">2</a></sup> [https://msdn.microsoft.com/pt-br/library/dd409390.aspx](https://msdn.microsoft.com/pt-br/library/dd409390.aspx)
 

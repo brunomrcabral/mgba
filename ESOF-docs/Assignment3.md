@@ -50,14 +50,14 @@ O *package* **gba** é responsável pela implementação de uma **máquina virtu
 O *package* **arm** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da *Game Boy Advance*. Esta componente (*dynamic recompiler* ou *DynaREC*) será então responsável pela leitura do programa em código-máquina desenvolvido para a *Game Boy Advance*, tradução desse código em código máquina nativo da plataforma da máquina hospedeira e por fim pela execução do código gerado na máquina hospedeira.
 
 O *package* **plataform** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada **sistema operativo** a correr nas diferentes plataformas, sendo estas:
-- [Qt](http://www.qt.io/developers) **:** *cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.*
+- [Qt](http://www.qt.io/developers) **:** *cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications.*;
 - [SDL](https://www.libsdl.org) **:** *Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.*
 
 O *package* **third-party** contém bibliotecas *open source* de terceiros (*third-party libraries*) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base, como por exemplo suporte à leitura de formatos de ficheiro menos comuns. Segue-se uma lista com as cinco bibliotecas utilizadas no projeto estudado: 
-- [blip_buf](https://code.google.com/p/blip-buf/) **:** *Blip_buf is a small waveform synthesis library meant for use in classic video game sound chip emulation. It greatly simplifies sound chip emulation code by handling all the details of resampling. The emulator merely sets the input clock rate and output sample rate, adds waveforms by specifying the clock times where their amplitude changes, then reads the resulting output samples.*
-- [inih](https://github.com/benhoyt/inih) **:** biblioteca minimalista e *lightweight* escrita em C para leitura de ficheiros de configuração .INI, concebida especialmente para correr em sistemas embarcados
-- [libpng](http://www.libpng.org/pub/png/libpng.html) **:** biblioteca de funções destinadas à leitura, escrita e manipulação de ficheiros de imagem no formato PNG (*Portable Network Graphics*)
-- [lzma](http://www.7-zip.org/sdk.html) **:** biblioteca multiplataforma de compressão de dados baseada no algoritmo LZMA desenvolvido por *Igor Pavlov*, também conhecido como *Lempel-Ziv-Markov chain algorithm*.
+- [blip_buf](https://code.google.com/p/blip-buf/) **:** *Blip_buf is a small waveform synthesis library meant for use in classic video game sound chip emulation. It greatly simplifies sound chip emulation code by handling all the details of resampling. The emulator merely sets the input clock rate and output sample rate, adds waveforms by specifying the clock times where their amplitude changes, then reads the resulting output samples.*;
+- [inih](https://github.com/benhoyt/inih) **:** biblioteca minimalista e *lightweight* escrita em C para leitura de ficheiros de configuração .INI, concebida especialmente para correr em sistemas embarcados;
+- [libpng](http://www.libpng.org/pub/png/libpng.html) **:** biblioteca de funções destinadas à leitura, escrita e manipulação de ficheiros de imagem no formato PNG (*Portable Network Graphics*);
+- [lzma](http://www.7-zip.org/sdk.html) **:** biblioteca multiplataforma de compressão de dados baseada no algoritmo LZMA desenvolvido por *Igor Pavlov*, também conhecido como *Lempel-Ziv-Markov chain algorithm*;
 - [zlib](http://www.zlib.net) **:** biblioteca multiplataforma de compressão de dados baseada no algoritmo DEFLATE escrita por *Jean-Loup Gailly* e *Mark Adler*, muito semelhante ao popular formato ZIP
 
 O *package* **debugger** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (GCC Debugger).
@@ -68,14 +68,14 @@ O *package* **util** contém funcionalidades comuns e **estruturas de dados** fr
 - funções de validação de CRC (*Cyclic Redundancy Check*);
 - operações sobre *strings* e vetores;
 - tabelas de dispersão;
-- *buffers* circulares.
+- *buffers* circulares
 
 ##Implementation View
 
 Um **diagrama de componentes**<sup>[[2]](#nav2)</sup> associado a uma **vista de implementação** representa o modo como as componentes de um sistema de *software* se relacionam entre si. Estes diagramas são utilizados com as seguintes finalidades<sup>[[3]](#nav3)</sup>:
 - separar os dados do código fonte do código executável do software;
 - destacar a função de cada módulo para facilitar a sua reutilização;
-- auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles.
+- auxiliar no processo de engenharia reversa, por meio da organização do sistema em módulos e nas relações que estabelecem entre eles
 
 ### !!! [IMAGEM] !!!
 
@@ -94,9 +94,9 @@ Por fim existem os **GBARenderers**, que por questões de simplificação repres
 ##Process View
 
 Um **diagrama de atividades**<sup>[[4]](#nav4)</sup> ilustra um processo como um **fluxo de trabalho** por meio de uma série de ações que podem ser executadas por computadores, componentes de software ou mesmo pessoas. Os diagramas de atividades podem ser utilizados para descrever **processos** de diversos tipos e caracterizam a **vista de processo** de um projeto, sendo eles:
-- fluxos de trabalho entre um sistema e os seus utilizadores
-- as etapas executadas para um caso de uso
-- sequências de interações entre as componentes do *software*
+- fluxos de trabalho entre um sistema e os seus utilizadores;
+- as etapas executadas para um caso de uso;
+- sequências de interações entre as componentes do *software*;
 - algoritmos implementados no *software*
 
 ![](Assignment3/process-view.png)

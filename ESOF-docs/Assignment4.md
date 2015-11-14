@@ -17,3 +17,30 @@ Faculdade de Engenharia da Universidade do Porto
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
 ##Introdução
+
+
+###Controlabilidade
+- Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
+
+### Observabilidade
+- Observability: The degree to which it is possible to observe (intermediate and final) test results.
+
+###Isolabilidade
+- Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
+
+###Separação de Funcionalidades
+- Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
+
+###Inteligibilidade
+- Understandability: The degree to which the component under test is documented or self-explaining.
+
+###Heterogenidade
+- Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+
+##Estatísticas de Teste
+
+###Travis-CI
+
+###Coverage
+
+###Bugzilla

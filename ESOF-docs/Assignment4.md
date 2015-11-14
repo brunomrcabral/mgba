@@ -18,6 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
+##Graus de Testabilidade
 
 ###Controlabilidade
 - Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.

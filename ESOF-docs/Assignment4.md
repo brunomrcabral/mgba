@@ -40,6 +40,11 @@ Como já foi referido em relatórios anteriores, o MGBA define um conjunto de el
 ###Inteligibilidade
 - Understandability: The degree to which the component under test is documented or self-explaining.
 
+A inteligibilidade do software assume uma enorme relevância no que toca à manutenção, desenvolvimento e teste de um programa. Assim, quanto mais detalhada for a documentação de um programa, maior é a facilidade de compreensão do mesmo o que pode ser vantajoso em diversas situações, como por exemplo na integração de novos colaboradores.
+
+O caso do MGBA perde bastante neste aspeto, pois revela-se pouco detalhado na descrição das funções revelando até uma completa ausência de documentação em grande parte das mesmas, o que torna certos módulos do programa de difícil compreensão. 
+
+
 ###Heterogenidade
 - Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 

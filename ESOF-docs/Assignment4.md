@@ -23,6 +23,11 @@ Faculdade de Engenharia da Universidade do Porto
 ###Controlabilidade
 - Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 
+Como já foi referido em relatórios anteriores, o MGBA define um conjunto de elementos que implementam os diferentes controladores de emulação do hardware como por exemplo controladores de som, de vídeo, de inputs e até mesmo de controladores de emulação do CPU.
+ Cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento.
+ 
+
+
 ### Observabilidade
 - Observability: The degree to which it is possible to observe (intermediate and final) test results.
 

@@ -47,6 +47,15 @@ Como já foi referido em relatórios anteriores, o MGBA define um conjunto de el
 
 ###Travis-CI
 
+Uma das ferramentas usadas para realizar testes de integração neste projeto é o Travis-CI que trata-se de um serviço de integração contínuo e distribuido totalmente gratutito e open-source.
+Esta ferramenta permite aos seus utilizadores registarem o seu repositório do GitHub e assim terem os seus testes executados. Sempre que é feito um commit a ferramente reconhece e de imediato compila o projeto e corre todos os testes.
+O mesmo acontece com os pull requests.
+O Travis-CI suporta diversas linguagens e para ser configurado é apenas necessário adicionar um novo ficheiro denominado '.travis.yml' no diretório raiz do projeto.
+
+CMake é uma família de ferramentas que tem como objetivo compilar, testar e organizar software. Para isso é usado um plataforma simples e configurações de um compilador independente.
+
+Qt é um software desenhado para desenhado para desenvolver outros aplicativos de software.
+
 ###Coverage
 
 ###Bugzilla

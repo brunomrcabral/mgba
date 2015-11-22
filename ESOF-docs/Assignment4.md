@@ -104,7 +104,7 @@ Para uma posterior análise de cobertura de testes,  transferimos a [última ver
 
 ![](Assignment4/test-all.png)
 
-Conseguiu passar todos os testes de memória, não tendo conseguido a pontuação máxima nos testes de *timing* (1164 de 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (114 de 122 casos testados com sucesso).
+A versão do programa testada conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (1164 de 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (114 de 122 casos testados com sucesso).
 
 Apesar do mGBA ter apresentado excelentes resultasdos face a programas equivalentes, existem funcionalidades que não são possiveis de testar, como por exemplo a sua interface gráfica. O que poderá, de certa forma, atenuar um pouco a sua falta de cobertura.
 

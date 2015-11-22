@@ -52,19 +52,23 @@ Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma ferramenta
 
 > -- endrift, https://forums.mgba.io/showthread.php?tid=18
 
-Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório conta ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual.
+Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório conta ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual, que se encotram exemplificados na imagem seguinte:
 
 ![](Assignment4/test-select.PNG)
 
-São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas funcionalidades da máquina virtual que se encontram incompletas ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má cobertura de código, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na secção de *issues* do repositório como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças a estes testes de jogabilidade realizados pelos utilizadores.
+São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas **funcionalidades** da máquina virtual que se encontram **incompletas** ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má **cobertura de código**, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na **secção de issues** do repositório como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças aos testes de jogabilidade realizados pelos utilizadores.
 
 ###Isolabilidade
+
+##(TERMINAR)
+
 A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Numa situação destas seria correto afirmar que ao testarmos um componente de um determinado módulo estamos também a testar, indiretamente, outras componentes de diferentes módulos.
 
 A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a realização de *ports* para outras plataformas.
 
  É também referido que estass, however, the following optional dependencies are required for specific features. The features will be disabled if the dependencies can't be found.
- 
+##(TERMINAR)
+
 ###Separação de Responsabilidades
 
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal organizado ou mal atribuído conduziria ao aumento do **grau de dificuldade** na definição dos **testes unitários** a serem realizados.

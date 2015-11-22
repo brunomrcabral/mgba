@@ -18,27 +18,26 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-##Graus de Testabilidade
+##Testabilidade
+
+- **Controllability :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
+- **Observability :** The degree to which it is possible to observe (intermediate and final) test results.
+- **Isolateability :** The degree to which the component under test (CUT) can be tested in isolation.
+- **Separation of concerns :** The degree to which the component under test has a single, well defined responsibility**
+- **Heterogeneity :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 ###Controlabilidade
-- Controllability: The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
-
 Como já foi referido em relatórios anteriores, o MGBA define um conjunto de elementos que implementam os diferentes controladores de emulação do hardware como por exemplo controladores de som, de vídeo, de inputs e até mesmo de controladores de emulação do CPU.
 
-  Cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno dos diferentes pomponetes do programa pode ser consultado através de um debugger em “mgba/src/debugger/”, que permite assim demonstrar essa modularidade do programa.
+Cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno dos diferentes pomponetes do programa pode ser consultado através de um debugger em “mgba/src/debugger/”, que permite assim demonstrar essa modularidade do programa.
 
 
 ### Observabilidade
-- Observability: The degree to which it is possible to observe (intermediate and final) test results.
-
 Não nos foi possível verificar a existência de testes unitários neste repositório, no entanto, existem testes (“mgba/src/platform/test”) que demonstram que esses componentes são controláveis, pois nesta secção é possível definir uma série de parâmetros vareáveis que criam casos de teste. Por exemplo é possível desativar o rendering de vídeo ou controlar o número de fps.  Ainda assim os testes mais relevantes são feitos em módulos que combinam os diferentes componentes. São feitos com recurso a diferentes ROM’s que são postas a correr no programa sendo avaliado se a emulação dessa ROM teve o resultado esperado ou não, pois cada ROM usa diferentes recursos do emulador. No entanto, existem sempre casos de ROM’s que geram novas exceções no programa, o que conduz a erros de execução, que podem acabar por ser reportados por utilizadores do emulador na secção dos issues como já foi referido em entregas anteriores.
 
 ###Isolabilidade
-- Isolateability: The degree to which the component under test (CUT) can be tested in isolation.
 
 ###Separação de Funcionalidades
-**Separation of concerns: The degree to which the component under test has a single, well defined responsibility**
-
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na componente ao qual diz respeito, evitando que o código se torne mais confuso. Nestas condições, código mal estruturado levaria ao aumento do grau de dificuldade na definição e realização de testes unitários. 
 
 Em projetos de grande dimensão deve ser dada particular atenção a este aspeto, de forma a evitar a ocorrência de código mal estruturado, o que dificulta a sua manutenção. A separação de funcionalidades procura resolver os problemas acima referidos: facilita o isolamento da componente a ser testada, aspeto de grande relevância na produção de testes unitários.
@@ -51,7 +50,6 @@ Em projetos de grandes dimensões como este, a existência de documentação e d
 Consideramos que o projeto em estudo perde bastante nestes aspetos agora referidos, pois revela-se pouco detalhado na descrição das classes e das funções nelas existentes, revelando até uma completa ausência de documentação em grande parte dos ficheiros de código fonte, sendo pouco clara quando esta exista, o que torna certos módulos do programa de difícil compreensão. 
 
 ###Heterogenidade
-- Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 - CMake **:** família de ferramentas que tem como objetivo compilar, testar e estruturar *software* que permite realizar configurações independentes de compilador.
 

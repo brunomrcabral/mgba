@@ -100,18 +100,6 @@ Como podemos constatar pela presença de determinados ficheiros na raiz do repos
 
 A existência de dependências neste projeto é evidenciada pela presença de vários subdiretórios no diretório ```src/platform``` do repositório, enquanto que as informações relativas às mesmas encontram-se listadas no ficheiro README.md localizado na raiz do repositório, bem como os fins para os quais são utilizadas:
 
-> Qt: for the GUI frontend. Qt Multimedia or SDL are required for audio.
->
-> SDL: for a more basic frontend and gamepad support in the Qt frontend. SDL 2 is recommended, but 1.2 is supported.
->
-> zlib and libpng: for screenshot support and savestate-in-PNG support.
->
-> ibedit: for command-line debugger support.
->
-> ffmpeg or libav: for video recording.
->
-> ImageMagick: for GIF recording.
-
 ##Travis-CI
 
 Uma das ferramentas utilizadas pelos colaboradores do projeto na realização de **testes de integração** designa-se por **Travis-CI**. Trata-se de um serviço que realiza testes de integração contínua *open source* distribuído de forma gratuita. O *Travis-CI* permite aos seus utilizadores registarem na base de dados do serviço o seu repositório do **GitHub** e assim terem os seus **testes** executados automaticamente. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, **compilando** imediatamente o projeto na sua totalidade e **correndo** todos os testes unitários **pré-configurados** num ficheiro pelo autor. O mesmo acontece com os **pull requests**, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na **validação e aprovação** dos mesmos, processo que será explorado mais adiante neste relatório.

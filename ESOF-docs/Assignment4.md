@@ -69,13 +69,13 @@ Em projetos de grande dimensão deve ser dada uma atenção especiala estes aspe
 
 O mGBA apresenta-se dividido em seis packages:
 
-- gba **:** responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do hardware original da consola Game Boy Advance. 
-- arm **:** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da Game Boy Advance.
-- platform  **:** implementa diversas interfaces para frameworks e APIs (application programming interfaces) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas
--  third-party **:** contém bibliotecas open source de terceiros (third-party libraries) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base
+- **gba :** responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do hardware original da consola Game Boy Advance. 
+- **arm :** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da Game Boy Advance.
+- **platform  :** implementa diversas interfaces para frameworks e APIs (application programming interfaces) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas
+-  **third-party :** contém bibliotecas open source de terceiros (third-party libraries) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base
 
 ###Inteligibilidade
-A **inteligibilidade** do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a **documentação** de um programa e melhor **organizada** for a sua estrutura, maior é a **facilidade de compreensão** do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de **novos colaboradores**, nos relatórios de **correcção de bugs**, na sugestão de **novas funcionalidades**.
+A **inteligibilidade** do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a **documentação** de um programa e melhor **organizada** for a sua estrutura, maior é a **facilidade de compreensão** do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de **novos colaboradores**, nos relatórios de **correcção de bugs** e na sugestão de **novas funcionalidades**.
 
 Em projetos de grandes dimensões como este, a existência de documentação e de uma **estrutura de código** bem definida possui uma importância acrescida no entendimento do funcionamento de cada componente do *software* a ser desenvolvido. É da responsabilidade do **proprietário** e dos seus colaboradores promover a consistência e qualidade do código, bem como manter a sua documentação atualizada e acessível a qualquer outro *developer* ou indivíduo que demonstre interesse em participar.
 

@@ -83,15 +83,15 @@ Consideramos que o projeto em estudo perde bastante nestes aspetos agora referid
 
 ###Travis-CI
 
-Uma das ferramentas utilizadas pelos colaboradores do projeto na realizaçao testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*. O **Travis-CI** permite aos seus utilizadores registarem na base de dados o seu repositório do GitHub e assim terem os seus **testes** executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os *pull requests*, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na aprovação dos mesmos. (EXPLICAR APROVAÇÂO)
+Uma das ferramentas utilizadas pelos colaboradores do projeto na realização de testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratuito e *open source*. O **Travis-CI** permite aos seus utilizadores registarem na base de dados o seu repositório do GitHub e assim terem os seus **testes** executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os *pull requests*, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na aprovação dos mesmos. (EXPLICAR APROVAÇÂO)
 
 O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilização relativamente acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do repositório, bem como um conjunto de *scripts* no formato *Bash* que eventualmente sejam necessários para executar em paralelo com o *script* de compilação principal.
 
-Apesar das vantagens que foram referidas nos parágrafos anteriores, o proprietário deste projeto não tira partido máximo das funcionalidades do **Travis-CI**, pois não recorre a esta ferramenta para executar testes unitários, servindo-se apenas dela para realizar **testes de compilação**, como é possível observar após uma análise cuidadosa do repositóriodo **mGBA**. Na raiz do repositório encontraram-se ainda dois ficheiros relacionados com esta ferrametna, com nomes ".travis.yml" e ."travis-deps.sh".
+Apesar das vantagens que foram referidas nos parágrafos anteriores, o proprietário deste projeto não tira partido máximo das funcionalidades do **Travis-CI**, pois não recorre a esta ferramenta para executar testes unitários, servindo-se apenas dela para realizar **testes de compilação**, como é possível observar após uma análise cuidadosa do repositóriodo **mGBA**. Na raiz do repositório encontraram-se ainda dois ficheiros relacionados com esta ferramenta, com nomes ".travis.yml" e ".travis-deps.sh".
 
 ###Gameboy Advance Test Suite 
 
-Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na *Internet*, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtvemos os seguintes resultados:
+Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na *Internet*, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtivemos os seguintes resultados:
 
 ![](Assignment4/test-all.png)
 
@@ -112,7 +112,7 @@ A versão testada do programa conseguiu passar todos os testes de memória (1552
 - NO$GBA 2.8b: 759 *passes*
 - VBA-M 2.0.0 beta 2: 680 *passes*
 
-Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo com vista a tornar esta ferramenta mais **completa**.
+Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possíveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo com vista a tornar esta ferramenta mais **completa**.
 
 > At the moment, it only tests timing operations, but way more will be coming in the future. 
 

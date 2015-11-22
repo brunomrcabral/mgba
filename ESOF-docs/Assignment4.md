@@ -65,7 +65,8 @@ A única isolabilidade que merece aqui destaque está na separação das funcion
  
 ###Separação de Responsabilidades
 
-Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal estruturado conduziria ao aumento do **grau de dificuldade** na definição e realização de **testes unitários**. 
+Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal estruturado conduziria ao aumento do **grau de dificuldade** na definição e realização de **testes unitários**.
+
 Em projetos de grande dimensão como este deve ser dada uma atenção especial a estes aspetos de forma a evitar a ocorrência de código mal estruturado, o que aumentaria o custo da sua manutenção. É necessária uma separação de funcionalidades para resolver os problemas de controlabilidade e isolabilidade acima referidos, com vista a facilitar no isolamento da componente sob teste, aspeto de grande relevância na produção de testes unitários de qualidade.
 
 O mGBA apresenta-se dividido em seis packages:

@@ -46,22 +46,24 @@ Em projetos como este, de dimensão considerável, a existência de documentaç�
 
 Consideramos que o projeto em estudo perde bastante nestes aspetos agora referidos, pois revela-se pouco detalhado na descrição das classes e das funções nelas existentes, revelando até uma completa ausência de documentação em grande parte dos ficheiros de código fonte, ou pouco clara quando esta exista, o que torna certos módulos do programa de difícil compreensão. 
 
-
 ###Heterogenidade
 - Heterogeneity: The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+
+- CMake **:** família de ferramentas que tem como objetivo compilar, testar e estruturar *software* que permite realizar configurações independentes de compilador.
+
+- Qt **:** cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications;
 
 ##Estatísticas de Teste
 
 ###Travis-CI
 
-Uma das ferramentas usadas para realizar testes de integração neste projeto é o Travis-CI que trata-se de um serviço de integração contínuo e distribuido totalmente gratutito e open-source.
-Esta ferramenta permite aos seus utilizadores registarem o seu repositório do GitHub e assim terem os seus testes executados. Sempre que é feito um commit a ferramente reconhece e de imediato compila o projeto e corre todos os testes.
-O mesmo acontece com os pull requests.
-O Travis-CI suporta diversas linguagens e para ser configurado é apenas necessário adicionar um novo ficheiro denominado '.travis.yml' no diretório raiz do projeto.
+Uma das ferramentas utilizadas pelo proprietário na realizaçao testes de integração neste projeto é o Travis-CI, como se pode verificar na raiz do repositório pela presença de um ficheiro ".travis.yml". Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*.
 
-CMake é uma família de ferramentas que tem como objetivo compilar, testar e organizar software. Para isso é usado um plataforma simples e configurações de um compilador independente.
+Esta ferramenta permite aos seus utilizadores registarem o seu repositório do GitHub e assim terem os seus testes executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, a ferramente reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os pull requests, onde esta ferramenta é bastante útil, auxiliando o proprietário a aprovar/rejeitar os mesmos.
 
-Qt é um software desenhado para desenhado para desenvolver outros aplicativos de software.
+O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilizaçaõ muito acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do projeto, bem como outros *scripts* que possam ser necessários executar juntamente com o *script* principal.
+
+
 
 ###Coverage
 

@@ -25,7 +25,11 @@ Numa primeira fase serão estudados os graus de testabilidade do software, sendo
 - **Isolabilidade :** The degree to which the component under test (CUT) can be tested in isolation.
 - **Separação de Responsabilidades**  :** The degree to which the component under test has a single, well defined responsibility**
 - **Heterogeneidade :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
-- 
+
+Em seguida pretendemos referir as circunstâncias de utilização da ferramenta Travis-CI na realização de testes de integração contínua pelos autores do projeto, bem como uma breve introdução a esta ferramenta e à forma como é utilizada em conjunto com os projetos no **GitHub**.
+
+Finalmente, numa forma de conclusão, iremos apresentar algumas **estatisticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
+
 ##Testabilidade
 
 Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo irá avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
@@ -92,6 +96,9 @@ Uma das ferramentas utilizadas pelos colaboradores do projeto na realização de
 O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilização relativamente acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do repositório, bem como um conjunto de *scripts* no formato *Bash* que eventualmente sejam necessários para executar em paralelo com o *script* de compilação principal.
 
 Apesar das vantagens que foram referidas nos parágrafos anteriores, o proprietário deste projeto não tira partido máximo das funcionalidades do **Travis-CI**, pois não recorre a esta ferramenta para executar testes unitários, servindo-se apenas dela para realizar **testes de compilação**, como é possível observar após uma análise cuidadosa do repositóriodo **mGBA**. Na raiz do repositório encontraram-se ainda dois ficheiros relacionados com esta ferramenta, com nomes ".travis.yml" e ".travis-deps.sh".
+
+![](Assignment4/travis-pass.PNG)
+
 
 ###Gameboy Advance Test Suite 
 

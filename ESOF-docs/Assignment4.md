@@ -34,13 +34,17 @@ Cada um destes componentes fornece serviços que são independentes do estado de
 ### Observabilidade
 Não foi possível verificar a existência de testes unitários escritos em código neste repositório nem junto do autor. No entanto, foram encontrados testes de outras naturezas no diretório ```/src/platform/test``` que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros variáveis que criam casos de teste. 
 
-Visto que se trata de um emulador, seria correto afirmar que a própria utilização deste programa define um caso de teste. Com efeito, é possível realizar testes de integração com recurso a diferentes ficheiros ROM que são colocados a correr na máquina virtual, sendo posteriormente avaliado se a emulação dessa ROM teve o resultado esperado ou não. Isto acontece porque o *software* contido em cada ROM foi programado para utilizar de forma distinta os vários recursos da máquina virtual bem como do dispositivo a ser emulado.
+Visto que se trata de um **emulador**, seria correto afirmar que a própria utilização deste programa define um caso de teste. Com efeito, é possível realizar **testes de integração** com recurso a diferentes ficheiros ROM que são colocados a correr na **máquina virtual**, sendo posteriormente avaliado se a emulação dessa ROM teve o resultado esperado ou não. Isto acontece porque o *software* contido em cada ROM foi programado para utilizar de forma distinta os vários **recursos** da máquina virtual bem como do dispositivo a ser emulado.
 
-Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes
+Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes bastante completa:
 
 > In the interest of furthering the state of Game Boy Advance emulation, I've been writing a test suite that tests various aspects of hardware. At the moment, it only tests timing operations, but way more will be coming in the future. 
 
 > -- endrift, https://forums.mgba.io/showthread.php?tid=18
+
+Embora apenas sejam referidos testes de *timing*
+
+![](Assignment4/test-list.PNG)
 
 São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas funcionalidades da máquina virtual que se encontram incompletas ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má cobertura de código, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na secção de *issues* do repositório como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças a estes testes de jogabilidade realizados pelos utilizadores.
 

@@ -38,11 +38,11 @@ Visto que se trata de um **emulador**, seria correto afirmar que a própria util
 
 Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes bastante completa que avalia uma série de operações executadas com maior frequência na máquina virtual:
 
-> In the interest of furthering the state of Game Boy Advance emulation, I've been writing a test suite that tests various aspects of hardware. At the moment, it only tests timing operations, but way more will be coming in the future. 
+> In the interest of furthering the state of Game Boy Advance emulation, I've been writing a test suite that tests various aspects of hardware
 
 > -- endrift, https://forums.mgba.io/showthread.php?tid=18
 
-Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório contava ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual. É possível afirmar que a informação que consta nesse tópico encontra-se desatualizada, pois na realidade o programa atual encontra-se muito mais completo.
+Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório contava ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual.
 
 ![](Assignment4/test-select.PNG)
 
@@ -104,7 +104,7 @@ Para uma posterior análise de cobertura de testes,  transferimos a [última ver
 
 ![](Assignment4/test-all.png)
 
-A versão testada do programa conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance**, como se pode constatar na seguinte lista:
+A versão testada do programa conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance** mais antigos e portanto com processos de desenvolvimento mais longos, como se pode constatar na seguinte lista:
 
 **Memory Tests**
 - mGBA (master): 1552 passes
@@ -121,4 +121,8 @@ A versão testada do programa conseguiu passar todos os testes de memória (1552
 - NO$GBA 2.8b: 759 passes
 - VBA-M 2.0.0 beta 2: 680 passes
 
-Apesar do **mGBA** ter apresentado **excelentes resultados** na emulação face a programas equivalentes, existem outras **funcionalidades** do programa que de certa forma não são possiveis de testar, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo.
+Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo.
+
+> At the moment, it only tests timing operations, but way more will be coming in the future. 
+
+> -- endrift, https://forums.mgba.io/showthread.php?tid=18

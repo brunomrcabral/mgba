@@ -40,11 +40,11 @@ Não nos foi possível verificar a existência de testes unitários neste reposi
 - Separation of concerns: The degree to which the component under test has a single, well defined responsibility.
 
 ###Inteligibilidade
-- Understandability: The degree to which the component under test is documented or self-explaining.
+A inteligibilidade do *software* assume uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a documentação de um programa e melhor organizada for a sua estrutura, maior é a facilidade de compreensão do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem em diversas situações, como por exemplo na integração de novos colaboradores, na sugestão de novas funcionalidades ou até na correcção de *bugs*.
 
-A inteligibilidade do software assume uma enorme relevância no que toca à manutenção, desenvolvimento e teste de um programa. Assim, quanto mais detalhada for a documentação de um programa, maior é a facilidade de compreensão do mesmo o que pode ser vantajoso em diversas situações, como por exemplo na integração de novos colaboradores.
+Em projetos como este, de dimensão considerável, a existência de documentação e de uma estrutura de código bem definida possui uma importância acrescida. É da responsabilidade do proprietário e dos colaboradores promover a consistência e qualidade do código, bem como manter a sua documentação atualizada e acessível a qualquer *developer* ou indivíduo que demonstre interesse em participar no projeto.
 
-O caso do MGBA perde bastante neste aspeto, pois revela-se pouco detalhado na descrição das funções revelando até uma completa ausência de documentação em grande parte das mesmas, o que torna certos módulos do programa de difícil compreensão. 
+Consideramos que o projeto em estudo perde bastante nestes aspetos agora referidos, pois revela-se pouco detalhado na descrição das classes e das funções nelas existentes, revelando até uma completa ausência de documentação em grande parte dos ficheiros de código fonte, ou pouco clara quando esta exista, o que torna certos módulos do programa de difícil compreensão. 
 
 
 ###Heterogenidade

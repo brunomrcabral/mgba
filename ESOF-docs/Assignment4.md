@@ -91,28 +91,28 @@ Apesar das vantagens que foram referidas nos parágrafos anteriores, o propriet�
 
 ###Gameboy Advance Test Suite 
 
-Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na Internet, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtvemos os seguintes resultados:
+Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na *Internet*, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtvemos os seguintes resultados:
 
 ![](Assignment4/test-all.png)
 
 A versão testada do programa conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance** mais antigos e portanto com processos de desenvolvimento mais longos, como se pode constatar na seguinte lista:
 
 **Memory Tests**
-- mGBA (master): 1552 passes
-- NO$GBA 2.8b: 1394 passes
-- VBA-M 2.0.0 beta 2: 1375 passes
+- mGBA (master): 1552 *passes*
+- NO$GBA 2.8b: 1394 *passes*
+- VBA-M 2.0.0 beta 2: 1375 *passes*
 
 **I/O Read Tests**
-- mGBA: 114 passes
-- NO$GBA 2.8b: 99 passes
-- VBA-M 2.0.0 beta 2: 99 passes
+- mGBA: 114 *passes*
+- NO$GBA 2.8b: 99 *passes*
+- VBA-M 2.0.0 beta 2: 99 *passes*
 
 **Timing Tests**
-- mGBA: 1164 passes
-- NO$GBA 2.8b: 759 passes
-- VBA-M 2.0.0 beta 2: 680 passes
+- mGBA: 1164 *passes*
+- NO$GBA 2.8b: 759 *passes*
+- VBA-M 2.0.0 beta 2: 680 *passes*
 
-Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo com vista a tornar esta ferramenta mais completa.
+Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo com vista a tornar esta ferramenta mais **completa**.
 
 > At the moment, it only tests timing operations, but way more will be coming in the future. 
 

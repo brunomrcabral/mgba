@@ -97,7 +97,7 @@ Apesar das vantagens de utilização que foram referidas nos parágrafos anterio
 
 ![](Assignment4/travis-pass.PNG)
 
-A imagem representa as estatísticas do teste de integração realizado automaticamente pela ferramenta **Travis-CI** sobre um [*pull request*](https://github.com/mgba-emu/mgba/pull/137) publicado recentemente no repositório referente a uns *warnings* que surgiam durante a compilação numa versão específica do compilador GCC. Como foi referido no parágrafo anterior, os únicos testes de integração realizados são testes de compilação, recorrendo a uma pequena amostra de dois compiladores, *GCC* e *Clang* que são executados em dois sistemas operativos diferentes (Linux e Mac OS X). É possível verificar que o *pull request* em questão foi bem sucedido, tendo passado em todos os quatro testes predefinidos pelo autor de projeto.
+A imagem representa as estatísticas do teste de integração realizado automaticamente pela ferramenta **Travis-CI** sobre um [*pull request*](https://github.com/mgba-emu/mgba/pull/137) publicado recentemente no repositório referente a uns *warnings* que surgiam durante a compilação numa versão específica do compilador GCC. Como foi referido no parágrafo anterior, os únicos testes de integração realizados são **testes de compilação**, recorrendo a uma pequena amostra de **dois compiladores**, *GCC* e *Clang* que são executados em **dois sistemas operativos** diferentes (Linux e Mac OS X). É possível verificar que o *pull request* em questão foi bem sucedido, tendo passado em todos os quatro testes predefinidos pelo autor de projeto.
 
 ##Gameboy Advance Test Suite 
 

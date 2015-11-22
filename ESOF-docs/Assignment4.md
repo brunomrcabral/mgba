@@ -95,7 +95,7 @@ Para uma posterior análise de cobertura de testes,  transferimos a [última ver
 
 ![](Assignment4/test-all.png)
 
-A versão testada do programa conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance** mais antigos e portanto com processos de desenvolvimento mais longos, como se pode constatar na seguinte lista:
+A versão testada do programa conseguiu passar todos os **testes de memória** (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos **testes de timing** (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos **testes de acesso aos registos de hardware** (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance** mais antigos e portanto com processos de desenvolvimento mais longos, como se pode constatar na seguinte lista:
 
 **Memory Tests**
 - mGBA (master): 1552 *passes*

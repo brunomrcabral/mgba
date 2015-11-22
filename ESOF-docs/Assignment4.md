@@ -100,10 +100,12 @@ In computer science, code coverage is a measure used to describe the degree to w
 
 ###Gameboy Advance Test Suite 
 
-O grupo fez *download* da [última *build*](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na Internet, bem como da *suite* de testes disponibilizada pelo autor. Em seguida, carregou o ficheiro ROM ```suite.gba``` no mGBA e foram executados os três testes disponíveis, tendo obtido os seguintes resultados:
+Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na Internet, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtvemos os seguintes resultados:
 
 ![](Assignment4/test-all.png)
 
 Conseguiu passar todos os testes de memória, não tendo conseguido a pontuação máxima nos testes de *timing* (1164 de 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (114 de 122 casos testados com sucesso).
+
+Apesar do mGBA ter apresentado excelentes resultasdos face a programas equivalentes, existem funcionalidades que não são possiveis de testar, como por exemplo a sua interface gráfica. O que poderá, de certa forma, atenuar um pouco a sua falta de cobertura.
 
 ##Análise Crítica

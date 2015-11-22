@@ -27,24 +27,24 @@ Faculdade de Engenharia da Universidade do Porto
 - **Heterogeneity :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 ###Controlabilidade
-Como já foi referido em relatórios anteriores, o **mGBA** define um conjunto de elementos que implementam os diferentes controladores de emulação do hardware como por exemplo controladores de som, de vídeo, de inputs e até mesmo de controladores de emulação do CPU.
+Como já foi referido em relatórios anteriores, o **mGBA** implementa uma máquina virtual constutída por vários elementos que controlam os diferentes controladores de emulação do hardware como por exemplo controladores de som, de vídeo, de inputs e até mesmo de controladores de emulação do CPU.
 
 Cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno dos diferentes pomponetes do programa pode ser consultado através de um debugger em “mgba/src/debugger/”, que permite assim demonstrar essa modularidade do programa.
 
 ### Observabilidade
-Não foi possível verificar a existência de testes unitários escritos em código neste repositório nem junto do autor. No entanto, foram encontrados testes de outras naturezas no diretório ```/src/platform/test``` que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros variáveis que criam casos de teste. 
+Não foi possível verificar a existência de testes unitários escritos em código neste repositório. Foram encontrados no entanto testes de outras naturezas no diretório ```/src/platform/test``` que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros variáveis que criam casos de teste. 
 
 Visto que se trata de um **emulador**, seria correto afirmar que a própria utilização deste programa define um caso de teste. Com efeito, é possível realizar **testes de integração** com recurso a diferentes ficheiros ROM que são colocados a correr na **máquina virtual**, sendo posteriormente avaliado se a emulação dessa ROM teve o resultado esperado ou não. Isto acontece porque o *software* contido em cada ROM foi programado para utilizar de forma distinta os vários **recursos** da máquina virtual bem como do dispositivo a ser emulado.
 
-Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes bastante completa:
+Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes bastante completa que avalia uma série de operações executadas com maior frequência na máquina virtual:
 
 > In the interest of furthering the state of Game Boy Advance emulation, I've been writing a test suite that tests various aspects of hardware. At the moment, it only tests timing operations, but way more will be coming in the future. 
 
 > -- endrift, https://forums.mgba.io/showthread.php?tid=18
 
-Embora apenas sejam referidos testes de *timing*
+Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório contava ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual. É possível afirmar que a informação que consta nesse tópico encontra-se desatualizada, pois na realidade o programa atual encontra-se muito mais completo.
 
-![](Assignment4/test-list.PNG)
+![](Assignment4/test-select.PNG)
 
 São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas funcionalidades da máquina virtual que se encontram incompletas ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má cobertura de código, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na secção de *issues* do repositório como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças a estes testes de jogabilidade realizados pelos utilizadores.
 
@@ -97,5 +97,11 @@ In computer science, code coverage is a measure used to describe the degree to w
 - Statement coverage - Has each statement in the program been executed?
 - Branch coverage - Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
 - Condition coverage (or predicate coverage) - Has each Boolean sub-expression evaluated both to true and false?
+
+###Gameboy Advance Test Suite
+
+![](Assignment4/test-pass.PNG)
+
+![](Assignment4/test-timing.PNG)
 
 ##Análise Crítica

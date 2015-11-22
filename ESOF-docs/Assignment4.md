@@ -34,20 +34,20 @@ Cada um destes componentes fornece serviços que são independentes do estado de
 ### Observabilidade
 Não foi possível verificar a existência de testes unitários neste repositório nem junto do autor. No entanto, existem testes (“mgba/src/platform/test”) que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros vareáveis que criam casos de teste. Por exemplo é possível desativar o rendering de vídeo ou controlar o número de fps.  Ainda assim os testes mais relevantes são feitos em módulos que combinam os diferentes componentes.
 
-Visto que se trata de um emulador, é também possível realizar testes de integração com recurso a diferentes ROMs que são colocadas a correr na máquina virtual, sendo avaliado se a emulação dessa ROM teve o resultado esperado ou não, pois o *software* contido em cada ROM utiliza de forma distinta os vários recursos do emulador e os recursos disponibilizados pela Game Boy Advance.  Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos graças a estes testes de jogabilidade realizados pelos utilizadores.
+Visto que se trata de um emulador, é também possível realizar testes de integração com recurso a diferentes ficheiros ROM que são colocados a correr na máquina virtual, sendo posteriormente avaliado se a emulação dessa ROM teve o resultado esperado ou não. Isto acontece porque o *software* contido em cada ROM utiliza de forma distinta os vários recursos do emulador e os recursos disponibilizados pelo dispositivo a ser emulado.Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças a estes testes de jogabilidade realizados pelos utilizadores.
 
-São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ou pedirem funcionalidades da máquina virtual que ainda não foram simualdas em código, o que conduz a erros de execução e a comportamentos menos esperados por parte do programa. Muitas destas situações acabam por ser reportadas na secção dos *issues* deste repositório pelos utilizadores, como já foi referido nas entregas anteriores.
+São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas funcionalidades da máquina virtual que se encontram incompletas ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má cobertura de código, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na secção de *issues* do repositório como já foi referido nas entregas anteriores.
 
 ###Isolabilidade
-A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Assim, ao testarmos um componente de um determinado módulo, estamos também a testar, indiretamente, outros componentes de diferentes módulos.
+A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Numa situação destas seria correto afirmar que ao testarmos um componente de um determinado módulo estamos também a testar, indiretamente, outros componentes de diferentes módulos.
 
-A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a existência de *ports* para outras plataformas.
+A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a realização de *ports* para outras plataformas.
 
 ###Separação de Funcionalidades
 
-Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na componente ao qual diz respeito, evitando que o código se torne mais confuso. Nestas condições, código mal estruturado levaria ao aumento do grau de dificuldade na definição e realização de testes unitários. 
+Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na componente ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de *software* com código mal estruturado conduziria ao aumento do grau de dificuldade na definição e realização de testes unitários. 
 
-Em projetos de grande dimensão deve ser dada particular atenção a este aspeto, de forma a evitar a ocorrência de código mal estruturado, o que dificulta a sua manutenção. A separação de funcionalidades procura resolver os problemas acima referidos: facilita o isolamento da componente a ser testada, aspeto de grande relevância na produção de testes unitários.
+Em projetos de grande dimensão deve ser dada uma atenção especiala estes aspetos, de forma a evitar a ocorrência de código mal estruturado que aumentaria o custo da sua manutenção. A separação de funcionalidades procura resolver os problemas acima referidos: facilita o isolamento da componente a ser testada, aspeto de grande relevância na produção de testes unitários.
 
 O mGBA apresenta-se dividido em seis packages:
 
@@ -73,13 +73,11 @@ Consideramos que o projeto em estudo perde bastante nestes aspetos agora referid
 
 ###Travis-CI
 
-Uma das ferramentas utilizadas pelos colaboradores do projeto na realizaçao testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*.
+Uma das ferramentas utilizadas pelos colaboradores do projeto na realizaçao testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*. O **Travis-CI** permite aos seus utilizadores registarem na base de dados o seu repositório do GitHub e assim terem os seus **testes** executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os *pull requests*, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na aprovação dos mesmos. (EXPLICAR APROVAÇÂO)
 
-Esta ferramenta permite aos seus utilizadores registarem o seu repositório do GitHub e assim terem os seus testes executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, a ferramente reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os pull requests, onde esta ferramenta é bastante útil, auxiliando o proprietário a aprovar/rejeitar os mesmos.
+O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilização relativamente acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do repositório, bem como um conjunto de *scripts* no formato *Bash* que eventualmente sejam necessários para executar em paralelo com o *script* de compilação principal.
 
-O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilizaçaõ muito acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do projeto, bem como outros *scripts* que possam ser necessários executar juntamente com o *script* principal.
-
-No entanto, o proprietário deste projeto não recorre a esta ferramenta para executar tests unitários, servindo-se apenas dela para realizar testes de compilação, como é possível observar. Na raiz do repositório do *mGBA* encontraram-se dois ficheiros relacionados entre si, com nomes ".travis.yml" e ."travis-deps.sh".
+Apesar das vantagens que foram referidas nos parágrafos anteriores, o proprietário deste projeto não tira partido máximo das funcionalidades do **Travis-CI**, pois não recorre a esta ferramenta para executar testes unitários, servindo-se apenas dela para realizar **testes de compilação**, como é possível observar após uma análise cuidadosa do repositóriodo **mGBA**. Na raiz do repositório encontraram-se ainda dois ficheiros relacionados com esta ferrametna, com nomes ".travis.yml" e ."travis-deps.sh".
 
 ###Coverage
 

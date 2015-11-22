@@ -104,8 +104,23 @@ Para uma posterior análise de cobertura de testes,  transferimos a [última ver
 
 ![](Assignment4/test-all.png)
 
-A versão do programa testada conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (1164 de 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (114 de 122 casos testados com sucesso).
+A versão testada do programa conseguiu passar todos os testes de memória (1552 dos 1552 testes unitários realizados), não tendo no entanto conseguido obter pontuação máxima nos testes de *timing* (92.4%, 1164 dos 1260 casos testados com sucesso) nem nos testes de acesso aos registos de *hardware* (93.4%, 114 dos 122 casos testados com sucesso), resultados bastante satisfatórios quando comparados com os resultados obtidos por outros emuladores de **Game Boy Advance**, como se pode constatar na seguinte lista:
 
+**Memory Tests**
+- mGBA (master): 1552 passes
+- NO$GBA 2.8b: 1394 passes
+- VBA-M 2.0.0 beta 2: 1375 passes
+
+**I/O Read Tests**
+- mGBA: 114 passes
+- NO$GBA 2.8b: 99 passes
+- VBA-M 2.0.0 beta 2: 99 passes
+
+**Timing Tests**
+- mGBA: 1164 passes
+- NO$GBA 2.8b: 759 passes
+- VBA-M 2.0.0 beta 2: 680 passes
+- 
 Apesar do mGBA ter apresentado excelentes resultasdos face a programas equivalentes, existem funcionalidades que não são possiveis de testar, como por exemplo a sua interface gráfica. O que poderá, de certa forma, atenuar um pouco a sua falta de cobertura.
 
 ##Análise Crítica

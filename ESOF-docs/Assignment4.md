@@ -18,15 +18,17 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
+Numa primeira fase serão estudados os graus de testabilidade do software, sendo estes a controlabilidade do estado dos componentes testados, a observabilidade dos resultados, a isolabilidade dos componentes, o grau de separação de responsabilidades, o grau de inteligibilidade dos componentes e de heterogenidade das tecnologias utilizadas.
+
+- **Controlabilidade :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
+- **Observabilidade :** The degree to which it is possible to observe (intermediate and final) test results.
+- **Isolabilidade :** The degree to which the component under test (CUT) can be tested in isolation.
+- **Separação de Responsabilidades**  :** The degree to which the component under test has a single, well defined responsibility**
+- **Heterogeneidade :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+- 
 ##Testabilidade
 
 Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo irá avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
-
-- **Controllability :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
-- **Observability :** The degree to which it is possible to observe (intermediate and final) test results.
-- **Isolateability :** The degree to which the component under test (CUT) can be tested in isolation.
-- **Separation of concerns :** The degree to which the component under test has a single, well defined responsibility**
-- **Heterogeneity :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 ###Controlabilidade
 Como já foi referido em relatórios anteriores, o **mGBA** implementa uma máquina virtual constutída por vários elementos que controlam os diferentes controladores de emulação do hardware como por exemplo controladores de som, de vídeo, de inputs e até mesmo de controladores de emulação do CPU.
@@ -55,7 +57,7 @@ A maior parte das classes dos diferentes pacotes faz uso de outras classes e mé
 
 A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a realização de *ports* para outras plataformas.
 
-###Separação de Funcionalidades
+###Separação de Responsabilidades
 
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na componente ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de *software* com código mal estruturado conduziria ao aumento do grau de dificuldade na definição e realização de testes unitários. 
 

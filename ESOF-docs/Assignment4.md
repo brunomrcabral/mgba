@@ -102,8 +102,6 @@ In computer science, code coverage is a measure used to describe the degree to w
 
 O grupo fez *download* da [última *build*](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na Internet, bem como da *suite* de testes disponibilizada pelo autor. Em seguida, carregou o ficheiro ROM ```suite.gba``` no mGBA e foram executados os três testes disponíveis, tendo obtido os seguintes resultados:
 
-![](Assignment4/test-list.PNG)
-
-![](Assignment4/test-timing.PNG)
+![](Assignment4/test-all.PNG)
 
 ##Análise Crítica

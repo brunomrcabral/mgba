@@ -98,9 +98,11 @@ In computer science, code coverage is a measure used to describe the degree to w
 - Branch coverage - Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
 - Condition coverage (or predicate coverage) - Has each Boolean sub-expression evaluated both to true and false?
 
-###Gameboy Advance Test Suite
+###Gameboy Advance Test Suite 
 
-![](Assignment4/test-pass.PNG)
+O grupo fez *download* da ![última *build*]([http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na internet, bem como da *suite* de testes disponível no link acima referido e carregou o ficheiro ROM ```suite.gba``` no mGBA. Em seguida, foram executados os três testes disponíveis, tendo obtido os seguintes resultados:
+
+![](Assignment4/test-list.PNG)
 
 ![](Assignment4/test-timing.PNG)
 

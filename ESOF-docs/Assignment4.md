@@ -85,24 +85,26 @@ Consideramos que o projeto em estudo perde bastante nestes aspetos agora referid
 
 ###Heterogeneidade
 
-Com a crescente expansão de um projecto e o uso de novas tecnologias cresce também a necessidade de métodos de teste diversificados de modo a que estes consigam abranger as diversas tecnologias utilizadas. devido ao número de funcionalidades e tecnologias implementadas é bastante complexo, apresentando assim uma grande heterogeneidade.
+Com a constante evolução temporal do **mGBA** e o aparecimento de novas tecnologias ou paradigmas cresce também a necessidade de diversificar os métodos de teste aplicados ao *software* de modo a conseguirem abranger estas novas tecnologias implementadas. É devido ao número de bibliotecas utilizadas e funcionalidades implementadas que este projeto apresenta uma grande heterogeneidade.
 
 Como podemos constatar pela presença de vários subdiretórios no diretório ```src/platform``` do repositório, o projeto **mGBA** utiliza várias tecnologias e bibliotecas de terceiros (*third-party*) que permitem aos colabores e utilizadores compilar o projeto de forma rápida e eficiente, independentemente da plataforma e dos compiladores em uso, sendo estas:
 
 - **CMake :** família de ferramentas que têm como objetivo compilar e testar aplicações de *software*, bem como realizar configurações independentes do sistema operativo e do compilador;
 - **Travis-CI :** ferramenta para realização de trstes de integração contínua *open source* distribuído de forma gratuita ao sutilizadores do GitHub.
 
-As informações relativas às dependencias utilizadas encontram-se listadas no ficheiro README.md na raiz do repositório, bem como as funções que as utilizam.
+As informações relativas às dependências requisitadas pelo programa encontram-se listadas no ficheiro README.md na raiz do repositório, bem como os fins para os quais são utilizadas:
 
-- Qt: for the GUI frontend. Qt Multimedia or SDL are required for audio.
-- SDL: for a more basic frontend and gamepad support in the Qt frontend. SDL 2 is recommended, but 1.2 is supported.
-- zlib and libpng: for screenshot support and savestate-in-PNG support.
-libedit: for command-line debugger support.
-ffmpeg or libav: for video recording.
-libzip: for loading ROMs stored in zip files.
-ImageMagick: for GIF recording.
+> Qt: for the GUI frontend. Qt Multimedia or SDL are required for audio.
 
-- Qt **:** cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications;
+> SDL: for a more basic frontend and gamepad support in the Qt frontend. SDL 2 is recommended, but 1.2 is supported.
+
+> zlib and libpng: for screenshot support and savestate-in-PNG support.
+
+> ibedit: for command-line debugger support.
+
+> ffmpeg or libav: for video recording.
+
+> ImageMagick: for GIF recording.
 
 ##Travis-CI
 

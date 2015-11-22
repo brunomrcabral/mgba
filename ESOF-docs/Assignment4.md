@@ -17,19 +17,18 @@ Faculdade de Engenharia da Universidade do Porto
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
 ##Introdução
-Neste relatório iremos analisar alguns dos conceitos associados à **validação e **verificação de software** no projeto em estudo.
+Neste relatório iremos analisar alguns dos conceitos associados à **validação e **verificação de software** no projeto em estudo. 
 
 Primeiramente serão estudados os graus de testabilidade do **software**, sendo estes a **controlabilidade** do estado das componentes testadas, a **observabilidade** do resultado dos testes, a isolabilidade das componentes, o grau de **separação de responsabilidades**, o grau de **inteligibilidade** das componentes e de **heterogeneidade** das tecnologias e recursos utilizados.
 
-Em seguida pretendemos referir as circunstâncias de utilização da ferramenta Travis-CI na realização de testes de integração contínua pelo autor do projeto, bem como uma breve introdução a esta ferramenta e à forma como pode ser utilizada em conjunto com os projetos no **GitHub**.
+Em seguida pretendemos referir as circunstâncias de utilização da ferramenta **Travis-CI** na realização de testes de integração contínua pelo autor do projeto, bem como uma breve introdução a esta ferramenta e à forma como pode ser utilizada em conjunto com os projetos no **GitHub**.
 
-Para terminar, iremos apresentar algumas **estatisticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
+Para terminar, iremos apresentar algumas **estatísticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
 
 ##Testabilidade
-Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo pretende avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas sempre que estas forem pertinentes, com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
+Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o **grau de testabilidade** do projeto em estudo. O grupo pretende avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de *software* adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de **imagens** e **referências** a outras páginas sempre que estas forem pertinentes, com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
 
 ###Controlabilidade
-
 A controlabilidade define o grau de controlo do estado das componentes a serem testados (*CUT - components under test*). À semelhança do que foi referido nas entregas anteriores, o **mGBA** implementa uma **máquina virtual** constituída por várias classes (aqui representadas por ficheiros de código fonte) que controlam as diferentes **componentes** de emulação do *hardware* da consola original, como por exemplo controladores de som, vídeo, *inputs* do utilizador (dispositivos de entrada tais como teclado, rato, *gamepad*), até mesmo de controladores de **execução** do CPU ou componentes para **sincronização** das próprias componentes. Tendo em conta a complexidade desta estrutura, será necessário
 
 No que diz respeito à controlabilidade das componentes sob teste, verificámos que cada uma destas componentes fornece serviços que são independentes do estado de qualquer uma das outras componentes em cada instante da execução do programa (à exceção da unidade de controlo e sincronização), sendo portanto possível controlar o seu estado interno em cada momento. Este estado interno das diferentes componentes do programa pode ser consultado na própria **interface gráfica** da aplicação através das funcionalidades de **debugging** implementadas em código no diretório ```/src/debugger/```, conseguindo deste modo ter um maior controlo sob o *software* em execução, que permite assim demonstrar modularidade deste programa.
@@ -54,15 +53,13 @@ São frequentes os casos de ROMs nunca antes testadas gerarem exceções no prog
 ###Isolabilidade
 A maior parte das classes que fazem parte do *package* principal *gba* faz uso de algumas classes e métodos pertencentes a outros *packages*, estando estas intimamente ligadas e interdependentes, como é o caso da relação arm <=> gba. Numa situação como esta seria correto afirmar que ao testarmos uma componente de um determinado recurso do programa estamos também a testar indiretamente outras componentes presentes em diferentes módulos.
 
-O isolamento de componentes que merece aqui destaque será a separação dos recursos dependentes e não dependentes do sistema operativo, ou seja, entre as componentes da máquina virtual e as componentes de interação do utilizador com a mesma, o que permite a realização de *ports* para outras plataformas e melhorar os aspetos gráficos da imagem, pro exemplo.
+O isolamento de componentes que merece aqui destaque será a separação dos recursos dependentes (dependências opcionais) e não dependentes da plataforma (requisitos), ou seja, entre as componentes que constituem a máquina virtual e as componentes de interação do utilizador com a mesma, o que permite, entre outras funcionalidades, a realização de *ports* para outros dispositivos com sistemas operativos diferentes e melhorias gerais na experiência do utilizador.
 
-Estas dependências não são necessárias para o funcionamento normal do emulador, isto é, será possível isolar e executar a máquina virtual na sua forma mais básica (sem saída de imagem nem som) e executar testes sobre esta. O autor chega mesmo a referir no ```README.md``` que estas funcionalidades extra serão desativadas na ausência dessas dependências opcionais, e que não terá implicações no funcionamento normal da aplicação.
+Estas dependências não são necessárias para o funcionamento normal do emulador, isto é, será possível isolar e executar a máquina virtual na sua forma mais básica (sem saída de imagem nem som) e executar qualquer tipo de testes sobre esta. O autor chega mesmo a referir no ```README.md``` que estas funcionalidades específicas serão desativadas na ausência das suas dependências, e que não terá implicações no funcionamento normal da aplicação.
 
 > mGBA has no hard dependencies, however, the following optional dependencies are required for specific features. The features will be disabled if the dependencies can't be found.
 
 > -- endrift, https://github.com/mgba-emu/mgba/blob/master/README.md
-
-##(TERMINAR)
 
 ###Separação de Responsabilidades
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal organizado ou mal atribuído conduziria ao aumento do **grau de dificuldade** na definição dos **testes unitários** a serem realizados.
@@ -73,11 +70,11 @@ Em projetos de grande dimensão como este deve ser dada uma atenção especial a
 - **arm :** implementa um sistema de **recompilação dinâmica** das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da consola **Game Boy Advance**;
 - **debugger :** acrescenta funcionalidades de *debugging* à máquina virtual, bem como uma *interface* programável com uma ferramenta de *debugging* externa, gdb (*GCC Debugger*);
 - **platform  :** implementa diversas *interfaces* para *frameworks* e APIs (*application programming interfaces*) de terceiros específicas para cada **sistema operativo** a correr nas diferentes plataformas;
--  **third-party :** contém bibliotecas *open source* de terceiros (*third-party libraries*) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base;
--  **util :** contém funcionalidades comuns e **estruturas** de dados frequentemente utilizadas nos outros *packages*.
+- **third-party :** contém bibliotecas *open source* de terceiros (*third-party libraries*) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base;
+- **util :** contém funcionalidades comuns e **estruturas** de dados frequentemente utilizadas nos outros *packages*.
 
 ###Inteligibilidade
-A **inteligibilidade** do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a **documentação** de um programa e melhor **organizada** for a sua estrutura, maior é a **facilidade de compreensão** do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de **novos colaboradores**, nos relatórios de **correcção de bugs** e na sugestão de **novas funcionalidades**.
+A **inteligibilidade** do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a **documentação** de um programa e melhor **organizada** for a sua estrutura, maior é a **facilidade de compreensão** do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de **novos colaboradores**, nos relatórios de **correção de bugs** e na sugestão de **novas funcionalidades**.
 
 Em projetos de grandes dimensões como este, a existência de documentação e de uma **estrutura de código** bem definida possui uma importância acrescida no entendimento do funcionamento de cada componente do *software* a ser desenvolvido. É da responsabilidade do **proprietário** e dos seus colaboradores promover a consistência e qualidade do código, bem como manter a sua documentação atualizada e acessível a qualquer outro *developer* ou indivíduo que demonstre interesse em participar.
 

@@ -18,7 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Numa primeira fase serão estudados os graus de testabilidade do software, sendo estes a controlabilidade do estado dos componentes testados, a observabilidade dos resultados, a isolabilidade dos componentes, o grau de separação de responsabilidades, o grau de inteligibilidade dos componentes e de heterogenidade das tecnologias utilizadas.
+Numa primeira fase serão estudados os graus de testabilidade do software, sendo estes a controlabilidade do estado dos componentes testados, a observabilidade dos resultados, a isolabilidade dos componentes, o grau de separação de responsabilidades, o grau de inteligibilidade dos componentes e de heterogeneidade das tecnologias utilizadas.
 
 - **Controlabilidade :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 - **Observabilidade :** The degree to which it is possible to observe (intermediate and final) test results.
@@ -81,15 +81,13 @@ Em projetos de grandes dimensões como este, a existência de documentação e d
 
 Consideramos que o projeto em estudo perde bastante nestes aspetos agora referidos, pois revela-se pouco detalhado na descrição das classes e das funções nelas existentes, revelando até uma completa ausência de documentação em grande parte dos ficheiros de código fonte, sendo pouco clara quando esta exista, o que torna certos módulos do programa de difícil compreensão. 
 
-###Heterogenidade
+###Heterogeneidade
 
 - CMake **:** família de ferramentas que tem como objetivo compilar, testar e estruturar *software* que permite realizar configurações independentes de compilador.
 
 - Qt **:** cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms com in the underlying codebase, while having the power and speed of native applications;
 
-##Estatísticas de Teste
-
-###Travis-CI
+##Travis-CI
 
 Uma das ferramentas utilizadas pelos colaboradores do projeto na realização de testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratuito e *open source*. O **Travis-CI** permite aos seus utilizadores registarem na base de dados o seu repositório do GitHub e assim terem os seus **testes** executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os *pull requests*, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na aprovação dos mesmos. (EXPLICAR APROVAÇÂO)
 
@@ -99,8 +97,9 @@ Apesar das vantagens que foram referidas nos parágrafos anteriores, o propriet�
 
 ![](Assignment4/travis-pass.PNG)
 
+A imagem representa as estatísticas do teste de integração realizado automaticamente pela ferramenta **Travis-CI** sobre um [*pull request*](https://github.com/mgba-emu/mgba/pull/137) publicado recentemente no repositório referente a uns *warnings* que surgiam durante a compilação numa versão específica do compilador GCC. Como foi referido anteriormente, os únicos testes de integração realizados são testes de compilação, recorrendo a uma pequena amostra de dois compiladores, *GCC* e *Clang* que são executados em dois sistemas operativos diferentes (Linux e Mac OS X). É possível verificar que o *pull request* em questão foi bem sucedido, tendo passado em todos os quatro testes predefinidos pelo autor de projeto.
 
-###Gameboy Advance Test Suite 
+##Gameboy Advance Test Suite 
 
 Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na *Internet*, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtivemos os seguintes resultados:
 

@@ -65,16 +65,16 @@ A única isolabilidade que merece aqui destaque está na separação das funcion
  
 ###Separação de Responsabilidades
 
-Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal estruturado conduziria ao aumento do **grau de dificuldade** na definição e realização de **testes unitários**.
+Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal organizado ou mal atribuído conduziria ao aumento do **grau de dificuldade** na definição dos **testes unitários** a serem realizados.
 
-Em projetos de grande dimensão como este deve ser dada uma atenção especial a estes aspetos de forma a evitar a ocorrência de código mal estruturado, o que aumentaria o custo da sua manutenção. É necessária uma separação de funcionalidades para resolver os problemas de controlabilidade e isolabilidade acima referidos, com vista a facilitar no isolamento da componente sob teste, aspeto de grande relevância na produção de testes unitários de qualidade.
+Em projetos de grande dimensão como este deve ser dada uma atenção especial a estes aspetos de forma a evitar a ocorrência de código mal estruturado, o que aumentaria o custo da sua manutenção. É necessária uma separação de funcionalidades para resolver os problemas de controlabilidade e isolabilidade acima referidos, com vista a facilitar no isolamento da componente sob teste, aspeto de grande relevância na produção de testes unitários de qualidade. É com base nestes princípios que o **mGBA** se encontra estruturado em seis packages:
 
-O mGBA apresenta-se dividido em seis packages:
-
-- **gba :** responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do hardware original da consola Game Boy Advance. 
-- **arm :** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da Game Boy Advance.
-- **platform  :** implementa diversas interfaces para frameworks e APIs (application programming interfaces) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas
--  **third-party :** contém bibliotecas open source de terceiros (third-party libraries) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base
+- **gba :** responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do hardware original da consola Game Boy Advance;
+- **arm :** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da Game Boy Advance;
+- **debugger :** acrescenta funcionalidades de debugging à máquina virtual, bem como uma interface programável com uma ferramenta de debugging externa, gdb (GCC Debugger);
+- **platform  :** implementa diversas interfaces para frameworks e APIs (application programming interfaces) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas;
+-  **third-party :** contém bibliotecas open source de terceiros (third-party libraries) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base;
+-  **util :** contém funcionalidades comuns e estruturas de dados frequentemente utilizadas nos outros packages.
 
 ###Inteligibilidade
 A **inteligibilidade** do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a **documentação** de um programa e melhor **organizada** for a sua estrutura, maior é a **facilidade de compreensão** do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de **novos colaboradores**, nos relatórios de **correcção de bugs** e na sugestão de **novas funcionalidades**.

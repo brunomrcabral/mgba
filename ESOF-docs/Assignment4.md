@@ -59,18 +59,19 @@ Embora seja referido na página que este ficheiro ROM realiza apenas testes de *
 São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas **funcionalidades** da máquina virtual que se encontram **incompletas** ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estes comportamentos são normalmente sinónimo de uma má **cobertura de código**, isto é, recursos existentes em código que raramente são testados ou utilizados. Apesar de grande parte dos utilizadores desconhecerem o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser relatadas pelos mesmos na **secção de issues** do repositório, como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças aos testes de jogabilidade realizados pelos utilizadores.
 
 ###Isolabilidade
+A maior parte das classes que fazem parte do *package* principal *gba* faz uso de algumas classes e métodos pertencentes a outros *packages*, estando estas intimamente ligadas e interdependentes, como é o caso da relação arm <=> gba. Numa situação como esta seria correto afirmar que ao testarmos uma componente de um determinado recurso do programa estamos também a testar indiretamente outras componentes presentes em diferentes módulos.
 
-##(TERMINAR)
+O isolamento de componentes que merece aqui destaque será a separação dos recursos dependentes e não dependentes do sistema operativo, ou seja, entre as componentes da máquina virtual e as componentes de interação do utilizador com a mesma, o que permite a realização de *ports* para outras plataformas e melhorar os aspetos gráficos da imagem, pro exemplo.
 
-A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Numa situação destas seria correto afirmar que ao testarmos um componente de um determinado módulo estamos também a testar, indiretamente, outras componentes de diferentes módulos.
+Estas dependências não são necessárias para o funcionamento normal do emulador, isto é, será possível isolar e executar a máquina virtual na sua forma mais básica (sem saída de imagem nem som) e executar testes sobre esta. O autor chega mesmo a referir no ```README.md``` que estas funcionalidades extra serão desativadas na ausência dessas dependências opcionais, e que não terá implicações no funcionamento normal da aplicação.
 
-A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a realização de *ports* para outras plataformas.
+> mGBA has no hard dependencies, however, the following optional dependencies are required for specific features. The features will be disabled if the dependencies can't be found.
 
- É também referido que estass, however, the following optional dependencies are required for specific features. The features will be disabled if the dependencies can't be found.
+> -- endrift, https://github.com/mgba-emu/mgba/blob/master/README.md
+
 ##(TERMINAR)
 
 ###Separação de Responsabilidades
-
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na **componente** ao qual diz respeito, evitando que o código se torne mais confuso. Um fragmento de código mal organizado ou mal atribuído conduziria ao aumento do **grau de dificuldade** na definição dos **testes unitários** a serem realizados.
 
 Em projetos de grande dimensão como este deve ser dada uma atenção especial a estes aspetos de forma a evitar a ocorrência de código mal estruturado, o que aumentaria o custo da sua manutenção. É necessária uma separação destas funcionalidades para facilitar no isolamento da componente a ser testada, aspeto de grande relevância na produção de testes unitários relevantes e com qualidade. É com base nestes princípios que o **mGBA** se encontra estruturado em seis **packages**:
@@ -90,7 +91,6 @@ Em projetos de grandes dimensões como este, a existência de documentação e d
 Consideramos que o projeto em estudo perde bastante nestes aspetos agora referidos, pois revela-se **pouco detalhado** na descrição das classes e das funções nelas existentes, revelando até uma completa ausência de documentação em grande parte dos ficheiros de código fonte, sendo pouco clara quando esta existia, o que torna certos módulos do programa de **difícil compreensão**. 
 
 ###Heterogeneidade
-
 Com a constante evolução temporal do **mGBA** e o aparecimento de novas tecnologias ou paradigmas cresce também a necessidade de diversificar os métodos de teste aplicados ao *software* de modo a conseguirem abranger estas novas tecnologias implementadas. É devido ao número de bibliotecas utilizadas e funcionalidades implementadas que este projeto apresenta uma grande heterogeneidade.
 
 Como podemos constatar pela presença de determinados ficheiros na raiz do repositório, o projeto **mGBA** utiliza várias tecnologias e bibliotecas de terceiros (*third-party*) que permitem aos colaboradores e utilizadores compilar o projeto de forma rápida e eficiente, independentemente da plataforma e dos compiladores em uso, sendo estas:
@@ -101,7 +101,6 @@ Como podemos constatar pela presença de determinados ficheiros na raiz do repos
 A existência de dependências neste projeto é evidenciada pela presença de vários subdiretórios no diretório ```src/platform``` do repositório, enquanto que as informações relativas às mesmas encontram-se listadas no ficheiro README.md localizado na raiz do repositório, bem como os fins para os quais são utilizadas:
 
 ##Travis-CI
-
 Uma das ferramentas utilizadas pelos colaboradores do projeto na realização de **testes de integração** designa-se por **Travis-CI**. Trata-se de um serviço que realiza testes de integração contínua *open source* distribuído de forma gratuita. O *Travis-CI* permite aos seus utilizadores registarem na base de dados do serviço o seu repositório do **GitHub** e assim terem os seus **testes** executados automaticamente. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, esta ferramenta reconhece essa alteração, **compilando** imediatamente o projeto na sua totalidade e **correndo** todos os testes unitários **pré-configurados** num ficheiro pelo autor. O mesmo acontece com os **pull requests**, onde esta ferramenta é igualmente bastante útil, visto que auxilia os colaboradores na **validação e aprovação** dos mesmos, processo que será explorado mais adiante neste relatório.
 
 O Travis-CI suporta diversas **linguagens de programação** e possui um grau de **dificuldade de utilização** relativamente acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado ```.travis.yml``` na raiz do repositório, bem como um conjunto de *scripts* em **linguagem Bash** que eventualmente sejam necessários para executar em paralelo com o *script* de compilação principal.
@@ -113,7 +112,6 @@ Apesar das vantagens de utilização que foram referidas nos parágrafos anterio
 A imagem representa as estatísticas do teste de integração realizado automaticamente pela ferramenta **Travis-CI** sobre um [*pull request*](https://github.com/mgba-emu/mgba/pull/137) publicado recentemente no repositório referente a uns *warnings* que surgiam durante a compilação numa versão específica do compilador GCC. Como foi referido no parágrafo anterior, os únicos testes de integração realizados são **testes de compilação**, recorrendo a uma pequena amostra de **dois compiladores**, *GCC* e *Clang* que são executados em **dois sistemas operativos** diferentes (Linux e Mac OS X). É possível verificar que o *pull request* em questão foi bem sucedido, tendo passado em todos os quatro testes predefinidos pelo autor de projeto.
 
 ##Gameboy Advance Test Suite 
-
 Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na *Internet*, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtivemos os seguintes resultados:
 
 ![](Assignment4/test-all.png)

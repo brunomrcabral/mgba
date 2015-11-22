@@ -31,12 +31,14 @@ Como já foi referido em relatórios anteriores, o MGBA define um conjunto de el
 
 Cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno dos diferentes pomponetes do programa pode ser consultado através de um debugger em “mgba/src/debugger/”, que permite assim demonstrar essa modularidade do programa.
 
-
 ### Observabilidade
-Não nos foi possível verificar a existência de testes unitários neste repositório, no entanto, existem testes (“mgba/src/platform/test”) que demonstram que esses componentes são controláveis, pois nesta secção é possível definir uma série de parâmetros vareáveis que criam casos de teste. Por exemplo é possível desativar o rendering de vídeo ou controlar o número de fps.  Ainda assim os testes mais relevantes são feitos em módulos que combinam os diferentes componentes. São feitos com recurso a diferentes ROM’s que são postas a correr no programa sendo avaliado se a emulação dessa ROM teve o resultado esperado ou não, pois cada ROM usa diferentes recursos do emulador. No entanto, existem sempre casos de ROM’s que geram novas exceções no programa, o que conduz a erros de execução, que podem acabar por ser reportados por utilizadores do emulador na secção dos issues como já foi referido em entregas anteriores.
+Não foi possível verificar a existência de testes unitários neste repositório nem junto do autor. No entanto, existem testes (“mgba/src/platform/test”) que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros vareáveis que criam casos de teste. Por exemplo é possível desativar o rendering de vídeo ou controlar o número de fps.  Ainda assim os testes mais relevantes são feitos em módulos que combinam os diferentes componentes.
+
+É possível realizar testes de integração com recurso a diferentes ROMs que são colocadas a correr na máquina virtual, sendo avaliado se a emulação dessa ROM teve o resultado esperado ou não, pois o *software* contido em cada ROM utiliza de forma distinta os vários recursos do emulador e os recursos disponibilizados pela Game Boy Advance.
+
+É possível existirem casos de ROMs que geram novas exceções no programa, o que conduz a erros de execução e a comportamentos menos esperados por parte do emulador. Estas situações cabam por ser reportadas na secção dos issues deste repositório por utilizadores e *testers*, como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos graças a estes testes de jogabilidade realizados pelos utilizadores.
 
 ###Isolabilidade
-
 A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Assim, ao testarmos um componente de um determinado módulo, estamos também a testar, indiretamente, outros componentes de diferentes módulos.
 
 A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a existência de *ports* para outras plataformas.

@@ -94,6 +94,4 @@ In computer science, code coverage is a measure used to describe the degree to w
 - Branch coverage - Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
 - Condition coverage (or predicate coverage) - Has each Boolean sub-expression evaluated both to true and false?
 
-###Bugzilla
-
 ##Análise Crítica

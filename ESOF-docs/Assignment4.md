@@ -89,15 +89,6 @@ O Travis-CI suporta diversas linguagens de programação e possui um grau de dif
 
 Apesar das vantagens que foram referidas nos parágrafos anteriores, o proprietário deste projeto não tira partido máximo das funcionalidades do **Travis-CI**, pois não recorre a esta ferramenta para executar testes unitários, servindo-se apenas dela para realizar **testes de compilação**, como é possível observar após uma análise cuidadosa do repositóriodo **mGBA**. Na raiz do repositório encontraram-se ainda dois ficheiros relacionados com esta ferrametna, com nomes ".travis.yml" e ."travis-deps.sh".
 
-###Coverage
-
-In computer science, code coverage is a measure used to describe the degree to which the source code of a program is tested by a particular test suite. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. Many different metrics can be used to calculate code coverage; some of the most basic are the percent of program subroutines and the percent of program statements called during execution of the test suite.
-
-- Function coverage - Has each function (or subroutine) in the program been called?
-- Statement coverage - Has each statement in the program been executed?
-- Branch coverage - Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
-- Condition coverage (or predicate coverage) - Has each Boolean sub-expression evaluated both to true and false?
-
 ###Gameboy Advance Test Suite 
 
 Para uma posterior análise de cobertura de testes,  transferimos a [última versão](http://www.emucr.com/2015/11/mgba-git-20151122.html) compilada disponível na Internet, bem como a *suite* de testes referida nas secções anteriores, disponibilizada pelo autor. Em seguida, carregámos esse ficheiro ROM ```suite.gba``` no mGBA e executámos todos os testes disponíveis no momento (três), sendo que obtvemos os seguintes resultados:
@@ -121,8 +112,8 @@ A versão testada do programa conseguiu passar todos os testes de memória (1552
 - NO$GBA 2.8b: 759 passes
 - VBA-M 2.0.0 beta 2: 680 passes
 
-Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo.
+Apesar do **mGBA** ter apresentado **excelentes resultados** na execução dos testes face a programas equivalentes, estes dizem apenas respeito à componente de emulação (máquina virtual), sendo que existem outras **funcionalidades** do programa que de certa forma não foram possiveis de testar com esta ferramenta, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo com vista a tornar esta ferramenta mais completa.
 
 > At the moment, it only tests timing operations, but way more will be coming in the future. 
 
-> -- endrift, https://forums.mgba.io/showthread.php?tid=18
+>-- endrift, https://forums.mgba.io/showthread.php?tid=18

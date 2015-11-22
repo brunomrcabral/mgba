@@ -120,7 +120,5 @@ A versão testada do programa conseguiu passar todos os testes de memória (1552
 - mGBA: 1164 passes
 - NO$GBA 2.8b: 759 passes
 - VBA-M 2.0.0 beta 2: 680 passes
-- 
-Apesar do **mGBA** ter apresentado **excelentes resultados** na emulação face a programas equivalentes, existem outras **funcionalidades** do programa que de certa forma não são possiveis de testar, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão acrescentados mais testes com o decorrer do tempo.
 
-##Análise Crítica
+Apesar do **mGBA** ter apresentado **excelentes resultados** na emulação face a programas equivalentes, existem outras **funcionalidades** do programa que de certa forma não são possiveis de testar, como por exemplo a sua **interface gráfica**. Também já referimos que a *suite* de testes utilizada ainda não se encontra terminada, o próprio autor confirmou que serão **acrescentados** mais testes com o decorrer do tempo.

@@ -18,46 +18,48 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Numa primeira fase serão estudados os graus de testabilidade do software, sendo estes a controlabilidade do estado dos componentes testados, a observabilidade dos resultados, a isolabilidade dos componentes, o grau de separação de responsabilidades, o grau de inteligibilidade dos componentes e de heterogeneidade das tecnologias utilizadas.
+Neste relatório iremos analisar alguns dos conceitos associados à **validação e **verificação de software** no projeto em estudo.
 
-- **Controlabilidade :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
+Primeiramente serão estudados os graus de testabilidade do **software**, sendo estes a **controlabilidade** do estado das componentes testadas, a **observabilidade** do resultado dos testes, a isolabilidade das componentes, o grau de **separação de responsabilidades**, o grau de **inteligibilidade** das componentes e de **heterogeneidade** das tecnologias e recursos utilizados.
+
+- **Controlabilidade :** define o grau de controlo do estado das componentes a serem testados (*CUT - components under test*)
 - **Observabilidade :** The degree to which it is possible to observe (intermediate and final) test results.
-- **Isolabilidade :** The degree to which the component under test (CUT) can be tested in isolation.
-- **Separação de Responsabilidades**  :** The degree to which the component under test has a single, well defined responsibility**
-- **Heterogeneidade :** The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+- **Isolabilidade :** define a which the component under test (CUT) can be tested in isolation.
+- **Separação de Responsabilidades :** The degree to which the component under test has a single, well defined responsibility
+- **Heterogeneidade :** define o grau segundo o qual a utilização de diferentes tecnologias requer a utiização de diversos métodos e ferramentas de teste em paralelo.
 
-Em seguida pretendemos referir as circunstâncias de utilização da ferramenta Travis-CI na realização de testes de integração contínua pelos autores do projeto, bem como uma breve introdução a esta ferramenta e à forma como é utilizada em conjunto com os projetos no **GitHub**.
+Em seguida pretendemos referir as circunstâncias de utilização da ferramenta Travis-CI na realização de testes de integração contínua pelo autor do projeto, bem como uma breve introdução a esta ferramenta e à forma como pode ser utilizada em conjunto com os projetos no **GitHub**.
 
-Finalmente, numa forma de conclusão, iremos apresentar algumas **estatisticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
+Para terminar, iremos apresentar algumas **estatisticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
 
 ##Testabilidade
 
-Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo irá avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
+Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo pretende avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas sempre que estas forem pertinentes, com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
 
 ###Controlabilidade
-À semelhança do que foi referido nas entregas anteriores, o **mGBA** implementa uma máquina virtual constituída por várias classes (aqui representadas por ficheiros de código fonte) que controlam os diferentes componentes de emulação do *hardware* da consola original, como por exemplo controladores de som, vídeo, inputs do utilizador (dispositivos de entrada tais como teclado, rato, *gamepad*), até mesmo de controladores de execução do CPU ou componentes para sincronização das próprias componentes. Tendo em conta a complexidade desta estrutura, e 
+À semelhança do que foi referido nas entregas anteriores, o **mGBA** implementa uma **máquina virtual** constituída por várias classes (aqui representadas por ficheiros de código fonte) que controlam as diferentes **componentes** de emulação do *hardware* da consola original, como por exemplo controladores de som, vídeo, *inputs* do utilizador (dispositivos de entrada tais como teclado, rato, *gamepad*), até mesmo de controladores de **execução** do CPU ou componentes para **sincronização** das próprias componentes. Tendo em conta a complexidade desta estrutura, será necessário
 
-No que diz respeito à controlabilidade dos componentes sob teste, verifácamos que cada um destes componentes fornece serviços que são independentes do estado de qualquer um dos outros componentes em cada instante da execução do programa, e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno dos diferentes pomponetes do programa pode ser consultado através de um debugger em “mgba/src/debugger/”, conseguindo deste modo ter um maior controlo sob o software em execução, que permite assim demonstrar essa modularidade do programa.
+No que diz respeito à controlabilidade das componentes sob teste, verificámos que cada uma destas componentes fornece serviços que são independentes do estado de qualquer uma dos outras componentes em cada instante da execução do programa (à excepção da unidade de controlo e sincronização), e portanto é razoável admitir que é possível controlar o seu estado interno em cada momento. Esse estado interno das diferentes componentes do programa pode ser consultado na própria **interface gráfica** através de um **debugger** implementado em código no diretório ```/src/debugger/```, conseguindo deste modo ter um maior controlo sob o *software* em execução, que permite assim demonstrar modularidade deste programa.
 
 ### Observabilidade
-Não foi possível verificar a existência de testes unitários escritos em código neste repositório. Foram encontrados no entanto testes de outras naturezas no diretório ```/src/platform/test``` que demonstram em que medida esses componentes são controláveis, sendo possível definir uma série de parâmetros variáveis que criam casos de teste. 
+Não foi possível verificar a existência de testes unitários escritos em código neste repositório. Foram encontrados no entanto testes de outras naturezas no diretório ```/src/platform/test``` que demonstram em que medida essas componentes são controláveis, sendo possível definir uma série de parâmetros variáveis e instruções de execução que criam casos de teste. 
 
 Visto que se trata de um **emulador**, seria correto afirmar que a própria utilização deste programa define um caso de teste. Com efeito, é possível realizar **testes de integração** com recurso a diferentes ficheiros ROM que são colocados a correr na **máquina virtual**, sendo posteriormente avaliado se a emulação dessa ROM teve o resultado esperado ou não. Isto acontece porque o *software* contido em cada ROM foi programado para utilizar de forma distinta os vários **recursos** da máquina virtual bem como do dispositivo a ser emulado.
 
-Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma *suite* de testes bastante completa que avalia uma série de operações executadas com maior frequência na máquina virtual:
+Foi ainda disponibilizado pelo autor no *site* oficial do projeto uma ferramenta de testes bastante completa que executauma série de operações executadas com maior frequência na máquina virtual, avaliando os resultados obtidos:
 
 > In the interest of furthering the state of Game Boy Advance emulation, I've been writing a test suite that tests various aspects of hardware
 
 > -- endrift, https://forums.mgba.io/showthread.php?tid=18
 
-Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório contava ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual.
+Embora seja referido na página que este ficheiro ROM realiza apenas testes de *timing* ao sistema, a versão disponibilizada à data de elaboração deste relatório conta ainda com testes de acesso à memória e testes de acesso aos registos de *hardware* da máquina virtual.
 
 ![](Assignment4/test-select.PNG)
 
 São frequentes os casos de ROMs nunca antes testadas gerarem exceções no programa ao pedirem certas funcionalidades da máquina virtual que se encontram incompletas ou que ainda não foram implementadas em código, o que conduz a erros de execução e a comportamentos menos previsíveis por parte do programa. Estas sintomas são normalmente sinónimo de uma má cobertura de código, isto é, condições ou variáveis existentes no em código que raramente são testadas. Embora os utilizadores desconheçam o funcionamento interno da máquina virtual, grande parte destas situações acabam por ser publicadas por estes na secção de *issues* do repositório como já foi referido nas entregas anteriores. Os últimos progressos no desenvolvimento deste *software* têm sido conseguidos sobretudo graças a estes testes de jogabilidade realizados pelos utilizadores.
 
 ###Isolabilidade
-A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Numa situação destas seria correto afirmar que ao testarmos um componente de um determinado módulo estamos também a testar, indiretamente, outros componentes de diferentes módulos.
+A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Numa situação destas seria correto afirmar que ao testarmos um componente de um determinado módulo estamos também a testar, indiretamente, outras componentes de diferentes módulos.
 
 A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a realização de *ports* para outras plataformas.
 

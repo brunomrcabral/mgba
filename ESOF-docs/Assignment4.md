@@ -61,11 +61,13 @@ Consideramos que o projeto em estudo perde bastante nestes aspetos agora referid
 
 ###Travis-CI
 
-Uma das ferramentas utilizadas pelo proprietário na realizaçao testes de integração neste projeto é o Travis-CI, como se pode verificar na raiz do repositório pela presença de um ficheiro ".travis.yml". Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*.
+Uma das ferramentas utilizadas pelos colaboradores do projeto na realizaçao testes de integração designa-se por Travis-CI. Esta ferramenta trata-se de um serviço de integração contínuo e distribuído totalmente gratutito e *open source*.
 
 Esta ferramenta permite aos seus utilizadores registarem o seu repositório do GitHub e assim terem os seus testes executados. Sempre que é realizado um *commit* por qualquer colaborador num *branch* do repositório, a ferramente reconhece essa alteração, compilando imediatamente o projeto e correndo todos os testes unitários pré-configurados. O mesmo acontece com os pull requests, onde esta ferramenta é bastante útil, auxiliando o proprietário a aprovar/rejeitar os mesmos.
 
 O Travis-CI suporta diversas linguagens de programação e possui um grau de dificuldade de utilizaçaõ muito acessível. Para configurar será apenas necessário adicionar um novo ficheiro denominado '.travis.yml' na raiz do projeto, bem como outros *scripts* que possam ser necessários executar juntamente com o *script* principal.
+
+No entanto, o proprietário deste projeto não recorre a esta ferramenta para executar tests unitários, servindo-se apenas dela para realizar testes de compilação, como é possível observar. Na raiz do repositório do *mGBA* encontraram-se dois ficheiros relacionados entre si, com nomes ".travis.yml" e ."travis-deps.sh".
 
 ###Coverage
 

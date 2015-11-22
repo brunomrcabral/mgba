@@ -37,10 +37,22 @@ Não nos foi possível verificar a existência de testes unitários neste reposi
 
 ###Isolabilidade
 
+A maior parte das classes dos diferentes pacotes faz uso de outras classes e métodos pertencentes a outros pacotes, estando estas intimamente ligadas e interdependentes. Assim, ao testarmos um componente de um determinado módulo, estamos também a testar, indiretamente, outros componentes de diferentes módulos.
+
+A única isolabilidade que merece aqui destaque está na separação das funcionalidades dependentes e não dependentes do sistema operativo, o que permite a existência de *ports* para outras plataformas.
+
 ###Separação de Funcionalidades
+
 Durante o processo de desenvolvimento de *software* é importante garantir que cada funcionalidade implementada fique confinada, o mais possível, na componente ao qual diz respeito, evitando que o código se torne mais confuso. Nestas condições, código mal estruturado levaria ao aumento do grau de dificuldade na definição e realização de testes unitários. 
 
 Em projetos de grande dimensão deve ser dada particular atenção a este aspeto, de forma a evitar a ocorrência de código mal estruturado, o que dificulta a sua manutenção. A separação de funcionalidades procura resolver os problemas acima referidos: facilita o isolamento da componente a ser testada, aspeto de grande relevância na produção de testes unitários.
+
+O mGBA apresenta-se dividido em seis packages:
+
+- gba **:** responsável pela implementação de uma máquina virtual na máquina hospedeira que serve como base para a simulação do comportamento do hardware original da consola Game Boy Advance. 
+- arm **:** implementa um sistema de recompilação dinâmica das instruções de microprocessadores da família ARM7, utilizado como unidade de processamento central da Game Boy Advance.
+- platform  **:** implementa diversas interfaces para frameworks e APIs (application programming interfaces) de terceiros específicas para cada sistema operativo a correr nas diferentes plataformas
+-  third-party **:** contém bibliotecas open source de terceiros (third-party libraries) independentes da plataforma alvo que acrescentam novas funcionalidades ao sistema com o mínimo de alterações no código base
 
 ###Inteligibilidade
 A inteligibilidade do *software* assume também uma enorme relevância no que toca à manutenção, desenvolvimento e teste do *software* em questão. Assim, quanto mais detalhada for a documentação de um programa e melhor organizada for a sua estrutura (como também foi referido nas secções anteriores deste relatório), maior é a facilidade de compreensão do mesmo. Esta facilidade de compreensão que pode ser vista como uma vantagem nas mais variadas situações, como por exemplo na integração de novos colaboradores, no relatório e correcção de *bugs*, na sugestão de novas funcionalidades (levantamento de requisitos).
@@ -75,7 +87,7 @@ In computer science, code coverage is a measure used to describe the degree to w
 - Statement coverage - Has each statement in the program been executed?
 - Branch coverage - Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? For example, given an if statement, have both the true and false branches been executed? Another way of saying this is, has every edge in the program been executed?
 - Condition coverage (or predicate coverage) - Has each Boolean sub-expression evaluated both to true and false?
-- 
+
 ###Bugzilla
 
 ##Análise Crítica

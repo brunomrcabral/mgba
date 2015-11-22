@@ -17,27 +17,20 @@ Faculdade de Engenharia da Universidade do Porto
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
 
 ##Introdução
-
 Neste relatório iremos analisar alguns dos conceitos associados à **validação e **verificação de software** no projeto em estudo.
 
 Primeiramente serão estudados os graus de testabilidade do **software**, sendo estes a **controlabilidade** do estado das componentes testadas, a **observabilidade** do resultado dos testes, a isolabilidade das componentes, o grau de **separação de responsabilidades**, o grau de **inteligibilidade** das componentes e de **heterogeneidade** das tecnologias e recursos utilizados.
-
-- **Controlabilidade :** define o grau de controlo do estado das componentes a serem testados (*CUT - components under test*)
-- **Observabilidade :** The degree to which it is possible to observe (intermediate and final) test results.
-- **Isolabilidade :** define a which the component under test (CUT) can be tested in isolation.
-- **Separação de Responsabilidades :** The degree to which the component under test has a single, well defined responsibility
-- **Heterogeneidade :** define o grau segundo o qual a utilização de diferentes tecnologias requer a utiização de diversos métodos e ferramentas de teste em paralelo.
 
 Em seguida pretendemos referir as circunstâncias de utilização da ferramenta Travis-CI na realização de testes de integração contínua pelo autor do projeto, bem como uma breve introdução a esta ferramenta e à forma como pode ser utilizada em conjunto com os projetos no **GitHub**.
 
 Para terminar, iremos apresentar algumas **estatisticas de teste** referentes ao número de testes unitários realizados e resultados da execução dos mesmos, levados a cabo pelos elementos do grupo. 
 
 ##Testabilidade
-
 Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo pretende avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas sempre que estas forem pertinentes, com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
 
 ###Controlabilidade
-À semelhança do que foi referido nas entregas anteriores, o **mGBA** implementa uma **máquina virtual** constituída por várias classes (aqui representadas por ficheiros de código fonte) que controlam as diferentes **componentes** de emulação do *hardware* da consola original, como por exemplo controladores de som, vídeo, *inputs* do utilizador (dispositivos de entrada tais como teclado, rato, *gamepad*), até mesmo de controladores de **execução** do CPU ou componentes para **sincronização** das próprias componentes. Tendo em conta a complexidade desta estrutura, será necessário
+
+A controlabilidade define o grau de controlo do estado das componentes a serem testados (*CUT - components under test*). À semelhança do que foi referido nas entregas anteriores, o **mGBA** implementa uma **máquina virtual** constituída por várias classes (aqui representadas por ficheiros de código fonte) que controlam as diferentes **componentes** de emulação do *hardware* da consola original, como por exemplo controladores de som, vídeo, *inputs* do utilizador (dispositivos de entrada tais como teclado, rato, *gamepad*), até mesmo de controladores de **execução** do CPU ou componentes para **sincronização** das próprias componentes. Tendo em conta a complexidade desta estrutura, será necessário
 
 No que diz respeito à controlabilidade das componentes sob teste, verificámos que cada uma destas componentes fornece serviços que são independentes do estado de qualquer uma das outras componentes em cada instante da execução do programa (à exceção da unidade de controlo e sincronização), sendo portanto possível controlar o seu estado interno em cada momento. Este estado interno das diferentes componentes do programa pode ser consultado na própria **interface gráfica** da aplicação através das funcionalidades de **debugging** implementadas em código no diretório ```/src/debugger/```, conseguindo deste modo ter um maior controlo sob o *software* em execução, que permite assim demonstrar modularidade deste programa.
 

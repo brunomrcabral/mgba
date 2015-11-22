@@ -20,6 +20,8 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Testabilidade
 
+Os tópicos discutidos na seguinte secção deste relatório incidirão sobre o grau de testabilidade do projeto em estudo. O grupo irá avaliar a possibilidade de aplicação dos conhecimentos sobre processos de verificação e validação de software adquiridos nas aulas da unidade curricular de Engenharia de Software ao mesmo. Os tópicos serão acompanhados de imagens e referências a outras páginas com vista a ilustrar ou explicar melhor o ponto de vista dos elementos do grupo.
+
 - **Controllability :** The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 - **Observability :** The degree to which it is possible to observe (intermediate and final) test results.
 - **Isolateability :** The degree to which the component under test (CUT) can be tested in isolation.

@@ -15,3 +15,13 @@ Faculdade de Engenharia da Universidade do Porto
 * Carlos Jorge Rocha Soares (up201305514@fe.up.pt)
 * Carlos Manuel Carvalho Boavista Samouco (up201305187@fe.up.pt)
 * Diogo Belarmino Coelho Marques (up201305642@fe.up.pt)
+
+##Introdução
+
+##Identificação da *feature*
+
+##Identificação das componentes que implementam a feature
+
+##Evolução da *feature*
+
+##Submissão do *patch*

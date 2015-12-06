@@ -20,7 +20,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Identificação da *feature*
 
-##Identificação das componentes que implementam a feature
+##Identificação das componentes
 
 ##Evolução da *feature*
 

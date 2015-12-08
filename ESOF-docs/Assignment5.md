@@ -18,10 +18,18 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
+Para última entrega do projeto desenvolvido durante este semestre na unidade curricular de Engenheria de Software foi-nos pedida a identificação e posterior implementação de uma nova *feature* ou evolução de uma existente no projeto escolhido, mGBA. Com este relatório o grupo pretende apresentar a *feature* implementada e todo o processo de desenvolvimento associado.
+
 ##Identificação da *feature*
+
+O repositório do projeto disponibiliza uma secção de *issues* (tal como já foi referido em entregas anteriores) onde os vários contribuidores e utilizadores da aplicação relatam habitualmente os *bugs* que encontraram durante a sua utilização e sugerem uma série de *features* que gostavam de ver implementadas no decorrer do desenvolvimento deste projeto. Após uma análise da mesma, o grupo decidiu evoluir a seguinte *feature*: _____
 
 ##Identificação das componentes
 
 ##Evolução da *feature*
 
+O grupo começou por  _____
+
 ##Submissão do *patch*
+
+Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request*  _____

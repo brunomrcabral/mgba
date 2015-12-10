@@ -18,9 +18,9 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Para última entrega do projeto desenvolvido durante este semestre na unidade curricular de **Engenharia de Software** foi-nos pedida a identificação e posterior **implementação** de uma nova *feature* no projeto escolhido (mGBA) ou **evolução** de uma existente. Com este relatório o grupo pretende apresentar a funcionalidade implementada e ilustrar todo o **processo de desenvolvimento** associado.
+Como última entrega do projeto desenvolvido durante este semestre na unidade curricular de **Engenharia de Software** foi-nos pedida a identificação e **implementação** de uma nova funcionalidade no projeto escolhido (mGBA) ou **evolução** de uma existente. Com este relatório o grupo pretende apresentar a *feature* implementada e reflectir sobre o seu **processo de desenvolvimento**.
 
-O termo "evolução de software" é frequentemente utilizado em engenharia de *software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema implementado com vista a satisfazer uma determinada necessidade. A evolução do *software* é um processo inevitável a qualquer *developer*: todos os dias surgem novos requisitos e novos erros com a utilização do *software* que devem ser corrigidos, novas metodologias de trabalho e ambientes de negócio, necessidades de optimização do desempenho e melhorias na segurança e fiabilidade do sistema. 
+O termo *software evolution* é frequentemente utilizado em Engenharia de *Software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema previamente implementado com vista a satisfazer determinadas necessidades ou requisitos. A evolução do *software* é um processo inevitável a qualquer *developer*: todos os dias são encontrados novos erros com a utilização do *software* que devem ser corrigidos e surgem novos requisitos, novas metodologias de trabalho, necessidade de optimização do seu desempenho e melhorias na segurança e fiabilidade do sistema. 
 
 - **Corrective maintenance**: modificações efetuadas no *software* após o seu lançamento para corrigir problemas que tenham sido descobertos;
 - **Adaptive maintenance**: modificações efetuadas no *software* após o seu lançamento para manter o produto reutillizável num ambiente em mudança constante;
@@ -37,7 +37,7 @@ Para a implementação desta *feature* foi necessário ____
 
 ##Submissão do *patch*
 
-Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request*  _____
+Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request* com vista a ser integrada no *branch* principal do projeto em estudo.
 
 ##Análise crítica
 

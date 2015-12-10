@@ -35,10 +35,10 @@ O repositório do projeto disponibiliza uma secção de *issues* (como já foi r
 
 Para a implementação desta *feature* foi necessário ____
 
-##Evolução da *feature*
-
-O grupo começou por  _____
-
 ##Submissão do *patch*
 
 Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request*  _____
+
+##Análise crítica
+
+O grupo considera que a má organização geral do projeto e a falta de documentação no seu código fonte dificultou a realização da tarefa proposta para esta entrega. Numa fase inicial não fazíamos ideia por onde devíamos começar a realizar alterações no projeto, pois a distnção entre a máquina virtual e a camada da *interface* gráfica revelou não ser tão óbvia como o grupo achava inicialmente, embora as classes e responsabilidades tenham sido colocadas pelo autor do projeto em diretórios diferentes. A contribuir para o aumento do grau de dificuldade, não encontramos nenhuma aplicação capaz de realizar engenharia reversa no código gerado pelo editor de *interfaces* gráficas da framework Qt, o que reduziu a produtividade do grupo. A própria framework revelou-se bastante complexa, com uma extensa documentação online e um grau de aprendizagem elevado.

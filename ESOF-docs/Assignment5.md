@@ -29,7 +29,7 @@ O termo *software evolution* é frequentemente utilizado em Engenharia de *Softw
 
 ##Identificação da *feature*
 
-O repositório do projeto disponibiliza uma secção de *issues* (como já foi referido em entregas anteriores) onde os vários **contribuidores** e **utilizadores** da aplicação relatam habitualmente os *bugs* que encontraram durante a sua utilização e sugerem uma série de funcionalidades que gostavam de ver implementadas no decorrer do desenvolvimento deste projeto. Após uma análise da mesma, o grupo decidiu evoluir a seguinte *feature*: _____
+O repositório do projeto disponibiliza uma secção de *issues* (como já foi referido em entregas anteriores) onde os vários **contribuidores** e **utilizadores** da aplicação relatam habitualmente os *bugs* que encontraram durante a sua utilização e sugerem uma série de funcionalidades que gostavam de ver implementadas no decorrer do desenvolvimento deste projeto. Após uma análise da mesma, o grupo decidiu evoluir a *feature* referenciada pelos issues [#179](https://github.com/mgba-emu/mgba/issues/179) *[Request] screen rotation*, [#162](https://github.com/mgba-emu/mgba/issues/162) *[Request] Tilt the game 'screen' along with the tilt value*
 
 ##Identificação das componentes
 

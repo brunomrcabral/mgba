@@ -20,12 +20,9 @@ Faculdade de Engenharia da Universidade do Porto
 
 Como última entrega do projeto desenvolvido durante este semestre na unidade curricular de Engenharia de Software foi-nos pedida a identificação e implementação de uma nova funcionalidade ou evolução de uma existente no projeto escolhido (mGBA). Com este relatório o grupo pretende apresentar a *feature* implementada e reflectir sobre o seu **processo de desenvolvimento**.
 
-O termo *software evolution* é frequentemente utilizado em Engenharia de *Software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema previamente implementado com vista a satisfazer determinadas necessidades ou requisitos. A evolução do *software* é um processo inevitável a qualquer *developer*: todos os dias são encontrados novos erros com a utilização do *software* que devem ser corrigidos, todos os dias surgem novos requisitos, novas metodologias de trabalho, uma necessidade constante de optimização do seu **desempenho** e melhorias na **segurança** e **fiabilidade** do sistema. 
+O termo *software evolution* é frequentemente utilizado em Engenharia de *Software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema previamente implementado com vista a satisfazer determinadas necessidades ou requisitos.
 
-- **Corrective maintenance**: modificações efetuadas no *software* após o seu lançamento para corrigir problemas que tenham sido descobertos;
-- **Adaptive maintenance**: modificações efetuadas no *software* após o seu lançamento para manter o produto reutillizável num ambiente em mudança constante;
-- **Perfective maintenance**: modificações efetuadas no *software* após o seu lançamento com vista a melhorar o desempenho e fiabilidade da solução;
-- **Preventive maintenance**: modificações efetuadas no *software* após o seu lançamento com vista a detectar e corrigir falhas de segurança e/ou vulnerabilidades antes que estas sejam descobertas e se tornem ameaças efetivas.
+A evolução do *software* é um processo inevitável para qualquer *developer* ou empresa de *software*: todos os dias são encontrados novos problemas e *issues* com a utilização do *software* desenvolvido por estes que devem ser corrigidos, todos os dias surgem novos requisitos, existindo portante uma necessidade constante de produzir *software* reutilizável, optimizado e adaptado à constante mudança nas metodologias de trabalho e à evolução dos sitemas informáticos, nunca esquecendo eventuais melhorias na **segurança** e **fiabilidade** do sistema, evitando o aparecimento de vulnerabilidades que possam comprometer a integridade da máquina ou dos dados nele utilizados.
 
 ##Identificação da *feature*
 

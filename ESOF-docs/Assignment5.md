@@ -22,7 +22,7 @@ Como última entrega do projeto desenvolvido durante este semestre na unidade cu
 
 O termo *software evolution* é frequentemente utilizado em Engenharia de *Software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema previamente implementado com vista a satisfazer determinadas necessidades ou requisitos.
 
-A evolução do *software* é um processo inevitável para qualquer *developer* ou empresa de *software*: todos os dias são encontradas novas imperfeições e *issues* com a utilização das soluções de *software* desenvolvidas por estes que devem ser corrigiaos, todos os dias surgem novos **requisitos**, uma necessidade constante de **evoluir** e tornar o *software* reutilizável, optimizando-o e adaptando-o a novas metodologias de trabalho e à constante evolução dos **sistemas informáticos**, nunca esquecendo eventuais melhorias na **segurança** e **fiabilidade** do sistema, evitando o aparecimento de **vulnerabilidades** que possam comprometer a integridade da máquina ou dos dados nele utilizados.
+A evolução do *software* é um processo inevitável para qualquer *developer* ou empresa de *software*: todos os dias são encontradas novas imperfeições e *issues* com a utilização das soluções de *software* desenvolvidas por estes que devem ser corrigiaos, todos os dias surgem novos **requisitos**, uma necessidade constante de **evoluir** e tornar o *software* reutilizável, optimizando-o e adaptando-o a novas metodologias de trabalho e à constante evolução dos sistemas informáticos, nunca esquecendo eventuais melhorias na **segurança** e **fiabilidade** do sistema, evitando o aparecimento de **vulnerabilidades** que possam comprometer a integridade da máquina ou dos dados nele utilizados.
 
 ##Identificação da *feature*
 
@@ -32,7 +32,7 @@ Para tal acrescentamos um novo sub-menu no menu "Audio/Video" da *interface* gr�
 
 ##Identificação das componentes
 
-Para a implementação desta *feature* foi necessário ____
+Para a implementação desta *feature* foi necessário alterar parte das componentes da interface gráfica em [platform/qt/](https://github.com/mgba-emu/mgba/tree/master/src/platform/qt), nomeadamente as classes [Window](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Window.cpp), [Display](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Display.cpp), [DisplayGL](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/DisplayGL.cpp)...
 
 ##Submissão do *patch*
 

@@ -18,7 +18,7 @@ Faculdade de Engenharia da Universidade do Porto
 
 ##Introdução
 
-Como última entrega do projeto desenvolvido durante este semestre na unidade curricular de **Engenharia de Software** foi-nos pedida a identificação e **implementação** de uma nova funcionalidade ou **evolução** de uma existente no projeto escolhido (mGBA). Com este relatório o grupo pretende apresentar a *feature* implementada e reflectir sobre o seu **processo de desenvolvimento**.
+Como última entrega do projeto desenvolvido durante este semestre na unidade curricular de Engenharia de Software foi-nos pedida a identificação e implementação de uma nova funcionalidade ou evolução de uma existente no projeto escolhido (mGBA). Com este relatório o grupo pretende apresentar a *feature* implementada e reflectir sobre o seu **processo de desenvolvimento**.
 
 O termo *software evolution* é frequentemente utilizado em Engenharia de *Software* para designar o processo de desenvolvimento inicial de *software*, seguido de constantes alterações ao sistema previamente implementado com vista a satisfazer determinadas necessidades ou requisitos. A evolução do *software* é um processo inevitável a qualquer *developer*: todos os dias são encontrados novos erros com a utilização do *software* que devem ser corrigidos, todos os dias surgem novos requisitos, novas metodologias de trabalho, uma necessidade constante de optimização do seu **desempenho** e melhorias na **segurança** e **fiabilidade** do sistema. 
 

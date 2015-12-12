@@ -32,7 +32,7 @@ Para tal acrescentamos um novo sub-menu no menu "Audio/Video" da *interface* gr�
 
 ##Identificação das componentes
 
-Para a implementação desta *feature* foi necessário alterar parte das componentes da interface gráfica em [platform/qt/](https://github.com/mgba-emu/mgba/tree/master/src/platform/qt), nomeadamente as classes [Window](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Window.cpp), [Display](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Display.cpp), [DisplayGL](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/DisplayGL.cpp)...
+Para a implementação desta *feature* foi necessário alterar parte das componentes da interface gráfica em [platform](https://github.com/mgba-emu/mgba/tree/master/src/platform/qt), nomeadamente as classes [Window](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Window.cpp), [Display](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Display.cpp), [DisplayGL](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/DisplayGL.cpp)...
 
 ##Submissão do *patch*
 

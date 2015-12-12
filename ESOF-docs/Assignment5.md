@@ -30,11 +30,11 @@ O repositório do projeto disponibiliza uma secção de *issues* onde os vários
 - [#179](https://github.com/mgba-emu/mgba/issues/179) *[Request] screen rotation*
 - [#162](https://github.com/mgba-emu/mgba/issues/162) *[Request] Tilt the game 'screen' along with the tilt value* 
 
-O grupo começou por acrescentar um novo sub-menu no menu "Audio/Video" da *interface* gráfica designado "Rotate screen" (inserindo algumas linhas no método responsável pela construção dos menus), consituído por quatro opções: None (sem rotação), 90º CW (rotação de 90 graus no sentido horário), 90º CCW (rotação de 90 graus no sentido anti-horário) e 180º (rotação de 180 graus). Verificámos que esta opção ficava guardada entre sessões num ficheiro de configuração criado pela aplicação, e sempre que voltávamos a abrir a aplicação, as nossas preferências eram lembradas e a imagem aparecia rodada tal e qual como a tínhamos deixado na última utilização.
-
 ##Identificação das componentes
 
 Para a implementação desta *feature* foi necessário alterar parte das componentes da interface gráfica em [platform](https://github.com/mgba-emu/mgba/tree/master/src/platform/qt), nomeadamente as classes [Window](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Window.cpp), [Display](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/Display.cpp), [DisplayGL](https://github.com/mgba-emu/mgba/blob/master/src/platform/qt/DisplayGL.cpp).
+
+O grupo começou por acrescentar um novo sub-menu no menu "Audio/Video" da *interface* gráfica designado "Rotate screen" (inserindo algumas linhas no método responsável pela construção dos menus), consituído por quatro opções: None (sem rotação), 90º CW (rotação de 90 graus no sentido horário), 90º CCW (rotação de 90 graus no sentido anti-horário) e 180º (rotação de 180 graus). Verificámos que esta opção ficava guardada entre sessões num ficheiro de configuração criado pela aplicação, e sempre que voltávamos a abrir a aplicação, as nossas preferências eram lembradas e a imagem aparecia rodada tal e qual como a tínhamos deixado na última utilização.
 
 ##Submissão do *patch*
 

@@ -42,7 +42,7 @@ Foram criados dois *commits* com as alterações feitas no código:
 
 ##Submissão do *patch*
 
-Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request* com vista a ser integrada no *branch* principal do repositório do **mGBA**.
+Após a sua implementação, a nossa *feature* foi sujeita a um pedido de [*pull request*](https://github.com/mgba-emu/mgba/pull/187) com vista a ser integrada no *branch* principal do repositório do **mGBA**.
 
 ##Análise crítica
 

@@ -36,6 +36,10 @@ Para a implementação desta *feature* foi necessário alterar parte das compone
 
 O grupo acrescentou um novo sub-menu no menu "Audio/Video" da *interface* gráfica da aplicação designado "Rotate screen", consituído por quatro opções: **None** (sem rotação), **90º CW** (rotação de 90 graus no sentido horário), **90º CCW** (rotação de 90 graus no sentido anti-horário) e **180º** (rotação de 180 graus). Verificámos ainda que esta opção ficava guardada entre sessões num ficheiro de configuração criado pela aplicação, e sempre que voltávamos a abrir a aplicação as nossas preferências eram lembradas e a imagem aparecia rodada tal e qual como a tínhamos deixado na última utilização. Em seguida, criámos um método na classe **Window** que alterava o tamanho da janela para corresponder ao tamanho da imagem rodada, bem como um método na classe **Display** e na sua classe derivada **DisplayGL** para atualizar a função de *display* do **OpenGL* com o ângulo de rotação escolhido pelo utilizador.
 
+Foram criados dois *commits* com as alterações feitas no código:
+- (153d1af) [screen rotation attempt](https://github.com/marques999/mgba/commit/153d1af94d13baddd73e112ee4d94c5fae4a2413)
+- (4e6a319) [fixed window height decreasing](https://github.com/marques999/mgba/commit/4e6a31969a68d00ab6e4e0dec336745b10b0adca)
+
 ##Submissão do *patch*
 
 Após a sua implementação, a nossa *feature* foi sujeita a um pedido de *pull request* com vista a ser integrada no *branch* principal do repositório do **mGBA**.
